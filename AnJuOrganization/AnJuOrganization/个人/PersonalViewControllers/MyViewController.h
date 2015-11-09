@@ -15,4 +15,7 @@
     NSArray *labArray;
 }
 @property(nonatomic,strong)UITableView *myTableView;
+@property(nonatomic,strong)UIImageView *touXiangImg;
+@property(nonatomic,strong)UILabel *nameLab;
+@property(nonatomic,strong)UILabel *informationLab;
 @end

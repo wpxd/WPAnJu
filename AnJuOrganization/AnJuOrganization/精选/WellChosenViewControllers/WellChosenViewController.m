@@ -41,7 +41,7 @@
     [rightNavItemView addSubview:rightNavItemBtn];
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithCustomView:rightNavItemView];
     self.navigationItem.rightBarButtonItem = rightItem;
-    [self.navigationController.tabBarItem setBadgeValue:@"3"];
+//    [self.navigationController.tabBarItem setBadgeValue:@"3"];
 }
 - (void)rightNavItemBtnClicked
 {
