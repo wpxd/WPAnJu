@@ -11,6 +11,7 @@
 #import "CusstomPageView.h"
 #import "OtherCusstomPageView.h"
 #import "AllHousesViewController.h"
+#import "AJCustomerListTableViewController.h"
 @interface SaleChampionViewController ()
 
 @end
@@ -67,6 +68,14 @@
             [self.navigationController pushViewController:allHousesVC animated:YES];
         }
             break;
+        case 101:
+        {
+            AJCustomerListTableViewController *customerManagetVC = [[AJCustomerListTableViewController alloc] init];
+            customerManagetVC.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:customerManagetVC animated:YES];
+        }
+            break;
+
             
         default:
             break;
