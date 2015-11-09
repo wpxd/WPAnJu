@@ -55,6 +55,7 @@
 		AA840CF31BE8520B00AEADF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA840CF21BE8520B00AEADF1 /* AppDelegate.m */; };
 		AA840CFB1BE8520B00AEADF1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA840CFA1BE8520B00AEADF1 /* Images.xcassets */; };
 		AA840D0A1BE8520B00AEADF1 /* AnJuOrganizationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA840D091BE8520B00AEADF1 /* AnJuOrganizationTests.m */; };
+		AA9075881BF0BE9000E8687A /* HouseDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9075871BF0BE9000E8687A /* HouseDetailViewController.m */; };
 		AA94C4971BF05BF0006B5F9D /* WPExpandHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = AA94C4961BF05BF0006B5F9D /* WPExpandHeader.m */; };
 		AA94C4A31BF06FD2006B5F9D /* myAbout@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA94C4991BF06FD2006B5F9D /* myAbout@2x.png */; };
 		AA94C4A41BF06FD2006B5F9D /* myAbout@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA94C49A1BF06FD2006B5F9D /* myAbout@3x.png */; };
@@ -168,6 +169,8 @@
 		AA840D031BE8520B00AEADF1 /* AnJuOrganizationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnJuOrganizationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA840D081BE8520B00AEADF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA840D091BE8520B00AEADF1 /* AnJuOrganizationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnJuOrganizationTests.m; sourceTree = "<group>"; };
+		AA9075861BF0BE9000E8687A /* HouseDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HouseDetailViewController.h; sourceTree = "<group>"; };
+		AA9075871BF0BE9000E8687A /* HouseDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HouseDetailViewController.m; sourceTree = "<group>"; };
 		AA94C4951BF05BF0006B5F9D /* WPExpandHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPExpandHeader.h; sourceTree = "<group>"; };
 		AA94C4961BF05BF0006B5F9D /* WPExpandHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPExpandHeader.m; sourceTree = "<group>"; };
 		AA94C4991BF06FD2006B5F9D /* myAbout@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "myAbout@2x.png"; sourceTree = "<group>"; };
@@ -396,6 +399,8 @@
 				AA1A018A1BE8AE6700930B8C /* WellChosenViewController.m */,
 				AA72E6CE1BE9CDAC002A03D6 /* AllHousesViewController.h */,
 				AA72E6CF1BE9CDAC002A03D6 /* AllHousesViewController.m */,
+				AA9075861BF0BE9000E8687A /* HouseDetailViewController.h */,
+				AA9075871BF0BE9000E8687A /* HouseDetailViewController.m */,
 			);
 			path = WellChosenViewControllers;
 			sourceTree = "<group>";
@@ -716,6 +721,7 @@
 				AA1A01911BE8AF2200930B8C /* SaleChampionViewController.m in Sources */,
 				AA1A01961BE8AFEE00930B8C /* MyViewController.m in Sources */,
 				AA840CF31BE8520B00AEADF1 /* AppDelegate.m in Sources */,
+				AA9075881BF0BE9000E8687A /* HouseDetailViewController.m in Sources */,
 				AA1A014D1BE877F500930B8C /* CYLTabBarController.m in Sources */,
 				AAEF758F1BEF430900EDECC8 /* OtherCusstomPageView.m in Sources */,
 				AA72E6D01BE9CDAC002A03D6 /* AllHousesViewController.m in Sources */,

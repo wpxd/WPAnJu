@@ -50,7 +50,6 @@ NSString * const inentifier = @"inentifier";
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-
     return 4;
 }
 
