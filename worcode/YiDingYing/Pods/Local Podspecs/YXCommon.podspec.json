@@ -1,0 +1,13 @@
+{
+  "name": "YXCommon",
+  "version": "0.0.33",
+  "platforms": {
+    "ios": null
+  },
+  "source_files": "YXCommon/libs/*.{h,m,c}",
+  "resources": "YXCommon/libs/*.{xib,jpg}",
+  "frameworks": "UIKit",
+  "source": {
+    "path": "./"
+  }
+}

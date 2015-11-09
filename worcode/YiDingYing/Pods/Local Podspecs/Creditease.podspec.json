@@ -1,0 +1,8 @@
+{
+  "name": "Creditease",
+  "version": "0.0.13",
+  "platforms": {
+    "ios": null
+  },
+  "source_files": "Creditease/*.{h,m,c}"
+}
