@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CustomerDetailTableViewController : UITableViewController
+@interface AJCustomerDetailTableViewController : UITableViewController
 
 @end

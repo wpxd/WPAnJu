@@ -17,8 +17,15 @@
 		9BA8C5DA1BF0DC8300A72FFF /* AJCustomerInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BA8C5D51BF0DC8300A72FFF /* AJCustomerInfoTableViewCell.xib */; };
 		9BA8C5DB1BF0DC8300A72FFF /* AJCustomerListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA8C5D71BF0DC8300A72FFF /* AJCustomerListTableViewController.m */; };
 		9BA8C5DC1BF0DC8300A72FFF /* AJCustomerListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BA8C5D81BF0DC8300A72FFF /* AJCustomerListTableViewController.xib */; };
-		9BA8C5E61BF0DCEB00A72FFF /* CustomerDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA8C5E41BF0DCEB00A72FFF /* CustomerDetailTableViewController.m */; };
-		9BA8C5E71BF0DCEB00A72FFF /* CustomerDetailTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BA8C5E51BF0DCEB00A72FFF /* CustomerDetailTableViewController.xib */; };
+		9BA8C5E61BF0DCEB00A72FFF /* AJCustomerDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA8C5E41BF0DCEB00A72FFF /* AJCustomerDetailTableViewController.m */; };
+		9BA8C5E71BF0DCEB00A72FFF /* AJCustomerDetailTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BA8C5E51BF0DCEB00A72FFF /* AJCustomerDetailTableViewController.xib */; };
+		9BA8C5F11BF0DED900A72FFF /* AJCustomerDetailAvatarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA8C5EF1BF0DED900A72FFF /* AJCustomerDetailAvatarTableViewCell.m */; };
+		9BA8C5F61BF0DEFD00A72FFF /* AJCustomerDeatailProgressTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA8C5F41BF0DEFD00A72FFF /* AJCustomerDeatailProgressTableViewCell.m */; };
+		9BA8C5F71BF0DEFD00A72FFF /* AJCustomerDeatailProgressTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BA8C5F51BF0DEFD00A72FFF /* AJCustomerDeatailProgressTableViewCell.xib */; };
+		9BA8C5FB1BF0DF1F00A72FFF /* AJCustomerDetailBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA8C5F91BF0DF1F00A72FFF /* AJCustomerDetailBaseTableViewCell.m */; };
+		9BA8C6011BF0F34500A72FFF /* AJCustomerDetailAvatarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BA8C5FD1BF0F34500A72FFF /* AJCustomerDetailAvatarTableViewCell.xib */; };
+		9BA8C6021BF0F34500A72FFF /* AJCustomerDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA8C5FF1BF0F34500A72FFF /* AJCustomerDetailTableViewCell.m */; };
+		9BA8C6031BF0F34500A72FFF /* AJCustomerDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BA8C6001BF0F34500A72FFF /* AJCustomerDetailTableViewCell.xib */; };
 		AA1A012B1BE8664C00930B8C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA1A01291BE8664C00930B8C /* LaunchScreen.xib */; };
 		AA1A014B1BE877F500930B8C /* CYLPlusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1A01411BE877F500930B8C /* CYLPlusButton.m */; };
 		AA1A014C1BE877F500930B8C /* CYLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1A01431BE877F500930B8C /* CYLTabBar.m */; };
@@ -113,9 +120,20 @@
 		9BA8C5D61BF0DC8300A72FFF /* AJCustomerListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJCustomerListTableViewController.h; sourceTree = "<group>"; };
 		9BA8C5D71BF0DC8300A72FFF /* AJCustomerListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJCustomerListTableViewController.m; sourceTree = "<group>"; };
 		9BA8C5D81BF0DC8300A72FFF /* AJCustomerListTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AJCustomerListTableViewController.xib; sourceTree = "<group>"; };
-		9BA8C5E31BF0DCEB00A72FFF /* CustomerDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerDetailTableViewController.h; sourceTree = "<group>"; };
-		9BA8C5E41BF0DCEB00A72FFF /* CustomerDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerDetailTableViewController.m; sourceTree = "<group>"; };
-		9BA8C5E51BF0DCEB00A72FFF /* CustomerDetailTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomerDetailTableViewController.xib; sourceTree = "<group>"; };
+		9BA8C5E31BF0DCEB00A72FFF /* AJCustomerDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJCustomerDetailTableViewController.h; sourceTree = "<group>"; };
+		9BA8C5E41BF0DCEB00A72FFF /* AJCustomerDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJCustomerDetailTableViewController.m; sourceTree = "<group>"; };
+		9BA8C5E51BF0DCEB00A72FFF /* AJCustomerDetailTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AJCustomerDetailTableViewController.xib; sourceTree = "<group>"; };
+		9BA8C5EE1BF0DED900A72FFF /* AJCustomerDetailAvatarTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJCustomerDetailAvatarTableViewCell.h; sourceTree = "<group>"; };
+		9BA8C5EF1BF0DED900A72FFF /* AJCustomerDetailAvatarTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJCustomerDetailAvatarTableViewCell.m; sourceTree = "<group>"; };
+		9BA8C5F31BF0DEFD00A72FFF /* AJCustomerDeatailProgressTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJCustomerDeatailProgressTableViewCell.h; sourceTree = "<group>"; };
+		9BA8C5F41BF0DEFD00A72FFF /* AJCustomerDeatailProgressTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJCustomerDeatailProgressTableViewCell.m; sourceTree = "<group>"; };
+		9BA8C5F51BF0DEFD00A72FFF /* AJCustomerDeatailProgressTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AJCustomerDeatailProgressTableViewCell.xib; sourceTree = "<group>"; };
+		9BA8C5F81BF0DF1F00A72FFF /* AJCustomerDetailBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJCustomerDetailBaseTableViewCell.h; sourceTree = "<group>"; };
+		9BA8C5F91BF0DF1F00A72FFF /* AJCustomerDetailBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJCustomerDetailBaseTableViewCell.m; sourceTree = "<group>"; };
+		9BA8C5FD1BF0F34500A72FFF /* AJCustomerDetailAvatarTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AJCustomerDetailAvatarTableViewCell.xib; sourceTree = "<group>"; };
+		9BA8C5FE1BF0F34500A72FFF /* AJCustomerDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJCustomerDetailTableViewCell.h; sourceTree = "<group>"; };
+		9BA8C5FF1BF0F34500A72FFF /* AJCustomerDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJCustomerDetailTableViewCell.m; sourceTree = "<group>"; };
+		9BA8C6001BF0F34500A72FFF /* AJCustomerDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AJCustomerDetailTableViewCell.xib; sourceTree = "<group>"; };
 		AA1A012A1BE8664C00930B8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		AA1A01401BE877F500930B8C /* CYLPlusButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLPlusButton.h; sourceTree = "<group>"; };
 		AA1A01411BE877F500930B8C /* CYLPlusButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLPlusButton.m; sourceTree = "<group>"; };
@@ -287,11 +305,30 @@
 		9BA8C5E21BF0DCEB00A72FFF /* CustomerDetail */ = {
 			isa = PBXGroup;
 			children = (
-				9BA8C5E31BF0DCEB00A72FFF /* CustomerDetailTableViewController.h */,
-				9BA8C5E41BF0DCEB00A72FFF /* CustomerDetailTableViewController.m */,
-				9BA8C5E51BF0DCEB00A72FFF /* CustomerDetailTableViewController.xib */,
+				9BA8C5ED1BF0DE8C00A72FFF /* CustomerDetailCell */,
+				9BA8C5E31BF0DCEB00A72FFF /* AJCustomerDetailTableViewController.h */,
+				9BA8C5E41BF0DCEB00A72FFF /* AJCustomerDetailTableViewController.m */,
+				9BA8C5E51BF0DCEB00A72FFF /* AJCustomerDetailTableViewController.xib */,
 			);
 			path = CustomerDetail;
+			sourceTree = "<group>";
+		};
+		9BA8C5ED1BF0DE8C00A72FFF /* CustomerDetailCell */ = {
+			isa = PBXGroup;
+			children = (
+				9BA8C5FE1BF0F34500A72FFF /* AJCustomerDetailTableViewCell.h */,
+				9BA8C5FF1BF0F34500A72FFF /* AJCustomerDetailTableViewCell.m */,
+				9BA8C6001BF0F34500A72FFF /* AJCustomerDetailTableViewCell.xib */,
+				9BA8C5EE1BF0DED900A72FFF /* AJCustomerDetailAvatarTableViewCell.h */,
+				9BA8C5EF1BF0DED900A72FFF /* AJCustomerDetailAvatarTableViewCell.m */,
+				9BA8C5FD1BF0F34500A72FFF /* AJCustomerDetailAvatarTableViewCell.xib */,
+				9BA8C5F31BF0DEFD00A72FFF /* AJCustomerDeatailProgressTableViewCell.h */,
+				9BA8C5F41BF0DEFD00A72FFF /* AJCustomerDeatailProgressTableViewCell.m */,
+				9BA8C5F51BF0DEFD00A72FFF /* AJCustomerDeatailProgressTableViewCell.xib */,
+				9BA8C5F81BF0DF1F00A72FFF /* AJCustomerDetailBaseTableViewCell.h */,
+				9BA8C5F91BF0DF1F00A72FFF /* AJCustomerDetailBaseTableViewCell.m */,
+			);
+			name = CustomerDetailCell;
 			sourceTree = "<group>";
 		};
 		AA1A013B1BE877BE00930B8C /* 个人 */ = {
@@ -641,6 +678,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BA8C6011BF0F34500A72FFF /* AJCustomerDetailAvatarTableViewCell.xib in Resources */,
 				9BA8C5DA1BF0DC8300A72FFF /* AJCustomerInfoTableViewCell.xib in Resources */,
 				AA1A01821BE88B9D00930B8C /* my_highlight@3x.png in Resources */,
 				AA94C4A41BF06FD2006B5F9D /* myAbout@3x.png in Resources */,
@@ -650,9 +688,10 @@
 				AA94C4B31BF091B6006B5F9D /* touXiang@2x.png in Resources */,
 				AAEF75891BEE247400EDECC8 /* myPlease@2x.png in Resources */,
 				AA94C4A81BF06FD2006B5F9D /* myMiMa@3x.png in Resources */,
+				9BA8C6031BF0F34500A72FFF /* AJCustomerDetailTableViewCell.xib in Resources */,
 				AA94C4AE1BF08F69006B5F9D /* mySeting@2x.png in Resources */,
 				9BA8C5B81BF0CE0300A72FFF /* CustomerManagerReadMe in Resources */,
-				9BA8C5E71BF0DCEB00A72FFF /* CustomerDetailTableViewController.xib in Resources */,
+				9BA8C5E71BF0DCEB00A72FFF /* AJCustomerDetailTableViewController.xib in Resources */,
 				AA72E6CC1BE9A313002A03D6 /* 1.jpeg in Resources */,
 				AA1A01771BE88AC600930B8C /* my_normal@2x.png in Resources */,
 				AA94C4B01BF08F80006B5F9D /* mySeting@3x.png in Resources */,
@@ -688,6 +727,7 @@
 				AA94C4A71BF06FD2006B5F9D /* myMiMa@2x.png in Resources */,
 				AA94C4AB1BF06FD2006B5F9D /* myYong@2x.png in Resources */,
 				AAEF758B1BEE247400EDECC8 /* recomendHistory@2x.png in Resources */,
+				9BA8C5F71BF0DEFD00A72FFF /* AJCustomerDeatailProgressTableViewCell.xib in Resources */,
 				AA1A01791BE88AC600930B8C /* sale_normal@2x.png in Resources */,
 				AA94C4AA1BF06FD2006B5F9D /* myUpDate@3x.png in Resources */,
 				AA1A01871BE88B9D00930B8C /* saleChosen_normal@3x.png in Resources */,
@@ -714,11 +754,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA72E6D31BE9ED83002A03D6 /* AllHousesTableViewCell.m in Sources */,
+				9BA8C6021BF0F34500A72FFF /* AJCustomerDetailTableViewCell.m in Sources */,
 				AABFB47D1BEC5A75006D9870 /* WPPagedFlowView.m in Sources */,
 				AA1A01621BE8813900930B8C /* CustomNavigationBarController.m in Sources */,
 				AA1A015E1BE87DCB00930B8C /* Common.m in Sources */,
 				AA1A018C1BE8AE6700930B8C /* WellChosenViewController.m in Sources */,
 				AA1A01911BE8AF2200930B8C /* SaleChampionViewController.m in Sources */,
+				9BA8C5F61BF0DEFD00A72FFF /* AJCustomerDeatailProgressTableViewCell.m in Sources */,
 				AA1A01961BE8AFEE00930B8C /* MyViewController.m in Sources */,
 				AA840CF31BE8520B00AEADF1 /* AppDelegate.m in Sources */,
 				AA9075881BF0BE9000E8687A /* HouseDetailViewController.m in Sources */,
@@ -728,9 +770,11 @@
 				AABFB4821BEC741E006D9870 /* CusstomPageView.m in Sources */,
 				9BA8C5B31BF0CD3300A72FFF /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				AA72E6C91BE99DC3002A03D6 /* WellChosenTableCell.m in Sources */,
-				9BA8C5E61BF0DCEB00A72FFF /* CustomerDetailTableViewController.m in Sources */,
+				9BA8C5E61BF0DCEB00A72FFF /* AJCustomerDetailTableViewController.m in Sources */,
+				9BA8C5FB1BF0DF1F00A72FFF /* AJCustomerDetailBaseTableViewCell.m in Sources */,
 				9BA8C5CB1BF0D8AC00A72FFF /* UIColor+GJCategory.m in Sources */,
 				AA1A014B1BE877F500930B8C /* CYLPlusButton.m in Sources */,
+				9BA8C5F11BF0DED900A72FFF /* AJCustomerDetailAvatarTableViewCell.m in Sources */,
 				9BA8C5D91BF0DC8300A72FFF /* AJCustomerInfoTableViewCell.m in Sources */,
 				9BA8C5DB1BF0DC8300A72FFF /* AJCustomerListTableViewController.m in Sources */,
 				AA94C4971BF05BF0006B5F9D /* WPExpandHeader.m in Sources */,

@@ -8,6 +8,7 @@
 
 #import "AJCustomerListTableViewController.h"
 #import "AJCustomerInfoTableViewCell.h"
+#import "AJCustomerDetailTableViewController.h"
 NSString * const inentifier = @"inentifier";
 
 @interface AJCustomerListTableViewController ()
@@ -82,7 +83,9 @@ NSString * const inentifier = @"inentifier";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
+    AJCustomerDetailTableViewController *detailViewController = [[AJCustomerDetailTableViewController alloc]init];
+    [self.navigationController pushViewController:detailViewController animated:YES];
+
 }
 
 /*
