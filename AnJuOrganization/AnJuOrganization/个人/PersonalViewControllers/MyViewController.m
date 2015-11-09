@@ -92,6 +92,8 @@
     if (!cell)
     {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+        cell.accessoryType = UITableViewCellAccessoryNone;
+        cell.selectionStyle=UITableViewCellSelectionStyleNone;
     }
     switch (indexPath.section)
     {
@@ -110,7 +112,6 @@
         case 2:
         {
             cell.imageView.image = [UIImage imageNamed:[imgArray objectAtIndex:indexPath.row]];
-//            cell.imageView.frame.size.width = 40;
             [cell.textLabel setText:[labArray objectAtIndex:indexPath.row]];
         }
             break;
