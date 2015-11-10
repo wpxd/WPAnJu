@@ -52,9 +52,6 @@
             self.bottomLine.hidden = YES;
             break;
         }
-            
-            
-            
         default:
         {
             self.detailNameLanel.text = nil;
