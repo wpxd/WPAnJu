@@ -6,15 +6,29 @@
 //  Copyright (c) 2015年 王鹏. All rights reserved.
 //
 //ScrollView的高度
+#define FONT_SIZE 13.0f
+#define CELL_CONTENT_WIDTH kMainScreenWidth
+#define CELL_CONTENT_MARGIN 5.0f
 #define kScrollHeight (9*kMainScreenWidth)/16.0
 #import "HouseDetailViewController.h"
-
+#import "HouseDetailCellOne.h"
+#import "HouseDetailCellTwo.h"
+#import "HouseDetailCellThree.h"
 @interface HouseDetailViewController ()
 
 @end
 
 @implementation HouseDetailViewController
-
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:YES];
+    [houseDetailTimer setFireDate:[NSDate distantPast]];
+}
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:YES];
+    [houseDetailTimer setFireDate:[NSDate distantFuture]];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -27,7 +41,7 @@
 }
 - (void)addTableHeaderView
 {
-    NSArray *xiaoGuoTuArray = [NSArray arrayWithObjects:@"0.jpg",@"1.jpeg",@"2.jpg", nil];
+    xiaoGuoTuArray = [NSArray arrayWithObjects:@"0.jpg",@"1.jpeg",@"2.jpg", nil];
     UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kMainScreenWidth, kScrollHeight)];
     headerView.backgroundColor = [UIColor purpleColor];
     self.myTableView.tableHeaderView = headerView;
@@ -53,6 +67,76 @@
 //            [_scrollView addSubview:scrollImg];
         }
     }
+    _direction = 1;
+    _pageControl = [[WPPageControl alloc] initWithFrame:CGRectMake((kMainScreenWidth-70)/2.0, kScrollHeight - 30, 70, 30)];
+    _pageControl.numberOfPages = xiaoGuoTuArray.count;
+    [headerView addSubview:_pageControl];
+    if (xiaoGuoTuArray.count>1)
+    {
+        houseDetailTimer = [NSTimer scheduledTimerWithTimeInterval:1.5f target:self selector:@selector(onTime) userInfo:nil repeats:YES];
+    }
+    UIView *yongJinView = [[UIView alloc] initWithFrame:CGRectMake(kMainScreenWidth-120, kScrollHeight-30, 110, 30)];
+    yongJinView.backgroundColor = UIColorFromHex(0x000000);
+    yongJinView.alpha = 0.7;
+    [headerView addSubview:yongJinView];
+    _yongJinLab = [[UILabel alloc] initWithFrame:CGRectMake(5, 5, 100, 20)];
+    _yongJinLab.font = [UIFont systemFontOfSize:14];
+    _yongJinLab.textColor = [UIColor whiteColor];
+    _yongJinLab.textAlignment = NSTextAlignmentCenter;
+    _yongJinLab.text = @"佣金：￥20000";
+    [yongJinView addSubview:_yongJinLab];
+}
+//定时器方法
+- (void)onTime
+{
+    _count ++;
+    if (xiaoGuoTuArray.count>0)
+    {
+        if (_count % xiaoGuoTuArray.count != 0) return;
+        _count = 0;
+        if (_scrollImgViewIndex == 0)
+        {
+            _direction = 1;
+        }
+        if (_scrollImgViewIndex == xiaoGuoTuArray.count - 1)
+        {
+            _direction = - 1;
+        }
+        _scrollImgViewIndex += _direction;
+        
+        [UIView animateWithDuration:0.4 animations:^{
+            _headerScrollView.contentOffset = CGPointMake(_scrollImgViewIndex * kMainScreenWidth, 0);
+        }];
+        _pageControl.currentPage = _scrollImgViewIndex;
+        [self changePicImageView];
+    }
+}
+- (void)changePicImageView
+{
+    if (_scrollImgViewIndex == 0)
+    {
+        _direction = 1;
+    }
+    if (_scrollImgViewIndex == xiaoGuoTuArray.count - 1)
+    {
+        _direction = - 1;
+    }
+    _pageControl.currentPage = _scrollImgViewIndex;
+}
+//ScrollView的代理方法
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    if (scrollView == self.headerScrollView)
+    {
+        _count = 0;
+        _dragImgViewIndex = scrollView.contentOffset.x / kMainScreenWidth;
+        
+        if (_dragImgViewIndex != _scrollImgViewIndex)
+        {
+            _scrollImgViewIndex = _dragImgViewIndex;
+            [self changePicImageView];
+        }
+    }
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -68,23 +152,93 @@
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
 {
+    if (section==4)
+    {
+        return 0.1;
+    }
     return 10;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    switch (indexPath.section)
+    {
+        case 0:
+        {
+            NSString *text = @"的卡号打打卡是的哈客户的卡号的卡号SD卡撒的卡号说电话卡HD声卡和低价位得噢积分我都去偶的我七号定位好的定期维护地区厚底我地区和地区和地区和地区厚底董卿和大红大全东区活动秦皇岛地区和无误后分红网红的话我去活动群活动我的厚度";
+            return 175+[self getCellHeightWithAttributedString:text];
+        }
+            break;
+        case 1:
+        {
+            NSString *text = @"海曙核心地段";
+            return 135+[self getCellHeightWithAttributedString:text];
+        }
+            break;
+            
+        default:
+            break;
+    }
     return 100;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static  NSString *CellIntentifier = @"CellIntentifier";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIntentifier];
-    if (cell==nil)
+    if (indexPath.section==0)
     {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIntentifier];
+        HouseDetailCellOne *cellOne = [[HouseDetailCellOne alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+        cellOne.selectionStyle = UITableViewCellSelectionStyleNone;
+        NSString *text = @"的卡号打打卡是的哈客户的卡号的卡号SD卡撒的卡号说电话卡HD声卡和低价位得噢积分我都去偶的我七号定位好的定期维护地区厚底我地区和地区和地区和地区厚底董卿和大红大全东区活动秦皇岛地区和无误后分红网红的话我去活动群活动我的厚度";
+        [cellOne.houseDynamicLab setText:text];
+        [cellOne.houseDynamicLab setFrame:CGRectMake(CELL_CONTENT_MARGIN, 175, kMainScreenWidth - (CELL_CONTENT_MARGIN * 2), MAX([self getHeightWithAttributedString:text], 35.0f - CELL_CONTENT_MARGIN*2))];
+        return cellOne;
     }
-    return cell;
+    else if (indexPath.section==1)
+    {
+        HouseDetailCellTwo *cellTwo = [[HouseDetailCellTwo alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+        cellTwo.selectionStyle = UITableViewCellSelectionStyleNone;
+        NSString *text = @"海曙核心地段";
+        [cellTwo.buyPointLab setText:text];
+        [cellTwo.buyPointLab setFrame:CGRectMake(CELL_CONTENT_MARGIN, 133, kMainScreenWidth - (CELL_CONTENT_MARGIN * 2), MAX([self getHeightWithAttributedString:text], 35.0f - CELL_CONTENT_MARGIN*2))];
+        return cellTwo;
+    }
+    else if (indexPath.section==2)
+    {
+        HouseDetailCellThree *cellThree = [[HouseDetailCellThree alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+        cellThree.selectionStyle = UITableViewCellSelectionStyleNone;
+        return cellThree;
+    }
+    else
+    {
+        static  NSString *CellIntentifier = @"CellIntentifier";
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIntentifier];
+        if (cell==nil)
+        {
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIntentifier];
+        }
+        return cell;
+    }
+    
+}
+- (CGFloat)getHeightWithAttributedString:(NSString *)text
+{
+    
+    CGSize constraint = CGSizeMake(CELL_CONTENT_WIDTH - (CELL_CONTENT_MARGIN * 2), 20000);//
+    NSDictionary * attributes = [NSDictionary dictionaryWithObject:[UIFont systemFontOfSize:FONT_SIZE] forKey:NSFontAttributeName];
+    NSAttributedString *attributedText =
+    [[NSAttributedString alloc]
+     initWithString:text
+     attributes:attributes];
+    CGRect rect = [attributedText boundingRectWithSize:constraint
+                                               options:NSStringDrawingUsesLineFragmentOrigin
+                                               context:nil];//
+    CGSize size = rect.size;
+    return size.height;
 }
 
+- (CGFloat)getCellHeightWithAttributedString:(NSString *)aStr
+{
+    CGFloat height = [self getHeightWithAttributedString:aStr] + 2*CELL_CONTENT_MARGIN;
+    return  MAX(height, 30.0f);
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

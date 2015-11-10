@@ -7,14 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "WPPageControl.h"
 @interface HouseDetailViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,UIScrollViewDelegate>
+{
+    WPPageControl *_pageControl;
+    int             _scrollImgViewIndex;
+    int             _dragImgViewIndex;
+    int             _direction;
+    int _count;
+    NSTimer *houseDetailTimer;
+    NSArray *xiaoGuoTuArray;
+}
 @property(nonatomic, strong)UITableView *myTableView;
 @property(nonatomic,strong)UIScrollView *headerScrollView;
-//@property(nonatomic,strong)UILabel *houseNameLab;
-//@property(nonatomic,strong)UILabel *houseTpyeLab;
-//@property(nonatomic,strong)UILabel *houseStateLab;
-//@property(nonatomic,strong)UILabel *housePriceLab;
-//@property(nonatomic,strong)UILabel *houseTimeLab;
+@property(nonatomic,strong)UILabel *yongJinLab;
 
 @end

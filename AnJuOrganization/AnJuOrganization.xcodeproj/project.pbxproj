@@ -94,6 +94,17 @@
 		AA94C4B41BF091B6006B5F9D /* touXiang@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA94C4B21BF091B6006B5F9D /* touXiang@3x.png */; };
 		AABFB47D1BEC5A75006D9870 /* WPPagedFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = AABFB47C1BEC5A75006D9870 /* WPPagedFlowView.m */; };
 		AABFB4821BEC741E006D9870 /* CusstomPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = AABFB4811BEC741E006D9870 /* CusstomPageView.m */; };
+		AAE57B1E1BF1B33A00A604C3 /* WPPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE57B1D1BF1B33A00A604C3 /* WPPageControl.m */; };
+		AAE57B211BF1B8A900A604C3 /* HouseDetailCellOne.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE57B201BF1B8A900A604C3 /* HouseDetailCellOne.m */; };
+		AAE57B271BF1C7F300A604C3 /* gouZiLight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AAE57B231BF1C7F300A604C3 /* gouZiLight@2x.png */; };
+		AAE57B281BF1C7F300A604C3 /* gouZiLight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AAE57B241BF1C7F300A604C3 /* gouZiLight@3x.png */; };
+		AAE57B291BF1C7F300A604C3 /* gouZiNormal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AAE57B251BF1C7F300A604C3 /* gouZiNormal@2x.png */; };
+		AAE57B2A1BF1C7F300A604C3 /* gouZiNormal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AAE57B261BF1C7F300A604C3 /* gouZiNormal@3x.png */; };
+		AAE57B2C1BF1D70E00A604C3 /* jianTou@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AAE57B2B1BF1D70E00A604C3 /* jianTou@2x.png */; };
+		AAE57B2F1BF1DD6E00A604C3 /* HouseDetailCellTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE57B2E1BF1DD6E00A604C3 /* HouseDetailCellTwo.m */; };
+		AAE57B311BF1E31C00A604C3 /* telphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AAE57B301BF1E31C00A604C3 /* telphone@2x.png */; };
+		AAE57B331BF1E33400A604C3 /* telphone@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AAE57B321BF1E33400A604C3 /* telphone@3x.png */; };
+		AAE57B361BF1EADE00A604C3 /* HouseDetailCellThree.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE57B351BF1EADE00A604C3 /* HouseDetailCellThree.m */; };
 		AAEF75811BEE247400EDECC8 /* allHouses@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AAEF75751BEE247400EDECC8 /* allHouses@2x.png */; };
 		AAEF75821BEE247400EDECC8 /* allHouses@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AAEF75761BEE247400EDECC8 /* allHouses@3x.png */; };
 		AAEF75831BEE247400EDECC8 /* managerClient@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AAEF75771BEE247400EDECC8 /* managerClient@2x.png */; };
@@ -243,6 +254,21 @@
 		AABFB47C1BEC5A75006D9870 /* WPPagedFlowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPPagedFlowView.m; sourceTree = "<group>"; };
 		AABFB4801BEC741E006D9870 /* CusstomPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CusstomPageView.h; sourceTree = "<group>"; };
 		AABFB4811BEC741E006D9870 /* CusstomPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CusstomPageView.m; sourceTree = "<group>"; };
+		AAE57B1C1BF1B33A00A604C3 /* WPPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPPageControl.h; sourceTree = "<group>"; };
+		AAE57B1D1BF1B33A00A604C3 /* WPPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPPageControl.m; sourceTree = "<group>"; };
+		AAE57B1F1BF1B8A900A604C3 /* HouseDetailCellOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HouseDetailCellOne.h; sourceTree = "<group>"; };
+		AAE57B201BF1B8A900A604C3 /* HouseDetailCellOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HouseDetailCellOne.m; sourceTree = "<group>"; };
+		AAE57B231BF1C7F300A604C3 /* gouZiLight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gouZiLight@2x.png"; sourceTree = "<group>"; };
+		AAE57B241BF1C7F300A604C3 /* gouZiLight@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gouZiLight@3x.png"; sourceTree = "<group>"; };
+		AAE57B251BF1C7F300A604C3 /* gouZiNormal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gouZiNormal@2x.png"; sourceTree = "<group>"; };
+		AAE57B261BF1C7F300A604C3 /* gouZiNormal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gouZiNormal@3x.png"; sourceTree = "<group>"; };
+		AAE57B2B1BF1D70E00A604C3 /* jianTou@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jianTou@2x.png"; sourceTree = "<group>"; };
+		AAE57B2D1BF1DD6E00A604C3 /* HouseDetailCellTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HouseDetailCellTwo.h; sourceTree = "<group>"; };
+		AAE57B2E1BF1DD6E00A604C3 /* HouseDetailCellTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HouseDetailCellTwo.m; sourceTree = "<group>"; };
+		AAE57B301BF1E31C00A604C3 /* telphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "telphone@2x.png"; sourceTree = "<group>"; };
+		AAE57B321BF1E33400A604C3 /* telphone@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "telphone@3x.png"; sourceTree = "<group>"; };
+		AAE57B341BF1EADE00A604C3 /* HouseDetailCellThree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HouseDetailCellThree.h; sourceTree = "<group>"; };
+		AAE57B351BF1EADE00A604C3 /* HouseDetailCellThree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HouseDetailCellThree.m; sourceTree = "<group>"; };
 		AAEF75751BEE247400EDECC8 /* allHouses@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "allHouses@2x.png"; sourceTree = "<group>"; };
 		AAEF75761BEE247400EDECC8 /* allHouses@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "allHouses@3x.png"; sourceTree = "<group>"; };
 		AAEF75771BEE247400EDECC8 /* managerClient@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "managerClient@2x.png"; sourceTree = "<group>"; };
@@ -458,6 +484,7 @@
 		AA1A01461BE877F500930B8C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				AAE57B221BF1C7F300A604C3 /* 楼盘详情 */,
 				9BA8C5C31BF0D20200A72FFF /* customerManager */,
 				AA94C4981BF06FD2006B5F9D /* 个人 */,
 				AAEF75741BEE247400EDECC8 /* 经纪按钮 */,
@@ -518,10 +545,18 @@
 		AA1A018B1BE8AE6700930B8C /* WellChosenViews */ = {
 			isa = PBXGroup;
 			children = (
+				AAE57B1C1BF1B33A00A604C3 /* WPPageControl.h */,
+				AAE57B1D1BF1B33A00A604C3 /* WPPageControl.m */,
 				AA72E6C71BE99DC3002A03D6 /* WellChosenTableCell.h */,
 				AA72E6C81BE99DC3002A03D6 /* WellChosenTableCell.m */,
 				AA72E6D11BE9ED83002A03D6 /* AllHousesTableViewCell.h */,
 				AA72E6D21BE9ED83002A03D6 /* AllHousesTableViewCell.m */,
+				AAE57B1F1BF1B8A900A604C3 /* HouseDetailCellOne.h */,
+				AAE57B201BF1B8A900A604C3 /* HouseDetailCellOne.m */,
+				AAE57B2D1BF1DD6E00A604C3 /* HouseDetailCellTwo.h */,
+				AAE57B2E1BF1DD6E00A604C3 /* HouseDetailCellTwo.m */,
+				AAE57B341BF1EADE00A604C3 /* HouseDetailCellThree.h */,
+				AAE57B351BF1EADE00A604C3 /* HouseDetailCellThree.m */,
 			);
 			path = WellChosenViews;
 			sourceTree = "<group>";
@@ -649,6 +684,20 @@
 			path = "个人";
 			sourceTree = "<group>";
 		};
+		AAE57B221BF1C7F300A604C3 /* 楼盘详情 */ = {
+			isa = PBXGroup;
+			children = (
+				AAE57B321BF1E33400A604C3 /* telphone@3x.png */,
+				AAE57B301BF1E31C00A604C3 /* telphone@2x.png */,
+				AAE57B2B1BF1D70E00A604C3 /* jianTou@2x.png */,
+				AAE57B231BF1C7F300A604C3 /* gouZiLight@2x.png */,
+				AAE57B241BF1C7F300A604C3 /* gouZiLight@3x.png */,
+				AAE57B251BF1C7F300A604C3 /* gouZiNormal@2x.png */,
+				AAE57B261BF1C7F300A604C3 /* gouZiNormal@3x.png */,
+			);
+			path = "楼盘详情";
+			sourceTree = "<group>";
+		};
 		AAEF75741BEE247400EDECC8 /* 经纪按钮 */ = {
 			isa = PBXGroup;
 			children = (
@@ -760,7 +809,9 @@
 				9BBB51181BF1D5DF00D74C5D /* AJEditCustomerRemarksTableViewCell.xib in Resources */,
 				AA94C4AE1BF08F69006B5F9D /* mySeting@2x.png in Resources */,
 				9BBB88291BF1A6E6009CB3DC /* AJCustomerDeatailProgressTableViewCell.xib in Resources */,
+				AAE57B281BF1C7F300A604C3 /* gouZiLight@3x.png in Resources */,
 				AA72E6CC1BE9A313002A03D6 /* 1.jpeg in Resources */,
+				AAE57B311BF1E31C00A604C3 /* telphone@2x.png in Resources */,
 				AA1A01771BE88AC600930B8C /* my_normal@2x.png in Resources */,
 				AA94C4B01BF08F80006B5F9D /* mySeting@3x.png in Resources */,
 				9BBB882B1BF1A6E6009CB3DC /* AJCustomerDetailAvatarTableViewCell.xib in Resources */,
@@ -768,10 +819,15 @@
 				AA1A017B1BE88AC600930B8C /* wellChosen_normal@2x.png in Resources */,
 				AA1A01831BE88B9D00930B8C /* my_normal@3x.png in Resources */,
 				AAEF75821BEE247400EDECC8 /* allHouses@3x.png in Resources */,
+<<<<<<< Updated upstream
 				9BBB51091BF1D57B00D74C5D /* AJEditCustomerAvatarTableViewCell.xib in Resources */,
 				9B4EE86A1BF1C672005C7039 /* phone@2x.png in Resources */,
+=======
+				AAE57B2C1BF1D70E00A604C3 /* jianTou@2x.png in Resources */,
+>>>>>>> Stashed changes
 				AA1A01861BE88B9D00930B8C /* saleChosen_highlight@3x.png in Resources */,
 				AA1A01781BE88AC600930B8C /* sale_hignlight@2x.png in Resources */,
+				AAE57B271BF1C7F300A604C3 /* gouZiLight@2x.png in Resources */,
 				AAEF75871BEE247400EDECC8 /* myMoeny@2x.png in Resources */,
 				AAEF758C1BEE247400EDECC8 /* recomendHistory@3x.png in Resources */,
 				AA1A017A1BE88AC600930B8C /* wellChosen_highlight@2x.png in Resources */,
@@ -780,6 +836,7 @@
 				9BBB51031BF1D53400D74C5D /* AJEditCustomerBaseTableViewCell.xib in Resources */,
 				AA72E6D61BEA0136002A03D6 /* 2.jpg in Resources */,
 				AA1A012B1BE8664C00930B8C /* LaunchScreen.xib in Resources */,
+				AAE57B291BF1C7F300A604C3 /* gouZiNormal@2x.png in Resources */,
 				AA72E6D71BEA0136002A03D6 /* 3.jpg in Resources */,
 				AAEF75861BEE247400EDECC8 /* myHouse@3x.png in Resources */,
 				AA1A014E1BE877F500930B8C /* Default-568h@2x.png in Resources */,
@@ -789,6 +846,7 @@
 				9BBB88351BF1A6E6009CB3DC /* CustomerManagerReadMe in Resources */,
 				AA840CFB1BE8520B00AEADF1 /* Images.xcassets in Resources */,
 				AA1A01761BE88AC600930B8C /* my_highlight@2x.png in Resources */,
+				AAE57B2A1BF1C7F300A604C3 /* gouZiNormal@3x.png in Resources */,
 				AA94C4B41BF091B6006B5F9D /* touXiang@3x.png in Resources */,
 				9BA8C5C71BF0D20200A72FFF /* customerInfo@3x.png in Resources */,
 				AAEF75851BEE247400EDECC8 /* myHouse@2x.png in Resources */,
@@ -801,6 +859,7 @@
 				AA94C4AC1BF06FD2006B5F9D /* myYong@3x.png in Resources */,
 				AAEF75881BEE247400EDECC8 /* myMoeny@3x.png in Resources */,
 				AA72E6CD1BE9A313002A03D6 /* 0.jpg in Resources */,
+				AAE57B331BF1E33400A604C3 /* telphone@3x.png in Resources */,
 				AA94C4A91BF06FD2006B5F9D /* myUpDate@2x.png in Resources */,
 				9BBB88321BF1A6E6009CB3DC /* AJCustomerInfoTableViewCell.xib in Resources */,
 				AA94C4A71BF06FD2006B5F9D /* myMiMa@2x.png in Resources */,
@@ -845,19 +904,26 @@
 				AA1A01911BE8AF2200930B8C /* SaleChampionViewController.m in Sources */,
 				AA1A01961BE8AFEE00930B8C /* MyViewController.m in Sources */,
 				9BBB882F1BF1A6E6009CB3DC /* AJCustomerDetailTableViewController.m in Sources */,
+				AAE57B211BF1B8A900A604C3 /* HouseDetailCellOne.m in Sources */,
 				AA840CF31BE8520B00AEADF1 /* AppDelegate.m in Sources */,
 				9BBB882A1BF1A6E6009CB3DC /* AJCustomerDetailAvatarTableViewCell.m in Sources */,
 				AA9075881BF0BE9000E8687A /* HouseDetailViewController.m in Sources */,
 				AA1A014D1BE877F500930B8C /* CYLTabBarController.m in Sources */,
 				AAEF758F1BEF430900EDECC8 /* OtherCusstomPageView.m in Sources */,
 				AA72E6D01BE9CDAC002A03D6 /* AllHousesViewController.m in Sources */,
+				AAE57B2F1BF1DD6E00A604C3 /* HouseDetailCellTwo.m in Sources */,
 				AABFB4821BEC741E006D9870 /* CusstomPageView.m in Sources */,
 				AA72E6C91BE99DC3002A03D6 /* WellChosenTableCell.m in Sources */,
+				AAE57B361BF1EADE00A604C3 /* HouseDetailCellThree.m in Sources */,
 				9BBB88281BF1A6E6009CB3DC /* AJCustomerDeatailProgressTableViewCell.m in Sources */,
 				AA1A014B1BE877F500930B8C /* CYLPlusButton.m in Sources */,
 				AA94C4971BF05BF0006B5F9D /* WPExpandHeader.m in Sources */,
 				9BBB88311BF1A6E6009CB3DC /* AJCustomerInfoTableViewCell.m in Sources */,
+<<<<<<< Updated upstream
 				9BBB50FD1BF1D3DA00D74C5D /* AJEditCustomerInfoViewController.m in Sources */,
+=======
+				AAE57B1E1BF1B33A00A604C3 /* WPPageControl.m in Sources */,
+>>>>>>> Stashed changes
 				9BBB88331BF1A6E6009CB3DC /* AJCustomerListTableViewController.m in Sources */,
 				9BBB882D1BF1A6E6009CB3DC /* AJCustomerDetailTableViewCell.m in Sources */,
 				AA1A014C1BE877F500930B8C /* CYLTabBar.m in Sources */,
