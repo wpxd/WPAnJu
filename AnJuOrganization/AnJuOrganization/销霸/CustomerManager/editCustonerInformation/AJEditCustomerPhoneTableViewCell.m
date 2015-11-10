@@ -21,6 +21,6 @@
 }
 
 - (CGFloat)cellHeight:(NSObject *)type{
-    return 90;
+    return 88;
 }
 @end

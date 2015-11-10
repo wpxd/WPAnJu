@@ -14,16 +14,74 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JzN-He-Guz">
-                        <rect key="frame" x="54" y="5" width="97" height="30"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="customerInfo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Gij-E5-MeO">
+                        <rect key="frame" x="10" y="6" width="31" height="31"/>
                         <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="31" id="DO3-gP-plS"/>
+                            <constraint firstAttribute="height" constant="31" id="PNY-V5-pC3"/>
+                        </constraints>
+                    </imageView>
+                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="vCs-KV-usZ">
+                        <rect key="frame" x="189" y="8" width="121" height="29"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="121" id="TZJ-7q-NQI"/>
+                            <constraint firstAttribute="height" constant="28" id="adm-ZH-vuo"/>
+                        </constraints>
+                        <segments>
+                            <segment title="男"/>
+                            <segment title="女"/>
+                        </segments>
+                    </segmentedControl>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="王鹏" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JzN-He-Guz">
+                        <rect key="frame" x="49" y="7" width="100" height="30"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="Hsu-xi-Unj"/>
+                            <constraint firstAttribute="height" constant="30" id="yxX-lu-pO7"/>
+                        </constraints>
+                        <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits"/>
                     </textField>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MM5-yE-1js" userLabel="topLine">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="0.5"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.76470588240000004" green="0.76470588240000004" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="1Y0-KQ-tXd"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ub3-qV-OIF" userLabel="bottomLine">
+                        <rect key="frame" x="0.0" y="43.5" width="320" height="0.5"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.76470588240000004" green="0.76470588240000004" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="VcC-Gj-A1v"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <animations/>
+                <constraints>
+                    <constraint firstItem="Ub3-qV-OIF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="B1K-fq-TiQ"/>
+                    <constraint firstItem="Gij-E5-MeO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="K2Q-sQ-i0N"/>
+                    <constraint firstItem="JzN-He-Guz" firstAttribute="leading" secondItem="Gij-E5-MeO" secondAttribute="trailing" constant="8" id="Mw3-aQ-LIO"/>
+                    <constraint firstItem="Gij-E5-MeO" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="OQ9-cJ-vlx"/>
+                    <constraint firstAttribute="bottom" secondItem="Ub3-qV-OIF" secondAttribute="bottom" id="QSH-t6-nbF"/>
+                    <constraint firstItem="vCs-KV-usZ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Rzg-wI-6lv"/>
+                    <constraint firstItem="MM5-yE-1js" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="UK4-H6-o7P"/>
+                    <constraint firstItem="MM5-yE-1js" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Ww9-MG-mc5"/>
+                    <constraint firstAttribute="trailing" secondItem="Ub3-qV-OIF" secondAttribute="trailing" id="as7-Qs-gJn"/>
+                    <constraint firstItem="JzN-He-Guz" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="fN3-Pr-0M4"/>
+                    <constraint firstAttribute="trailing" secondItem="vCs-KV-usZ" secondAttribute="trailing" constant="10" id="fbo-rp-fl9"/>
+                    <constraint firstAttribute="trailing" secondItem="MM5-yE-1js" secondAttribute="trailing" id="vrj-7O-qRN"/>
+                </constraints>
             </tableViewCellContentView>
             <animations/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="customerInfo.png" width="30" height="30"/>
+    </resources>
 </document>

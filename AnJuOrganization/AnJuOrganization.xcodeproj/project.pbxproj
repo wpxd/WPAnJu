@@ -14,6 +14,8 @@
 		9B9AC12E1BF22E5900363822 /* phone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B9AC12D1BF22E5900363822 /* phone@2x.png */; };
 		9B9AC1301BF22E9700363822 /* jianTou@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B9AC12F1BF22E9700363822 /* jianTou@2x.png */; };
 		9B9AC1331BF23B6400363822 /* YSKeyboardTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B9AC1321BF23B6400363822 /* YSKeyboardTableView.m */; };
+		9B9AC1361BF252E600363822 /* AJEditCustomAddPhoneNumView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B9AC1351BF252E600363822 /* AJEditCustomAddPhoneNumView.m */; };
+		9B9AC1381BF2530C00363822 /* AJEditCustomAddPhoneNumView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B9AC1371BF2530C00363822 /* AJEditCustomAddPhoneNumView.xib */; };
 		9BA8C5C61BF0D20200A72FFF /* customerInfo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA8C5C41BF0D20200A72FFF /* customerInfo@2x.png */; };
 		9BA8C5C71BF0D20200A72FFF /* customerInfo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA8C5C51BF0D20200A72FFF /* customerInfo@3x.png */; };
 		9BBB50FE1BF1D3DA00D74C5D /* AJEditCustomerInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BBB50FC1BF1D3DA00D74C5D /* AJEditCustomerInfoViewController.xib */; };
@@ -144,6 +146,9 @@
 		9B9AC12F1BF22E9700363822 /* jianTou@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jianTou@2x.png"; sourceTree = "<group>"; };
 		9B9AC1311BF23B6400363822 /* YSKeyboardTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSKeyboardTableView.h; sourceTree = "<group>"; };
 		9B9AC1321BF23B6400363822 /* YSKeyboardTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSKeyboardTableView.m; sourceTree = "<group>"; };
+		9B9AC1341BF252E600363822 /* AJEditCustomAddPhoneNumView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJEditCustomAddPhoneNumView.h; sourceTree = "<group>"; };
+		9B9AC1351BF252E600363822 /* AJEditCustomAddPhoneNumView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJEditCustomAddPhoneNumView.m; sourceTree = "<group>"; };
+		9B9AC1371BF2530C00363822 /* AJEditCustomAddPhoneNumView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AJEditCustomAddPhoneNumView.xib; sourceTree = "<group>"; };
 		9BA8C5C41BF0D20200A72FFF /* customerInfo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "customerInfo@2x.png"; sourceTree = "<group>"; };
 		9BA8C5C51BF0D20200A72FFF /* customerInfo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "customerInfo@3x.png"; sourceTree = "<group>"; };
 		9BBB50FC1BF1D3DA00D74C5D /* AJEditCustomerInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AJEditCustomerInfoViewController.xib; sourceTree = "<group>"; };
@@ -350,6 +355,9 @@
 				9BBB51041BF1D53900D74C5D /* editCustomerCell */,
 				9B7A27AE1BF1ED7A0083DA85 /* AJCustomerLevealView.h */,
 				9B7A27AF1BF1ED7A0083DA85 /* AJCustomerLevealView.m */,
+				9B9AC1341BF252E600363822 /* AJEditCustomAddPhoneNumView.h */,
+				9B9AC1351BF252E600363822 /* AJEditCustomAddPhoneNumView.m */,
+				9B9AC1371BF2530C00363822 /* AJEditCustomAddPhoneNumView.xib */,
 			);
 			path = editCustonerInformation;
 			sourceTree = "<group>";
@@ -862,6 +870,7 @@
 				AA1A014E1BE877F500930B8C /* Default-568h@2x.png in Resources */,
 				9BBB88301BF1A6E6009CB3DC /* AJCustomerDetailTableViewController.xib in Resources */,
 				9BBB88341BF1A6E6009CB3DC /* AJCustomerListTableViewController.xib in Resources */,
+				9B9AC1381BF2530C00363822 /* AJEditCustomAddPhoneNumView.xib in Resources */,
 				9B4EE86B1BF1C672005C7039 /* phone@3x.png in Resources */,
 				9BBB88351BF1A6E6009CB3DC /* CustomerManagerReadMe in Resources */,
 				AA840CFB1BE8520B00AEADF1 /* Images.xcassets in Resources */,
@@ -943,6 +952,7 @@
 				AAE57B361BF1EADE00A604C3 /* HouseDetailCellThree.m in Sources */,
 				9BBB88281BF1A6E6009CB3DC /* AJCustomerDeatailProgressTableViewCell.m in Sources */,
 				AA1A014B1BE877F500930B8C /* CYLPlusButton.m in Sources */,
+				9B9AC1361BF252E600363822 /* AJEditCustomAddPhoneNumView.m in Sources */,
 				AA94C4971BF05BF0006B5F9D /* WPExpandHeader.m in Sources */,
 				9B9AC12C1BF22E2100363822 /* AJEditCustomerInfoViewController.m in Sources */,
 				9BBB88311BF1A6E6009CB3DC /* AJCustomerInfoTableViewCell.m in Sources */,

@@ -15,18 +15,36 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bKW-R9-RZR" customClass="AJCustomerLevealView">
-                        <rect key="frame" x="40" y="41.5" width="250" height="50"/>
+                        <rect key="frame" x="40" y="41" width="250" height="50"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="50" id="YXX-sH-Y5I"/>
                         </constraints>
                     </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1xJ-pk-25a" userLabel="bottomLine">
+                        <rect key="frame" x="0.0" y="99" width="320" height="0.5"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.76470588240000004" green="0.76470588240000004" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="Vba-2t-AwK"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="客户等级" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODL-wP-2kr">
+                        <rect key="frame" x="10" y="10" width="80" height="18"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <animations/>
                 <constraints>
                     <constraint firstItem="bKW-R9-RZR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="WYC-44-1hB"/>
+                    <constraint firstItem="1xJ-pk-25a" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ZLy-xS-WtI"/>
+                    <constraint firstAttribute="bottom" secondItem="1xJ-pk-25a" secondAttribute="bottom" id="asO-xd-MnO"/>
                     <constraint firstAttribute="trailing" secondItem="bKW-R9-RZR" secondAttribute="trailing" constant="30" id="jjU-fw-kfg"/>
+                    <constraint firstAttribute="trailing" secondItem="1xJ-pk-25a" secondAttribute="trailing" id="x1K-Nz-zMC"/>
                     <constraint firstAttribute="bottom" secondItem="bKW-R9-RZR" secondAttribute="bottom" constant="8" id="zaa-hy-vbw"/>
                 </constraints>
             </tableViewCellContentView>

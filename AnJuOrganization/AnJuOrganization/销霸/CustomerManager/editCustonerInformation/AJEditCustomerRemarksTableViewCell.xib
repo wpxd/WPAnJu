@@ -35,14 +35,36 @@
                         <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hv4-Q7-GLS" userLabel="bottomLine">
+                        <rect key="frame" x="0.0" y="99.5" width="320" height="0.5"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.76470588240000004" green="0.76470588240000004" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="kxl-dC-Ihk"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hmd-4A-Fey" userLabel="topLine">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="0.5"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.76470588240000004" green="0.76470588240000004" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="96M-vG-NEt"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <animations/>
                 <constraints>
                     <constraint firstItem="U7o-Po-Nwh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="4" id="1i4-pG-ndW"/>
+                    <constraint firstItem="Hv4-Q7-GLS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="JJ8-0z-vhG"/>
                     <constraint firstItem="Sjx-Lu-MD3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Qdl-qU-sD8"/>
+                    <constraint firstItem="hmd-4A-Fey" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="UaS-fs-SPQ"/>
+                    <constraint firstAttribute="trailing" secondItem="Hv4-Q7-GLS" secondAttribute="trailing" id="Udt-2C-n6N"/>
                     <constraint firstItem="Sjx-Lu-MD3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="VbH-xd-3Zh"/>
                     <constraint firstAttribute="trailing" secondItem="Sjx-Lu-MD3" secondAttribute="trailing" id="WeF-O5-KVp"/>
+                    <constraint firstAttribute="bottom" secondItem="Hv4-Q7-GLS" secondAttribute="bottom" id="XFh-Hs-iBI"/>
                     <constraint firstItem="U7o-Po-Nwh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="ZIB-wh-WjA"/>
+                    <constraint firstAttribute="trailing" secondItem="hmd-4A-Fey" secondAttribute="trailing" id="aTK-cH-FWb"/>
+                    <constraint firstItem="hmd-4A-Fey" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="e7J-Ww-Y0y"/>
                     <constraint firstAttribute="bottom" secondItem="Sjx-Lu-MD3" secondAttribute="bottom" id="ta0-S7-14I"/>
                 </constraints>
             </tableViewCellContentView>

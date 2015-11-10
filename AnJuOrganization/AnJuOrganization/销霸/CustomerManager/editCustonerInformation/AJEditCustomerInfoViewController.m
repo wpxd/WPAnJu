@@ -30,6 +30,7 @@ UITableViewDelegate
     self.title = @"编辑客户";
     self.tableView.tableFooterView = [[UIView alloc]initWithFrame:CGRectZero];
     self.tableView.autoAdaptiveKeyBoard = YES;
+    [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     [self makeCommitBtn];
     [self makeCells];
     
