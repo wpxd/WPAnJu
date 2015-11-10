@@ -845,6 +845,12 @@
 				9B4EE86A1BF1C672005C7039 /* phone@2x.png in Resources */,
 
 				AAE57B2C1BF1D70E00A604C3 /* jianTou@2x.png in Resources */,
+
+				9BBB51091BF1D57B00D74C5D /* AJEditCustomerAvatarTableViewCell.xib in Resources */,
+				9B4EE86A1BF1C672005C7039 /* phone@2x.png in Resources */,
+
+				AAE57B2C1BF1D70E00A604C3 /* jianTou@2x.png in Resources */,
+
 				AA1A01861BE88B9D00930B8C /* saleChosen_highlight@3x.png in Resources */,
 				AA1A01781BE88AC600930B8C /* sale_hignlight@2x.png in Resources */,
 				AAE57B271BF1C7F300A604C3 /* gouZiLight@2x.png in Resources */,
@@ -943,6 +949,11 @@
 				9BBB88311BF1A6E6009CB3DC /* AJCustomerInfoTableViewCell.m in Sources */,
 				9BBB50FD1BF1D3DA00D74C5D /* AJEditCustomerInfoViewController.m in Sources */,
 				AAE57B1E1BF1B33A00A604C3 /* WPPageControl.m in Sources */,
+
+				9BBB50FD1BF1D3DA00D74C5D /* AJEditCustomerInfoViewController.m in Sources */,
+
+				AAE57B1E1BF1B33A00A604C3 /* WPPageControl.m in Sources */,
+
 
 				9BBB50FD1BF1D3DA00D74C5D /* AJEditCustomerInfoViewController.m in Sources */,
 
