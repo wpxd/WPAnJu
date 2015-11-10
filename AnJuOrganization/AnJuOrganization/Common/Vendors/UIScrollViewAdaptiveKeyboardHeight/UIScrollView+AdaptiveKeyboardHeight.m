@@ -183,8 +183,11 @@ typedef UIScrollView * (^targetSrollview)(void) ;
     
         self.keyBoardScrollView().contentInset = [self contentInsetForKeyboard];
         
-        [self.keyBoardScrollView() setContentOffset:CGPointMake(self.keyBoardScrollView().contentOffset.x,
-                                                                [self idealOffsetForView:firstResponder withSpace:[self keyboardRect].origin.y - self.          keyBoardScrollView().bounds.origin.y])
+        [self.keyBoardScrollView() setContentOffset:
+         CGPointMake(self.keyBoardScrollView().contentOffset.x,
+        [self idealOffsetForView:firstResponder
+                       withSpace:
+         [self keyboardRect].origin.y - self.keyBoardScrollView().bounds.origin.y])
                                            animated:NO];
  
     

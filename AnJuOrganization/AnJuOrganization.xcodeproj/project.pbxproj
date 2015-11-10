@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9B4EE86A1BF1C672005C7039 /* phone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B4EE8681BF1C672005C7039 /* phone@2x.png */; };
 		9B4EE86B1BF1C672005C7039 /* phone@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B4EE8691BF1C672005C7039 /* phone@3x.png */; };
 		9B7A27B01BF1ED7A0083DA85 /* AJCustomerLevealView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7A27AF1BF1ED7A0083DA85 /* AJCustomerLevealView.m */; };
+		9B9AC1291BF22DCF00363822 /* WPPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B9AC1281BF22DCF00363822 /* WPPageControl.m */; };
+		9B9AC12C1BF22E2100363822 /* AJEditCustomerInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B9AC12B1BF22E2100363822 /* AJEditCustomerInfoViewController.m */; };
+		9B9AC12E1BF22E5900363822 /* phone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B9AC12D1BF22E5900363822 /* phone@2x.png */; };
+		9B9AC1301BF22E9700363822 /* jianTou@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B9AC12F1BF22E9700363822 /* jianTou@2x.png */; };
 		9BA8C5C61BF0D20200A72FFF /* customerInfo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA8C5C41BF0D20200A72FFF /* customerInfo@2x.png */; };
 		9BA8C5C71BF0D20200A72FFF /* customerInfo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA8C5C51BF0D20200A72FFF /* customerInfo@3x.png */; };
-		9BBB50FD1BF1D3DA00D74C5D /* AJEditCustomerInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBB50FB1BF1D3DA00D74C5D /* AJEditCustomerInfoViewController.m */; };
 		9BBB50FE1BF1D3DA00D74C5D /* AJEditCustomerInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BBB50FC1BF1D3DA00D74C5D /* AJEditCustomerInfoViewController.xib */; };
 		9BBB51021BF1D53400D74C5D /* AJEditCustomerBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBB51001BF1D53400D74C5D /* AJEditCustomerBaseTableViewCell.m */; };
 		9BBB51031BF1D53400D74C5D /* AJEditCustomerBaseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BBB51011BF1D53400D74C5D /* AJEditCustomerBaseTableViewCell.xib */; };
@@ -96,13 +98,11 @@
 		AA94C4B41BF091B6006B5F9D /* touXiang@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA94C4B21BF091B6006B5F9D /* touXiang@3x.png */; };
 		AABFB47D1BEC5A75006D9870 /* WPPagedFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = AABFB47C1BEC5A75006D9870 /* WPPagedFlowView.m */; };
 		AABFB4821BEC741E006D9870 /* CusstomPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = AABFB4811BEC741E006D9870 /* CusstomPageView.m */; };
-		AAE57B1E1BF1B33A00A604C3 /* WPPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE57B1D1BF1B33A00A604C3 /* WPPageControl.m */; };
 		AAE57B211BF1B8A900A604C3 /* HouseDetailCellOne.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE57B201BF1B8A900A604C3 /* HouseDetailCellOne.m */; };
 		AAE57B271BF1C7F300A604C3 /* gouZiLight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AAE57B231BF1C7F300A604C3 /* gouZiLight@2x.png */; };
 		AAE57B281BF1C7F300A604C3 /* gouZiLight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AAE57B241BF1C7F300A604C3 /* gouZiLight@3x.png */; };
 		AAE57B291BF1C7F300A604C3 /* gouZiNormal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AAE57B251BF1C7F300A604C3 /* gouZiNormal@2x.png */; };
 		AAE57B2A1BF1C7F300A604C3 /* gouZiNormal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AAE57B261BF1C7F300A604C3 /* gouZiNormal@3x.png */; };
-		AAE57B2C1BF1D70E00A604C3 /* jianTou@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AAE57B2B1BF1D70E00A604C3 /* jianTou@2x.png */; };
 		AAE57B2F1BF1DD6E00A604C3 /* HouseDetailCellTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE57B2E1BF1DD6E00A604C3 /* HouseDetailCellTwo.m */; };
 		AAE57B311BF1E31C00A604C3 /* telphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AAE57B301BF1E31C00A604C3 /* telphone@2x.png */; };
 		AAE57B331BF1E33400A604C3 /* telphone@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AAE57B321BF1E33400A604C3 /* telphone@3x.png */; };
@@ -133,14 +133,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9B4EE8681BF1C672005C7039 /* phone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "phone@2x.png"; sourceTree = "<group>"; };
 		9B4EE8691BF1C672005C7039 /* phone@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "phone@3x.png"; sourceTree = "<group>"; };
 		9B7A27AE1BF1ED7A0083DA85 /* AJCustomerLevealView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJCustomerLevealView.h; sourceTree = "<group>"; };
 		9B7A27AF1BF1ED7A0083DA85 /* AJCustomerLevealView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJCustomerLevealView.m; sourceTree = "<group>"; };
+		9B9AC1281BF22DCF00363822 /* WPPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPPageControl.m; sourceTree = "<group>"; };
+		9B9AC12A1BF22E2100363822 /* AJEditCustomerInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJEditCustomerInfoViewController.h; sourceTree = "<group>"; };
+		9B9AC12B1BF22E2100363822 /* AJEditCustomerInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJEditCustomerInfoViewController.m; sourceTree = "<group>"; };
+		9B9AC12D1BF22E5900363822 /* phone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "phone@2x.png"; sourceTree = "<group>"; };
+		9B9AC12F1BF22E9700363822 /* jianTou@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jianTou@2x.png"; sourceTree = "<group>"; };
 		9BA8C5C41BF0D20200A72FFF /* customerInfo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "customerInfo@2x.png"; sourceTree = "<group>"; };
 		9BA8C5C51BF0D20200A72FFF /* customerInfo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "customerInfo@3x.png"; sourceTree = "<group>"; };
-		9BBB50FA1BF1D3DA00D74C5D /* AJEditCustomerInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJEditCustomerInfoViewController.h; sourceTree = "<group>"; };
-		9BBB50FB1BF1D3DA00D74C5D /* AJEditCustomerInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJEditCustomerInfoViewController.m; sourceTree = "<group>"; };
 		9BBB50FC1BF1D3DA00D74C5D /* AJEditCustomerInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AJEditCustomerInfoViewController.xib; sourceTree = "<group>"; };
 		9BBB50FF1BF1D53400D74C5D /* AJEditCustomerBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJEditCustomerBaseTableViewCell.h; sourceTree = "<group>"; };
 		9BBB51001BF1D53400D74C5D /* AJEditCustomerBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJEditCustomerBaseTableViewCell.m; sourceTree = "<group>"; };
@@ -261,14 +263,12 @@
 		AABFB4801BEC741E006D9870 /* CusstomPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CusstomPageView.h; sourceTree = "<group>"; };
 		AABFB4811BEC741E006D9870 /* CusstomPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CusstomPageView.m; sourceTree = "<group>"; };
 		AAE57B1C1BF1B33A00A604C3 /* WPPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPPageControl.h; sourceTree = "<group>"; };
-		AAE57B1D1BF1B33A00A604C3 /* WPPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPPageControl.m; sourceTree = "<group>"; };
 		AAE57B1F1BF1B8A900A604C3 /* HouseDetailCellOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HouseDetailCellOne.h; sourceTree = "<group>"; };
 		AAE57B201BF1B8A900A604C3 /* HouseDetailCellOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HouseDetailCellOne.m; sourceTree = "<group>"; };
 		AAE57B231BF1C7F300A604C3 /* gouZiLight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gouZiLight@2x.png"; sourceTree = "<group>"; };
 		AAE57B241BF1C7F300A604C3 /* gouZiLight@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gouZiLight@3x.png"; sourceTree = "<group>"; };
 		AAE57B251BF1C7F300A604C3 /* gouZiNormal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gouZiNormal@2x.png"; sourceTree = "<group>"; };
 		AAE57B261BF1C7F300A604C3 /* gouZiNormal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gouZiNormal@3x.png"; sourceTree = "<group>"; };
-		AAE57B2B1BF1D70E00A604C3 /* jianTou@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jianTou@2x.png"; sourceTree = "<group>"; };
 		AAE57B2D1BF1DD6E00A604C3 /* HouseDetailCellTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HouseDetailCellTwo.h; sourceTree = "<group>"; };
 		AAE57B2E1BF1DD6E00A604C3 /* HouseDetailCellTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HouseDetailCellTwo.m; sourceTree = "<group>"; };
 		AAE57B301BF1E31C00A604C3 /* telphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "telphone@2x.png"; sourceTree = "<group>"; };
@@ -312,7 +312,7 @@
 		9BA8C5C31BF0D20200A72FFF /* customerManager */ = {
 			isa = PBXGroup;
 			children = (
-				9B4EE8681BF1C672005C7039 /* phone@2x.png */,
+				9B9AC12D1BF22E5900363822 /* phone@2x.png */,
 				9B4EE8691BF1C672005C7039 /* phone@3x.png */,
 				9BA8C5C41BF0D20200A72FFF /* customerInfo@2x.png */,
 				9BA8C5C51BF0D20200A72FFF /* customerInfo@3x.png */,
@@ -341,9 +341,9 @@
 		9BBB50F91BF1D38500D74C5D /* editCustonerInformation */ = {
 			isa = PBXGroup;
 			children = (
+				9B9AC12A1BF22E2100363822 /* AJEditCustomerInfoViewController.h */,
+				9B9AC12B1BF22E2100363822 /* AJEditCustomerInfoViewController.m */,
 				9BBB51041BF1D53900D74C5D /* editCustomerCell */,
-				9BBB50FA1BF1D3DA00D74C5D /* AJEditCustomerInfoViewController.h */,
-				9BBB50FB1BF1D3DA00D74C5D /* AJEditCustomerInfoViewController.m */,
 				9BBB50FC1BF1D3DA00D74C5D /* AJEditCustomerInfoViewController.xib */,
 				9B7A27AE1BF1ED7A0083DA85 /* AJCustomerLevealView.h */,
 				9B7A27AF1BF1ED7A0083DA85 /* AJCustomerLevealView.m */,
@@ -563,8 +563,8 @@
 		AA1A018B1BE8AE6700930B8C /* WellChosenViews */ = {
 			isa = PBXGroup;
 			children = (
+				9B9AC1281BF22DCF00363822 /* WPPageControl.m */,
 				AAE57B1C1BF1B33A00A604C3 /* WPPageControl.h */,
-				AAE57B1D1BF1B33A00A604C3 /* WPPageControl.m */,
 				AA72E6C71BE99DC3002A03D6 /* WellChosenTableCell.h */,
 				AA72E6C81BE99DC3002A03D6 /* WellChosenTableCell.m */,
 				AA72E6D11BE9ED83002A03D6 /* AllHousesTableViewCell.h */,
@@ -705,9 +705,9 @@
 		AAE57B221BF1C7F300A604C3 /* 楼盘详情 */ = {
 			isa = PBXGroup;
 			children = (
+				9B9AC12F1BF22E9700363822 /* jianTou@2x.png */,
 				AAE57B321BF1E33400A604C3 /* telphone@3x.png */,
 				AAE57B301BF1E31C00A604C3 /* telphone@2x.png */,
-				AAE57B2B1BF1D70E00A604C3 /* jianTou@2x.png */,
 				AAE57B231BF1C7F300A604C3 /* gouZiLight@2x.png */,
 				AAE57B241BF1C7F300A604C3 /* gouZiLight@3x.png */,
 				AAE57B251BF1C7F300A604C3 /* gouZiNormal@2x.png */,
@@ -838,19 +838,8 @@
 				AA1A01831BE88B9D00930B8C /* my_normal@3x.png in Resources */,
 				AAEF75821BEE247400EDECC8 /* allHouses@3x.png in Resources */,
 				9BBB51091BF1D57B00D74C5D /* AJEditCustomerAvatarTableViewCell.xib in Resources */,
-				9B4EE86A1BF1C672005C7039 /* phone@2x.png in Resources */,
-				AAE57B2C1BF1D70E00A604C3 /* jianTou@2x.png in Resources */,
-
 				9BBB51091BF1D57B00D74C5D /* AJEditCustomerAvatarTableViewCell.xib in Resources */,
-				9B4EE86A1BF1C672005C7039 /* phone@2x.png in Resources */,
-
-				AAE57B2C1BF1D70E00A604C3 /* jianTou@2x.png in Resources */,
-
 				9BBB51091BF1D57B00D74C5D /* AJEditCustomerAvatarTableViewCell.xib in Resources */,
-				9B4EE86A1BF1C672005C7039 /* phone@2x.png in Resources */,
-
-				AAE57B2C1BF1D70E00A604C3 /* jianTou@2x.png in Resources */,
-
 				AA1A01861BE88B9D00930B8C /* saleChosen_highlight@3x.png in Resources */,
 				AA1A01781BE88AC600930B8C /* sale_hignlight@2x.png in Resources */,
 				AAE57B271BF1C7F300A604C3 /* gouZiLight@2x.png in Resources */,
@@ -883,6 +872,7 @@
 				9BBB88401BF1A706009CB3DC /* VendorsReadMe in Resources */,
 				AA1A01511BE877F500930B8C /* Default@3x.png in Resources */,
 				AA94C4AC1BF06FD2006B5F9D /* myYong@3x.png in Resources */,
+				9B9AC1301BF22E9700363822 /* jianTou@2x.png in Resources */,
 				AAEF75881BEE247400EDECC8 /* myMoeny@3x.png in Resources */,
 				AA72E6CD1BE9A313002A03D6 /* 0.jpg in Resources */,
 				AAE57B331BF1E33400A604C3 /* telphone@3x.png in Resources */,
@@ -899,6 +889,7 @@
 				9BA8C5C61BF0D20200A72FFF /* customerInfo@2x.png in Resources */,
 				AA94C4A61BF06FD2006B5F9D /* myHelp@3x.png in Resources */,
 				AA1A01841BE88B9D00930B8C /* sale_highlight@3x.png in Resources */,
+				9B9AC12E1BF22E5900363822 /* phone@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -931,6 +922,7 @@
 				9BBB883E1BF1A706009CB3DC /* UIColor+GJCategory.m in Sources */,
 				AA1A01911BE8AF2200930B8C /* SaleChampionViewController.m in Sources */,
 				AA1A01961BE8AFEE00930B8C /* MyViewController.m in Sources */,
+				9B9AC1291BF22DCF00363822 /* WPPageControl.m in Sources */,
 				9BBB882F1BF1A6E6009CB3DC /* AJCustomerDetailTableViewController.m in Sources */,
 				AAE57B211BF1B8A900A604C3 /* HouseDetailCellOne.m in Sources */,
 				AA840CF31BE8520B00AEADF1 /* AppDelegate.m in Sources */,
@@ -946,19 +938,8 @@
 				9BBB88281BF1A6E6009CB3DC /* AJCustomerDeatailProgressTableViewCell.m in Sources */,
 				AA1A014B1BE877F500930B8C /* CYLPlusButton.m in Sources */,
 				AA94C4971BF05BF0006B5F9D /* WPExpandHeader.m in Sources */,
+				9B9AC12C1BF22E2100363822 /* AJEditCustomerInfoViewController.m in Sources */,
 				9BBB88311BF1A6E6009CB3DC /* AJCustomerInfoTableViewCell.m in Sources */,
-				9BBB50FD1BF1D3DA00D74C5D /* AJEditCustomerInfoViewController.m in Sources */,
-				AAE57B1E1BF1B33A00A604C3 /* WPPageControl.m in Sources */,
-
-				9BBB50FD1BF1D3DA00D74C5D /* AJEditCustomerInfoViewController.m in Sources */,
-
-				AAE57B1E1BF1B33A00A604C3 /* WPPageControl.m in Sources */,
-
-
-				9BBB50FD1BF1D3DA00D74C5D /* AJEditCustomerInfoViewController.m in Sources */,
-
-				AAE57B1E1BF1B33A00A604C3 /* WPPageControl.m in Sources */,
-
 				9BBB88331BF1A6E6009CB3DC /* AJCustomerListTableViewController.m in Sources */,
 				9BBB882D1BF1A6E6009CB3DC /* AJCustomerDetailTableViewCell.m in Sources */,
 				AA1A014C1BE877F500930B8C /* CYLTabBar.m in Sources */,
