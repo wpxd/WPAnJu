@@ -17,5 +17,13 @@ typedef NS_ENUM(NSInteger ,AJCustomerEditCellsType) {
     
 };
 @interface AJEditCustomerBaseTableViewCell : UITableViewCell
+{
+    AJCustomerEditCellsType _cellType;
+}
 
+@property (assign ,nonatomic)AJCustomerEditCellsType cellType;
+
++ (instancetype )viewFromNib:(AJCustomerEditCellsType )type;
+- (CGFloat)cellHeight:(NSObject *)type;
+- (void)setData:(NSObject *)obj;
 @end

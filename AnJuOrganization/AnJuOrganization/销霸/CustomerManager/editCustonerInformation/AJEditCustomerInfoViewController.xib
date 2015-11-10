@@ -7,6 +7,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AJEditCustomerInfoViewController">
             <connections>
+                <outlet property="commitBtn" destination="gSx-oq-cvI" id="W6v-Xd-BUb"/>
+                <outlet property="tableView" destination="6nm-q9-pcl" id="kDe-hs-MBV"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,22 +18,36 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6nm-q9-pcl">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                     <animations/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="RuL-84-9BT"/>
                         <outlet property="delegate" destination="-1" id="9Xq-QF-3Qy"/>
                     </connections>
                 </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSx-oq-cvI">
+                    <rect key="frame" x="0.0" y="538" width="320" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Uoc-hI-Jwf"/>
+                    </constraints>
+                    <state key="normal" title="提交"/>
+                    <connections>
+                        <action selector="commitAction:" destination="-1" eventType="touchUpInside" id="kH5-Es-33E"/>
+                    </connections>
+                </button>
             </subviews>
             <animations/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="6nm-q9-pcl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="CBA-WK-50a"/>
                 <constraint firstItem="6nm-q9-pcl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="CBe-Hz-EE1"/>
-                <constraint firstAttribute="bottom" secondItem="6nm-q9-pcl" secondAttribute="bottom" id="TJE-L9-IZe"/>
+                <constraint firstItem="gSx-oq-cvI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="DgQ-ub-G1e"/>
+                <constraint firstAttribute="bottom" secondItem="6nm-q9-pcl" secondAttribute="bottom" constant="44" id="TJE-L9-IZe"/>
                 <constraint firstAttribute="trailing" secondItem="6nm-q9-pcl" secondAttribute="trailing" id="dz2-OG-71d"/>
+                <constraint firstAttribute="trailing" secondItem="gSx-oq-cvI" secondAttribute="trailing" id="i7R-4k-prH"/>
+                <constraint firstAttribute="bottom" secondItem="gSx-oq-cvI" secondAttribute="bottom" id="msE-oC-qMr"/>
             </constraints>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>

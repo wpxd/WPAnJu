@@ -8,6 +8,7 @@
 
 #import "AJCustomerDetailTableViewController.h"
 #import "AJCustomerDetailBaseTableViewCell.h"
+#import "AJEditCustomerInfoViewController.h"
 @interface AJCustomerDetailTableViewController ()
 @property (nonatomic ,strong)NSArray *datasources;
 @property (nonatomic ,strong)UIButton *goBtn;
@@ -71,7 +72,7 @@
     }
 }
 - (void)btnClicked:(UIButton *)btn{
-    
+   
 }
 
 - (void)makeEditItem{
@@ -81,7 +82,8 @@
     
 }
 - (void)editItemClicked:(UIBarButtonItem *)iten{
-    
+    UIViewController *controller = [[AJEditCustomerInfoViewController alloc]init];
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 #pragma mark - Table view data source

@@ -7,12 +7,15 @@
 //
 
 #import "AJEditCustomerInfoViewController.h"
-
+#import "AJEditCustomerBaseTableViewCell.h"
 @interface AJEditCustomerInfoViewController ()
 <
 UITableViewDataSource,
 UITableViewDelegate
 >
+@property (weak, nonatomic) IBOutlet UIButton *commitBtn;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
 @property (nonatomic ,strong)NSArray *datasources;
 @end
 
@@ -21,12 +24,36 @@ UITableViewDelegate
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"编辑客户";
+    self.tableView.tableFooterView = [[UIView alloc]initWithFrame:CGRectZero];
+    [self makeCommitBtn];
+    [self makeCells];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+#pragma mark -custom view
+
+- (void)makeCells{
+    AJEditCustomerBaseTableViewCell *avatarCell = [AJEditCustomerBaseTableViewCell viewFromNib:AJCustomerEditCellsTypeAvatar];
+    AJEditCustomerBaseTableViewCell *phoneCell = [AJEditCustomerBaseTableViewCell viewFromNib:AJCustomerEditCellsTypePhoenNum];
+    AJEditCustomerBaseTableViewCell *levelCell = [AJEditCustomerBaseTableViewCell viewFromNib:AJCustomerEditCellsTypeLeveal];
+    AJEditCustomerBaseTableViewCell *remarksCell = [AJEditCustomerBaseTableViewCell viewFromNib:AJCustomerEditCellsTypeCustomerRemarks];
+    
+    self.datasources = @[@[avatarCell],@[phoneCell,levelCell],@[remarksCell]];
+    
+}
+
+- (void)makeCommitBtn{
+    self.commitBtn.backgroundColor = [UIColor colorWithHex:0xF93108];
+}
+
+- (IBAction)commitAction:(UIButton *)sender {
+}
+
 
 #pragma mark - Table view data source
 
@@ -46,9 +73,9 @@ UITableViewDelegate
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 44;
-//    AJCustomerDetailBaseTableViewCell *baseCell = self.datasources[indexPath.section][indexPath.row];
-//    return [AJCustomerDetailBaseTableViewCell cellHeight:baseCell.cellType];
+    
+    AJEditCustomerBaseTableViewCell *baseCell = self.datasources[indexPath.section][indexPath.row];
+    return [baseCell cellHeight:nil];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{

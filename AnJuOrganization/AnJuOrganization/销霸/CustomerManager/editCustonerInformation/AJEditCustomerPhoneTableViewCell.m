@@ -20,4 +20,7 @@
     // Configure the view for the selected state
 }
 
+- (CGFloat)cellHeight:(NSObject *)type{
+    return 90;
+}
 @end
