@@ -7,11 +7,17 @@
 //
 
 #import "AJEditCustomerRemarksTableViewCell.h"
+@interface AJEditCustomerRemarksTableViewCell()
+<
+UITextViewDelegate
+>
 
+@end
 @implementation AJEditCustomerRemarksTableViewCell
 
 - (void)awakeFromNib {
     // Initialization code
+    self.textView.delegate = self;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -19,5 +25,11 @@
 
     // Configure the view for the selected state
 }
-
+#pragma mark- textViewDelegate 
+- (void)textViewDidBeginEditing:(UITextView *)textView{
+    self.placeHoderLabel.hidden = YES;
+}
+- (void)textViewDidEndEditing:(UITextView *)textView{
+     self.placeHoderLabel.hidden = NO;
+}
 @end

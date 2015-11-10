@@ -27,6 +27,7 @@
     for (id object in array) {
         if ([object isKindOfClass:[self class]]){
             ((AJEditCustomerBaseTableViewCell *)object).cellType = type;
+            ((AJEditCustomerBaseTableViewCell *)object).selectionStyle = UITableViewCellSelectionStyleNone;
             return object;
         }
         
