@@ -7,7 +7,7 @@
 //
 
 #import "MyViewController.h"
-
+#import "UINavigationController+FDFullscreenPopGesture.h"
 @interface MyViewController ()
 
 @end
@@ -18,7 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
-    self.navigationController.navigationBarHidden = YES;
+ 
     imgArray = [NSArray arrayWithObjects:@"myUpDate",@"myHelp",@"myAbout", nil];
     labArray = [NSArray arrayWithObjects:@"检查更新",@"帮助与反馈",@"关于安居中国专业版", nil];
     _myTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kMainScreenWidth, kMainScreenHeight-50) style:UITableViewStyleGrouped];
@@ -26,6 +26,11 @@
     _myTableView.delegate = self;
     [self.view addSubview:_myTableView];
     [self buildTableHeaderView];
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    self.navigationController.navigationBarHidden = YES;
 }
 - (void)buildTableHeaderView
 {

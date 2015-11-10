@@ -24,8 +24,8 @@
 		9BBB88341BF1A6E6009CB3DC /* AJCustomerListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BBB88261BF1A6E6009CB3DC /* AJCustomerListTableViewController.xib */; };
 		9BBB88351BF1A6E6009CB3DC /* CustomerManagerReadMe in Resources */ = {isa = PBXBuildFile; fileRef = 9BBB88271BF1A6E6009CB3DC /* CustomerManagerReadMe */; };
 		9BBB883E1BF1A706009CB3DC /* UIColor+GJCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBB88381BF1A706009CB3DC /* UIColor+GJCategory.m */; };
-		9BBB883F1BF1A706009CB3DC /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBB883C1BF1A706009CB3DC /* UINavigationController+FDFullscreenPopGesture.m */; };
 		9BBB88401BF1A706009CB3DC /* VendorsReadMe in Resources */ = {isa = PBXBuildFile; fileRef = 9BBB883D1BF1A706009CB3DC /* VendorsReadMe */; };
+		9BBB88431BF1BB23009CB3DC /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBB88421BF1BB23009CB3DC /* UINavigationController+FDFullscreenPopGesture.m */; };
 		AA1A012B1BE8664C00930B8C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA1A01291BE8664C00930B8C /* LaunchScreen.xib */; };
 		AA1A014B1BE877F500930B8C /* CYLPlusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1A01411BE877F500930B8C /* CYLPlusButton.m */; };
 		AA1A014C1BE877F500930B8C /* CYLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1A01431BE877F500930B8C /* CYLTabBar.m */; };
@@ -131,9 +131,9 @@
 		9BBB88271BF1A6E6009CB3DC /* CustomerManagerReadMe */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CustomerManagerReadMe; sourceTree = "<group>"; };
 		9BBB88371BF1A706009CB3DC /* UIColor+GJCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+GJCategory.h"; sourceTree = "<group>"; };
 		9BBB88381BF1A706009CB3DC /* UIColor+GJCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+GJCategory.m"; sourceTree = "<group>"; };
-		9BBB883B1BF1A706009CB3DC /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
-		9BBB883C1BF1A706009CB3DC /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
 		9BBB883D1BF1A706009CB3DC /* VendorsReadMe */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VendorsReadMe; sourceTree = "<group>"; };
+		9BBB88411BF1BB23009CB3DC /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		9BBB88421BF1BB23009CB3DC /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
 		AA1A012A1BE8664C00930B8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		AA1A01401BE877F500930B8C /* CYLPlusButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLPlusButton.h; sourceTree = "<group>"; };
 		AA1A01411BE877F500930B8C /* CYLPlusButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLPlusButton.m; sourceTree = "<group>"; };
@@ -317,8 +317,8 @@
 		9BBB883A1BF1A706009CB3DC /* FDFullscreenPopGesture */ = {
 			isa = PBXGroup;
 			children = (
-				9BBB883B1BF1A706009CB3DC /* UINavigationController+FDFullscreenPopGesture.h */,
-				9BBB883C1BF1A706009CB3DC /* UINavigationController+FDFullscreenPopGesture.m */,
+				9BBB88411BF1BB23009CB3DC /* UINavigationController+FDFullscreenPopGesture.h */,
+				9BBB88421BF1BB23009CB3DC /* UINavigationController+FDFullscreenPopGesture.m */,
 			);
 			path = FDFullscreenPopGesture;
 			sourceTree = "<group>";
@@ -748,7 +748,7 @@
 				AA72E6D31BE9ED83002A03D6 /* AllHousesTableViewCell.m in Sources */,
 				AABFB47D1BEC5A75006D9870 /* WPPagedFlowView.m in Sources */,
 				AA1A01621BE8813900930B8C /* CustomNavigationBarController.m in Sources */,
-				9BBB883F1BF1A706009CB3DC /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
+				9BBB88431BF1BB23009CB3DC /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				AA1A015E1BE87DCB00930B8C /* Common.m in Sources */,
 				AA1A018C1BE8AE6700930B8C /* WellChosenViewController.m in Sources */,
 				9BBB882C1BF1A6E6009CB3DC /* AJCustomerDetailBaseTableViewCell.m in Sources */,
