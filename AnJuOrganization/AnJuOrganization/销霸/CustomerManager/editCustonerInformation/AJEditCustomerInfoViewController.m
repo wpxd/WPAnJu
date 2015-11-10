@@ -8,6 +8,7 @@
 
 #import "AJEditCustomerInfoViewController.h"
 #import "AJEditCustomerBaseTableViewCell.h"
+#import "UIScrollView+AdaptiveKeyboardHeight.h"
 @interface AJEditCustomerInfoViewController ()
 <
 UITableViewDataSource,
@@ -25,6 +26,7 @@ UITableViewDelegate
     [super viewDidLoad];
     self.title = @"编辑客户";
     self.tableView.tableFooterView = [[UIView alloc]initWithFrame:CGRectZero];
+    self.tableView.autoAdaptiveKeyBoard = YES;
     [self makeCommitBtn];
     [self makeCells];
 }
