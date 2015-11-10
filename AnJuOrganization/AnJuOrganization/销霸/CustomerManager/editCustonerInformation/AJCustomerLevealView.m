@@ -32,7 +32,7 @@
 }
 
 - (void)makeUpLeveal{
-    self.levealTitleArr = @[@"E",@"D",@"C",@"B",@"A"];
+    _levealTitleArr = @[@"E",@"D",@"C",@"B",@"A"];
     for (UIView *aView in self.levealArr) {
         [aView removeFromSuperview];
     }
