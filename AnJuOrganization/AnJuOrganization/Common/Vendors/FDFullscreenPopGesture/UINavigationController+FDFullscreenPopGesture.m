@@ -176,7 +176,6 @@ typedef void (^_FDViewControllerWillAppearInjectBlock)(UIViewController *viewCon
     if (!self.fd_viewControllerBasedNavigationBarAppearanceEnabled) {
         return;
     }
-    
     __weak typeof(self) weakSelf = self;
     _FDViewControllerWillAppearInjectBlock block = ^(UIViewController *viewController, BOOL animated) {
         __strong typeof(weakSelf) strongSelf = weakSelf;
@@ -260,7 +259,6 @@ typedef void (^_FDViewControllerWillAppearInjectBlock)(UIViewController *viewCon
 {
     objc_setAssociatedObject(self, @selector(fd_prefersNavigationBarHidden), @(hidden), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
-
 
 - (CGFloat)fd_interactivePopMaxAllowedInitialDistanceToLeftEdge
 {

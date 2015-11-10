@@ -9,6 +9,7 @@
 #import "WellChosenViewController.h"
 #import "WellChosenTableCell.h"
 #import "AllHousesViewController.h"
+#import "HouseDetailViewController.h"
 @interface WellChosenViewController ()
 
 @end
@@ -75,6 +76,12 @@
         cell.louPanImgView.image = [UIImage imageNamed:@"1.jpeg"];
     }
     return cell;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    HouseDetailViewController *houseDetailVC = [[HouseDetailViewController alloc] init];
+    houseDetailVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:houseDetailVC animated:YES];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

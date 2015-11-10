@@ -8,13 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HouseDetailViewController : UIViewController
+@interface HouseDetailViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,UIScrollViewDelegate>
 @property(nonatomic, strong)UITableView *myTableView;
 @property(nonatomic,strong)UIScrollView *headerScrollView;
-@property(nonatomic,strong)UILabel *houseNameLab;
-@property(nonatomic,strong)UILabel *houseTpyeLab;
-@property(nonatomic,strong)UILabel *houseStateLab;
-@property(nonatomic,strong)UILabel *housePriceLab;
-@property(nonatomic,strong)UILabel *houseTimeLab;
+//@property(nonatomic,strong)UILabel *houseNameLab;
+//@property(nonatomic,strong)UILabel *houseTpyeLab;
+//@property(nonatomic,strong)UILabel *houseStateLab;
+//@property(nonatomic,strong)UILabel *housePriceLab;
+//@property(nonatomic,strong)UILabel *houseTimeLab;
 
 @end
