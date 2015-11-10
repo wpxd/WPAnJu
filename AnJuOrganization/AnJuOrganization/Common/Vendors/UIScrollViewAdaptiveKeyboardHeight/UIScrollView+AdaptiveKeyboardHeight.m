@@ -180,18 +180,16 @@ typedef UIScrollView * (^targetSrollview)(void) ;
         [UIView beginAnimations:nil context:NULL];
         [UIView setAnimationCurve:[[[notification userInfo] objectForKey:UIKeyboardAnimationCurveUserInfoKey] intValue]];
         [UIView setAnimationDuration:[[[notification userInfo] objectForKey:UIKeyboardAnimationDurationUserInfoKey] floatValue]];
-    
         self.keyBoardScrollView().contentInset = [self contentInsetForKeyboard];
         
         [self.keyBoardScrollView() setContentOffset:
          CGPointMake(self.keyBoardScrollView().contentOffset.x,
         [self idealOffsetForView:firstResponder
                        withSpace:
+         
          [self keyboardRect].origin.y - self.keyBoardScrollView().bounds.origin.y])
                                            animated:NO];
  
-    
-        
         [UIView commitAnimations];
    
    
@@ -239,22 +237,26 @@ typedef UIScrollView * (^targetSrollview)(void) ;
     CGFloat offset = rect.origin.y;
     //modify by gus 阻止输入区域的底部空间区域也显示出来
     if (view.bounds.size.height < space ) {
-        offset = self.keyBoardScrollView().contentOffset.y + 100;
+        offset = self.keyBoardScrollView().contentOffset.y;
     }
+    
     if (offset + space > self.keyBoardScrollView().contentSize.height ) {
         offset =  self.keyBoardScrollView().contentSize.height - space;
+    }
+    
+    if ([view isKindOfClass:[UITextView class]]) {
+        if (rect.size.height + rect.origin.y - self.keyBoardScrollView().contentOffset.y < self.keyBoardScrollView().contentOffset.y + space) {
+             return offset;
+        }
+        offset =   (rect.size.height + rect.origin.y - self.keyBoardScrollView().contentOffset.y) - self.keyBoardScrollView().contentOffset.y - space;
     }
     
     if (offset < 0) offset = 0;
     return offset;
 }
 
--(void)dealloc
-{
-    
+-(void)dealloc{
     [[NSNotificationCenter defaultCenter] removeObserver:self];
-    
-    
 }
 
 

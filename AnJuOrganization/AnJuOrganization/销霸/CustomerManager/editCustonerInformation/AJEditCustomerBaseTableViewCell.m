@@ -10,6 +10,9 @@
 
 @implementation AJEditCustomerBaseTableViewCell
 
+@synthesize callBackBlock = _callBackBlock;
+@synthesize cellType = _cellType;
+
 - (void)awakeFromNib {
     // Initialization code
 }

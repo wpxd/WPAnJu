@@ -13,6 +13,7 @@
 		9B9AC12C1BF22E2100363822 /* AJEditCustomerInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B9AC12B1BF22E2100363822 /* AJEditCustomerInfoViewController.m */; };
 		9B9AC12E1BF22E5900363822 /* phone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B9AC12D1BF22E5900363822 /* phone@2x.png */; };
 		9B9AC1301BF22E9700363822 /* jianTou@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B9AC12F1BF22E9700363822 /* jianTou@2x.png */; };
+		9B9AC1331BF23B6400363822 /* YSKeyboardTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B9AC1321BF23B6400363822 /* YSKeyboardTableView.m */; };
 		9BA8C5C61BF0D20200A72FFF /* customerInfo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA8C5C41BF0D20200A72FFF /* customerInfo@2x.png */; };
 		9BA8C5C71BF0D20200A72FFF /* customerInfo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA8C5C51BF0D20200A72FFF /* customerInfo@3x.png */; };
 		9BBB50FE1BF1D3DA00D74C5D /* AJEditCustomerInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BBB50FC1BF1D3DA00D74C5D /* AJEditCustomerInfoViewController.xib */; };
@@ -141,6 +142,8 @@
 		9B9AC12B1BF22E2100363822 /* AJEditCustomerInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJEditCustomerInfoViewController.m; sourceTree = "<group>"; };
 		9B9AC12D1BF22E5900363822 /* phone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "phone@2x.png"; sourceTree = "<group>"; };
 		9B9AC12F1BF22E9700363822 /* jianTou@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jianTou@2x.png"; sourceTree = "<group>"; };
+		9B9AC1311BF23B6400363822 /* YSKeyboardTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSKeyboardTableView.h; sourceTree = "<group>"; };
+		9B9AC1321BF23B6400363822 /* YSKeyboardTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSKeyboardTableView.m; sourceTree = "<group>"; };
 		9BA8C5C41BF0D20200A72FFF /* customerInfo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "customerInfo@2x.png"; sourceTree = "<group>"; };
 		9BA8C5C51BF0D20200A72FFF /* customerInfo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "customerInfo@3x.png"; sourceTree = "<group>"; };
 		9BBB50FC1BF1D3DA00D74C5D /* AJEditCustomerInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AJEditCustomerInfoViewController.xib; sourceTree = "<group>"; };
@@ -343,8 +346,8 @@
 			children = (
 				9B9AC12A1BF22E2100363822 /* AJEditCustomerInfoViewController.h */,
 				9B9AC12B1BF22E2100363822 /* AJEditCustomerInfoViewController.m */,
-				9BBB51041BF1D53900D74C5D /* editCustomerCell */,
 				9BBB50FC1BF1D3DA00D74C5D /* AJEditCustomerInfoViewController.xib */,
+				9BBB51041BF1D53900D74C5D /* editCustomerCell */,
 				9B7A27AE1BF1ED7A0083DA85 /* AJCustomerLevealView.h */,
 				9B7A27AF1BF1ED7A0083DA85 /* AJCustomerLevealView.m */,
 			);
@@ -413,6 +416,8 @@
 			children = (
 				9BBB88371BF1A706009CB3DC /* UIColor+GJCategory.h */,
 				9BBB88381BF1A706009CB3DC /* UIColor+GJCategory.m */,
+				9B9AC1311BF23B6400363822 /* YSKeyboardTableView.h */,
+				9B9AC1321BF23B6400363822 /* YSKeyboardTableView.m */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -931,6 +936,7 @@
 				AA1A014D1BE877F500930B8C /* CYLTabBarController.m in Sources */,
 				AAEF758F1BEF430900EDECC8 /* OtherCusstomPageView.m in Sources */,
 				AA72E6D01BE9CDAC002A03D6 /* AllHousesViewController.m in Sources */,
+				9B9AC1331BF23B6400363822 /* YSKeyboardTableView.m in Sources */,
 				AAE57B2F1BF1DD6E00A604C3 /* HouseDetailCellTwo.m in Sources */,
 				AABFB4821BEC741E006D9870 /* CusstomPageView.m in Sources */,
 				AA72E6C91BE99DC3002A03D6 /* WellChosenTableCell.m in Sources */,

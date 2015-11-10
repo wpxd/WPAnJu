@@ -18,6 +18,9 @@ UITableViewDelegate
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @property (nonatomic ,strong)NSArray *datasources;
+
+
+@property (nonatomic ,assign)CGPoint originOffset;
 @end
 
 @implementation AJEditCustomerInfoViewController
@@ -29,6 +32,8 @@ UITableViewDelegate
     self.tableView.autoAdaptiveKeyBoard = YES;
     [self makeCommitBtn];
     [self makeCells];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -38,12 +43,25 @@ UITableViewDelegate
 
 
 #pragma mark -custom view
-
+- (void)keBoardGesture{
+    UITapGestureRecognizer* singleRecognizer;
+    singleRecognizer = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(singleTap:)];
+    //点击的次数
+    singleRecognizer.numberOfTapsRequired = 1; // 单击
+    
+    //给self.view添加一个手势监测；
+    
+    [self.view addGestureRecognizer:singleRecognizer];
+}
+- (void)singleTap:(UITapGestureRecognizer *)gesture{
+    [self.tableView  subViewresigenFirstResponder];
+}
 - (void)makeCells{
     AJEditCustomerBaseTableViewCell *avatarCell = [AJEditCustomerBaseTableViewCell viewFromNib:AJCustomerEditCellsTypeAvatar];
     AJEditCustomerBaseTableViewCell *phoneCell = [AJEditCustomerBaseTableViewCell viewFromNib:AJCustomerEditCellsTypePhoenNum];
     AJEditCustomerBaseTableViewCell *levelCell = [AJEditCustomerBaseTableViewCell viewFromNib:AJCustomerEditCellsTypeLeveal];
     AJEditCustomerBaseTableViewCell *remarksCell = [AJEditCustomerBaseTableViewCell viewFromNib:AJCustomerEditCellsTypeCustomerRemarks];
+
     
     self.datasources = @[@[avatarCell],@[phoneCell,levelCell],@[remarksCell]];
     
@@ -84,7 +102,9 @@ UITableViewDelegate
     return 20;
 }
 
-
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView subViewresigenFirstResponder];
+}
 
 
 @end
