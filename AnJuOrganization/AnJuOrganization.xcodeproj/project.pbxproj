@@ -837,12 +837,12 @@
 				AA1A017B1BE88AC600930B8C /* wellChosen_normal@2x.png in Resources */,
 				AA1A01831BE88B9D00930B8C /* my_normal@3x.png in Resources */,
 				AAEF75821BEE247400EDECC8 /* allHouses@3x.png in Resources */,
-<<<<<<< Updated upstream
+
 				9BBB51091BF1D57B00D74C5D /* AJEditCustomerAvatarTableViewCell.xib in Resources */,
 				9B4EE86A1BF1C672005C7039 /* phone@2x.png in Resources */,
-=======
+
 				AAE57B2C1BF1D70E00A604C3 /* jianTou@2x.png in Resources */,
->>>>>>> Stashed changes
+
 				AA1A01861BE88B9D00930B8C /* saleChosen_highlight@3x.png in Resources */,
 				AA1A01781BE88AC600930B8C /* sale_hignlight@2x.png in Resources */,
 				AAE57B271BF1C7F300A604C3 /* gouZiLight@2x.png in Resources */,
@@ -939,11 +939,11 @@
 				AA1A014B1BE877F500930B8C /* CYLPlusButton.m in Sources */,
 				AA94C4971BF05BF0006B5F9D /* WPExpandHeader.m in Sources */,
 				9BBB88311BF1A6E6009CB3DC /* AJCustomerInfoTableViewCell.m in Sources */,
-<<<<<<< Updated upstream
+
 				9BBB50FD1BF1D3DA00D74C5D /* AJEditCustomerInfoViewController.m in Sources */,
-=======
+
 				AAE57B1E1BF1B33A00A604C3 /* WPPageControl.m in Sources */,
->>>>>>> Stashed changes
+
 				9BBB88331BF1A6E6009CB3DC /* AJCustomerListTableViewController.m in Sources */,
 				9BBB882D1BF1A6E6009CB3DC /* AJCustomerDetailTableViewCell.m in Sources */,
 				AA1A014C1BE877F500930B8C /* CYLTabBar.m in Sources */,
