@@ -17,7 +17,11 @@ typedef NS_ENUM(NSInteger ,AJCustomerDetailCellsType) {
     AJCustomerDetailCellsTypeCustomerDynamic,//客户动态
     AJCustomerDetailCellsTypeCustomerValidRecommend//有效推荐
 };
+
 @interface AJCustomerDetailBaseTableViewCell : UITableViewCell
+{
+    AJCustomerDetailCellsType _cellType;
+}
 @property (assign ,nonatomic)AJCustomerDetailCellsType cellType;
 + (instancetype )viewFromNib:(AJCustomerDetailCellsType )type;
 + (CGFloat)cellHeight:(AJCustomerDetailCellsType)type;

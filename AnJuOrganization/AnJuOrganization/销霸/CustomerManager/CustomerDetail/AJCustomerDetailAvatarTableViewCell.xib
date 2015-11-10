@@ -34,26 +34,37 @@
                         <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="王先生" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qCu-Gd-qUw">
-                        <rect key="frame" x="56" y="21" width="97" height="22"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="王先生" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vkk-lK-Hp3">
+                        <rect key="frame" x="54" y="23" width="100" height="18"/>
                         <animations/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="22" id="NDS-tJ-eBc"/>
-                            <constraint firstAttribute="width" constant="97" id="Yso-x6-cod"/>
+                            <constraint firstAttribute="height" constant="18" id="Qf1-XC-hGZ"/>
+                            <constraint firstAttribute="width" constant="100" id="qZh-OP-rfw"/>
                         </constraints>
-                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <textInputTraits key="textInputTraits"/>
-                    </textField>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F0t-V3-W2d">
+                        <rect key="frame" x="46" y="64" width="274" height="0.5"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.76470588235294112" green="0.76470588235294112" blue="0.76470588235294112" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="kdc-YE-4UH"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <animations/>
                 <constraints>
-                    <constraint firstItem="qCu-Gd-qUw" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="An3-Pi-gl8"/>
+                    <constraint firstItem="F0t-V3-W2d" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="46" id="0Xt-Ap-hvR"/>
+                    <constraint firstAttribute="trailing" secondItem="F0t-V3-W2d" secondAttribute="trailing" id="1Iu-tV-Acs"/>
+                    <constraint firstItem="vkk-lK-Hp3" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="2VW-ez-zn4"/>
+                    <constraint firstAttribute="bottom" secondItem="F0t-V3-W2d" secondAttribute="bottom" id="IWu-7S-eRS"/>
                     <constraint firstItem="lCl-6S-h02" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="JPv-F1-UWD"/>
                     <constraint firstItem="lCl-6S-h02" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="LyF-hc-OuP"/>
-                    <constraint firstItem="qCu-Gd-qUw" firstAttribute="leading" secondItem="lCl-6S-h02" secondAttribute="trailing" constant="10" id="Zca-2n-iEN"/>
                     <constraint firstItem="nRS-Au-xWt" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="f0c-TI-Elo"/>
                     <constraint firstItem="nRS-Au-xWt" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="10" id="je9-iw-jfn"/>
+                    <constraint firstItem="vkk-lK-Hp3" firstAttribute="leading" secondItem="lCl-6S-h02" secondAttribute="trailing" constant="8" id="yQV-sP-7Qc"/>
                 </constraints>
             </tableViewCellContentView>
             <animations/>

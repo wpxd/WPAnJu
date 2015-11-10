@@ -18,56 +18,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"客户详情";
-     
+    [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     [self makeUpCells];
     [self makeGoBtn];
 
     self.tableView.tableFooterView = [[UIView alloc]initWithFrame:CGRectZero];
-    
-    
-    
 }
-- (void)makeGoBtn{
-    
-    self.goBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [self.goBtn setTitle:@"继续跟进" forState:UIControlStateNormal];
-    [self.goBtn setBackgroundColor:[UIColor colorWithHex:0xF93108]];
-    [self.view addSubview:self.goBtn];
-    [self.goBtn addTarget:self action:@selector(btnClicked:) forControlEvents:UIControlEventTouchUpInside];
-//    self.goBtn.translatesAutoresizingMaskIntoConstraints = NO;
-//    NSString *VformatStr = [NSString stringWithFormat:@"V:|-%f-[btn(==40)]",self.view.bounds.size.height - 40];
-//    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:VformatStr options:0 metrics:nil views:NSDictionaryOfVariableBindings(btn)]];
-////    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:btn attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeBottom multiplier:1 constant:30]];
-//    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[btn]-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(btn)]];
-}
-- (void)makeUpCells{
-    NSArray *sectionOneCells =
-  @[
-    [AJCustomerDetailBaseTableViewCell viewFromNib:AJCustomerDetailCellsTypeAvatar],
-    [AJCustomerDetailBaseTableViewCell viewFromNib:AJCustomerDetailCellsTypePhoenNum]
-    ];
-    NSArray *sectionTwoCells =
-    @[
-      [AJCustomerDetailBaseTableViewCell viewFromNib:AJCustomerDetailCellsTypeFollowUpRecord],
-      [AJCustomerDetailBaseTableViewCell viewFromNib:AJCustomerDetailCellsTypeCustomerRemarks]
-      ];
 
-    NSArray *sectionThreeCells =
-    @[
-      [AJCustomerDetailBaseTableViewCell viewFromNib:AJCustomerDetailCellsTypeCustomerDynamic],
-      [AJCustomerDetailBaseTableViewCell viewFromNib:AJCustomerDetailCellsTypeCustomerValidRecommend]
-      ];
 
-    self.datasources = @[sectionOneCells,sectionTwoCells,sectionThreeCells];
-    for (NSArray *subCells in self.datasources) {
-        for (AJCustomerDetailBaseTableViewCell *cell in subCells) {
-            //这里是赋值操作 
-            [cell setData:nil];
-        }
-    }
-}
-- (void)btnClicked:(UIButton *)btn{
-    
+- (void)viewDidLayoutSubviews{
+    [super viewDidLayoutSubviews];
+    self.goBtn.frame = CGRectMake(0, self.view.bounds.size.height - 40, self.view.bounds.size.width, 40);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -97,10 +58,48 @@
     return [AJCustomerDetailBaseTableViewCell cellHeight:baseCell.cellType];
 }
 
-- (void)viewDidLayoutSubviews{
-    [super viewDidLayoutSubviews];
-    self.goBtn.frame = CGRectMake(0, self.view.bounds.size.height - 40, self.view.bounds.size.width, 40);
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 20;
 }
+
+
+#pragma mark- custom menthod
+- (void)makeGoBtn{
+    
+    self.goBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [self.goBtn setTitle:@"继续跟进" forState:UIControlStateNormal];
+    [self.goBtn setBackgroundColor:[UIColor colorWithHex:0xF93108]];
+    [self.view addSubview:self.goBtn];
+    [self.goBtn addTarget:self action:@selector(btnClicked:) forControlEvents:UIControlEventTouchUpInside];
+}
+- (void)makeUpCells{
+    
+    AJCustomerDetailBaseTableViewCell *cell1 =  [AJCustomerDetailBaseTableViewCell viewFromNib:AJCustomerDetailCellsTypeAvatar];
+    AJCustomerDetailBaseTableViewCell *cell2 =  [AJCustomerDetailBaseTableViewCell viewFromNib:AJCustomerDetailCellsTypePhoenNum];
+    
+    AJCustomerDetailBaseTableViewCell *cell3 =  [AJCustomerDetailBaseTableViewCell viewFromNib:AJCustomerDetailCellsTypeFollowUpRecord];
+    AJCustomerDetailBaseTableViewCell *cell4 =  [AJCustomerDetailBaseTableViewCell viewFromNib:AJCustomerDetailCellsTypeCustomerRemarks];
+    
+    AJCustomerDetailBaseTableViewCell *cell5 =  [AJCustomerDetailBaseTableViewCell viewFromNib:AJCustomerDetailCellsTypeCustomerDynamic];
+    AJCustomerDetailBaseTableViewCell *cell6 =  [AJCustomerDetailBaseTableViewCell viewFromNib:AJCustomerDetailCellsTypeCustomerValidRecommend];
+    
+    NSArray *sectionOneCells   =   @[cell1 ,cell2];
+    NSArray *sectionTwoCells   =   @[cell3 ,cell4];
+    NSArray *sectionThreeCells =   @[cell5 ,cell6];
+    
+    self.datasources = @[sectionOneCells,sectionTwoCells,sectionThreeCells];
+    for (NSArray *subCells in self.datasources) {
+        for (AJCustomerDetailBaseTableViewCell *cell in subCells) {
+            //这里是赋值操作
+            [cell setData:nil];
+        }
+    }
+}
+- (void)btnClicked:(UIButton *)btn{
+    
+}
+
+
 
 /*
 // Override to support conditional editing of the table view.

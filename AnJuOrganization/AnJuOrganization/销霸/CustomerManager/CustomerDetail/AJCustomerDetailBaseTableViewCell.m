@@ -9,7 +9,7 @@
 #import "AJCustomerDetailBaseTableViewCell.h"
 
 @implementation AJCustomerDetailBaseTableViewCell
-
+@synthesize cellType = _cellType;
 
 + (instancetype )viewFromNib:(AJCustomerDetailCellsType )type{
    

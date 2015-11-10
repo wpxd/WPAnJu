@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B4EE86A1BF1C672005C7039 /* phone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B4EE8681BF1C672005C7039 /* phone@2x.png */; };
+		9B4EE86B1BF1C672005C7039 /* phone@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B4EE8691BF1C672005C7039 /* phone@3x.png */; };
 		9BA8C5C61BF0D20200A72FFF /* customerInfo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA8C5C41BF0D20200A72FFF /* customerInfo@2x.png */; };
 		9BA8C5C71BF0D20200A72FFF /* customerInfo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA8C5C51BF0D20200A72FFF /* customerInfo@3x.png */; };
 		9BBB88281BF1A6E6009CB3DC /* AJCustomerDeatailProgressTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBB88131BF1A6E6009CB3DC /* AJCustomerDeatailProgressTableViewCell.m */; };
@@ -106,6 +108,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B4EE8681BF1C672005C7039 /* phone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "phone@2x.png"; sourceTree = "<group>"; };
+		9B4EE8691BF1C672005C7039 /* phone@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "phone@3x.png"; sourceTree = "<group>"; };
 		9BA8C5C41BF0D20200A72FFF /* customerInfo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "customerInfo@2x.png"; sourceTree = "<group>"; };
 		9BA8C5C51BF0D20200A72FFF /* customerInfo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "customerInfo@3x.png"; sourceTree = "<group>"; };
 		9BBB88121BF1A6E6009CB3DC /* AJCustomerDeatailProgressTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJCustomerDeatailProgressTableViewCell.h; sourceTree = "<group>"; };
@@ -246,6 +250,8 @@
 		9BA8C5C31BF0D20200A72FFF /* customerManager */ = {
 			isa = PBXGroup;
 			children = (
+				9B4EE8681BF1C672005C7039 /* phone@2x.png */,
+				9B4EE8691BF1C672005C7039 /* phone@3x.png */,
 				9BA8C5C41BF0D20200A72FFF /* customerInfo@2x.png */,
 				9BA8C5C51BF0D20200A72FFF /* customerInfo@3x.png */,
 			);
@@ -265,14 +271,14 @@
 		9BBB88111BF1A6E6009CB3DC /* CustomerDetail */ = {
 			isa = PBXGroup;
 			children = (
+				9BBB88181BF1A6E6009CB3DC /* AJCustomerDetailBaseTableViewCell.h */,
+				9BBB88191BF1A6E6009CB3DC /* AJCustomerDetailBaseTableViewCell.m */,
 				9BBB88121BF1A6E6009CB3DC /* AJCustomerDeatailProgressTableViewCell.h */,
 				9BBB88131BF1A6E6009CB3DC /* AJCustomerDeatailProgressTableViewCell.m */,
 				9BBB88141BF1A6E6009CB3DC /* AJCustomerDeatailProgressTableViewCell.xib */,
 				9BBB88151BF1A6E6009CB3DC /* AJCustomerDetailAvatarTableViewCell.h */,
 				9BBB88161BF1A6E6009CB3DC /* AJCustomerDetailAvatarTableViewCell.m */,
 				9BBB88171BF1A6E6009CB3DC /* AJCustomerDetailAvatarTableViewCell.xib */,
-				9BBB88181BF1A6E6009CB3DC /* AJCustomerDetailBaseTableViewCell.h */,
-				9BBB88191BF1A6E6009CB3DC /* AJCustomerDetailBaseTableViewCell.m */,
 				9BBB881A1BF1A6E6009CB3DC /* AJCustomerDetailTableViewCell.h */,
 				9BBB881B1BF1A6E6009CB3DC /* AJCustomerDetailTableViewCell.m */,
 				9BBB881C1BF1A6E6009CB3DC /* AJCustomerDetailTableViewCell.xib */,
@@ -687,6 +693,7 @@
 				AA1A017B1BE88AC600930B8C /* wellChosen_normal@2x.png in Resources */,
 				AA1A01831BE88B9D00930B8C /* my_normal@3x.png in Resources */,
 				AAEF75821BEE247400EDECC8 /* allHouses@3x.png in Resources */,
+				9B4EE86A1BF1C672005C7039 /* phone@2x.png in Resources */,
 				AA1A01861BE88B9D00930B8C /* saleChosen_highlight@3x.png in Resources */,
 				AA1A01781BE88AC600930B8C /* sale_hignlight@2x.png in Resources */,
 				AAEF75871BEE247400EDECC8 /* myMoeny@2x.png in Resources */,
@@ -701,6 +708,7 @@
 				AA1A014E1BE877F500930B8C /* Default-568h@2x.png in Resources */,
 				9BBB88301BF1A6E6009CB3DC /* AJCustomerDetailTableViewController.xib in Resources */,
 				9BBB88341BF1A6E6009CB3DC /* AJCustomerListTableViewController.xib in Resources */,
+				9B4EE86B1BF1C672005C7039 /* phone@3x.png in Resources */,
 				9BBB88351BF1A6E6009CB3DC /* CustomerManagerReadMe in Resources */,
 				AA840CFB1BE8520B00AEADF1 /* Images.xcassets in Resources */,
 				AA1A01761BE88AC600930B8C /* my_highlight@2x.png in Resources */,

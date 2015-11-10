@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "AJCustomerDetailBaseTableViewCell.h"
 @interface AJCustomerDetailTableViewCell : AJCustomerDetailBaseTableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *detailNameLanel;
+@property (weak, nonatomic) IBOutlet UILabel *detailLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *detailImageView;
+@property (weak, nonatomic) IBOutlet UIView *topLine;
+@property (weak, nonatomic) IBOutlet UIView *bottomLine;
+
 
 @end

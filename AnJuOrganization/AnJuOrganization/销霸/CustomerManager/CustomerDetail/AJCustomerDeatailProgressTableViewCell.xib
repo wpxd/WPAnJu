@@ -22,9 +22,17 @@
                             <constraint firstAttribute="height" constant="16" id="LDu-fZ-wZm"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="74R-9i-uhL" userLabel="topLine">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="0.5"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.76470588240000004" green="0.76470588240000004" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="vTG-CO-xE2"/>
+                        </constraints>
+                    </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="有效推荐" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AWN-iI-Avs">
                         <rect key="frame" x="230" y="7" width="80" height="18"/>
                         <animations/>
@@ -37,10 +45,10 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ABF-eW-4yw">
-                        <rect key="frame" x="10" y="38" width="300" height="6"/>
+                        <rect key="frame" x="10" y="39" width="300" height="4"/>
                         <animations/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="6" id="WG6-EM-bQs"/>
+                            <constraint firstAttribute="height" constant="4" id="WG6-EM-bQs"/>
                         </constraints>
                     </progressView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015-10-28" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sh7-nn-kuh">
@@ -51,7 +59,7 @@
                             <constraint firstAttribute="height" constant="18" id="Umz-zw-oqp"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ao-89-2cd">
@@ -65,6 +73,14 @@
                         <color key="textColor" red="0.97647058819999999" green="0.19215686269999999" blue="0.031372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VxR-6R-B2R" userLabel="bottomLine">
+                        <rect key="frame" x="0.0" y="73.5" width="320" height="0.5"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.76470588240000004" green="0.76470588240000004" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="QxO-jf-Eyv"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <animations/>
                 <constraints>
@@ -72,13 +88,19 @@
                     <constraint firstItem="ABF-eW-4yw" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="4" id="3Cz-m8-DPF"/>
                     <constraint firstItem="ygJ-Rk-99r" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="6Vh-LI-0LX"/>
                     <constraint firstAttribute="bottom" secondItem="8Ao-89-2cd" secondAttribute="bottom" constant="4" id="Cza-wJ-hET"/>
+                    <constraint firstAttribute="trailing" secondItem="VxR-6R-B2R" secondAttribute="trailing" id="EOW-7W-hVi"/>
+                    <constraint firstItem="74R-9i-uhL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ITd-A6-X6n"/>
+                    <constraint firstItem="VxR-6R-B2R" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="IYS-zF-prE"/>
                     <constraint firstItem="ygJ-Rk-99r" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Jbz-Lx-1oZ"/>
+                    <constraint firstAttribute="trailing" secondItem="74R-9i-uhL" secondAttribute="trailing" id="Mze-To-tOZ"/>
                     <constraint firstAttribute="trailing" secondItem="ABF-eW-4yw" secondAttribute="trailing" constant="10" id="R5z-F1-6BR"/>
                     <constraint firstAttribute="trailing" secondItem="AWN-iI-Avs" secondAttribute="trailing" constant="10" id="UhF-kJ-N5v"/>
                     <constraint firstItem="8Ao-89-2cd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="Ulm-Ce-8DQ"/>
                     <constraint firstItem="AWN-iI-Avs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="aX2-Qm-xBt"/>
                     <constraint firstItem="ABF-eW-4yw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="crK-69-vyj"/>
                     <constraint firstAttribute="trailing" secondItem="sh7-nn-kuh" secondAttribute="trailing" constant="10" id="eRB-VG-988"/>
+                    <constraint firstAttribute="bottom" secondItem="VxR-6R-B2R" secondAttribute="bottom" id="jYr-eg-jRF"/>
+                    <constraint firstItem="74R-9i-uhL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="xgJ-Lr-yI0"/>
                 </constraints>
             </tableViewCellContentView>
             <animations/>
