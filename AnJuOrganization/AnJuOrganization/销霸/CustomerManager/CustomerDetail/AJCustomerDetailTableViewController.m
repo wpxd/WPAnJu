@@ -19,10 +19,11 @@
     [super viewDidLoad];
     self.title = @"客户详情";
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
+    self.tableView.tableFooterView = [[UIView alloc]initWithFrame:CGRectZero];
+    
     [self makeUpCells];
     [self makeGoBtn];
-
-    self.tableView.tableFooterView = [[UIView alloc]initWithFrame:CGRectZero];
+    [self makeEditItem];
 }
 
 
@@ -34,32 +35,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-
-    return self.datasources.count;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSArray *subCells = self.datasources[section];
-    return [subCells count];
-}
-
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return self.datasources[indexPath.section][indexPath.row];
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    AJCustomerDetailBaseTableViewCell *baseCell = self.datasources[indexPath.section][indexPath.row];
-    return [AJCustomerDetailBaseTableViewCell cellHeight:baseCell.cellType];
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    return 20;
 }
 
 
@@ -97,6 +72,42 @@
 }
 - (void)btnClicked:(UIButton *)btn{
     
+}
+
+- (void)makeEditItem{
+    UIBarButtonItem *editItem  = [[UIBarButtonItem alloc]initWithTitle:@"编辑" style:UIBarButtonItemStylePlain target:self action:@selector(editItemClicked:)];
+    [editItem setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor colorWithHex:0xF93108],}forState:UIControlStateNormal];
+    self.navigationItem.rightBarButtonItem = editItem;
+    
+}
+- (void)editItemClicked:(UIBarButtonItem *)iten{
+    
+}
+
+#pragma mark - Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    
+    return self.datasources.count;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    NSArray *subCells = self.datasources[section];
+    return [subCells count];
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return self.datasources[indexPath.section][indexPath.row];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    AJCustomerDetailBaseTableViewCell *baseCell = self.datasources[indexPath.section][indexPath.row];
+    return [AJCustomerDetailBaseTableViewCell cellHeight:baseCell.cellType];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 20;
 }
 
 
