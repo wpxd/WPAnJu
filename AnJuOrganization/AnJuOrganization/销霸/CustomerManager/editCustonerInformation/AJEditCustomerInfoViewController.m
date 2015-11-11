@@ -56,6 +56,7 @@ UITableViewDelegate
     self.commitBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     self.commitBtn.frame = CGRectMake(0,[UIScreen mainScreen].bounds.size.height - 64 - 44,  [UIScreen mainScreen].bounds.size.width, 44);
     [self.view addSubview:self.commitBtn];
+    [self.commitBtn setTitle:@"提交" forState:UIControlStateNormal];
     [self.commitBtn addTarget:self action:@selector(commitAction:) forControlEvents:UIControlEventTouchUpInside];
     self.commitBtn.backgroundColor = [UIColor colorWithHex:0xF93108];
 }
