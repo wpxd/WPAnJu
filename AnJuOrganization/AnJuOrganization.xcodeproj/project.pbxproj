@@ -46,6 +46,10 @@
 		9BBB883E1BF1A706009CB3DC /* UIColor+GJCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBB88381BF1A706009CB3DC /* UIColor+GJCategory.m */; };
 		9BBB88401BF1A706009CB3DC /* VendorsReadMe in Resources */ = {isa = PBXBuildFile; fileRef = 9BBB883D1BF1A706009CB3DC /* VendorsReadMe */; };
 		9BBB88431BF1BB23009CB3DC /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBB88421BF1BB23009CB3DC /* UINavigationController+FDFullscreenPopGesture.m */; };
+		9BBB90C11BF3048300F05162 /* AJRecommendHistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBB90BF1BF3048300F05162 /* AJRecommendHistoryTableViewCell.m */; };
+		9BBB90C21BF3048300F05162 /* AJRecommendHistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BBB90C01BF3048300F05162 /* AJRecommendHistoryTableViewCell.xib */; };
+		9BBD70651BF2E8EC002374EA /* AJRecommendHistoryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBD70631BF2E8EC002374EA /* AJRecommendHistoryListViewController.m */; };
+		9BBD70771BF2F918002374EA /* AJRecommendHistoryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBD70751BF2F918002374EA /* AJRecommendHistoryDetailViewController.m */; };
 		9BF938AF1BF206E0009429FD /* UIScrollView+AdaptiveKeyboardHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF938AE1BF206E0009429FD /* UIScrollView+AdaptiveKeyboardHeight.m */; };
 		AA1A012B1BE8664C00930B8C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA1A01291BE8664C00930B8C /* LaunchScreen.xib */; };
 		AA1A014B1BE877F500930B8C /* CYLPlusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1A01411BE877F500930B8C /* CYLPlusButton.m */; };
@@ -193,6 +197,13 @@
 		9BBB883D1BF1A706009CB3DC /* VendorsReadMe */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VendorsReadMe; sourceTree = "<group>"; };
 		9BBB88411BF1BB23009CB3DC /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
 		9BBB88421BF1BB23009CB3DC /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
+		9BBB90BE1BF3048300F05162 /* AJRecommendHistoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJRecommendHistoryTableViewCell.h; sourceTree = "<group>"; };
+		9BBB90BF1BF3048300F05162 /* AJRecommendHistoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJRecommendHistoryTableViewCell.m; sourceTree = "<group>"; };
+		9BBB90C01BF3048300F05162 /* AJRecommendHistoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AJRecommendHistoryTableViewCell.xib; sourceTree = "<group>"; };
+		9BBD70621BF2E8EC002374EA /* AJRecommendHistoryListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJRecommendHistoryListViewController.h; sourceTree = "<group>"; };
+		9BBD70631BF2E8EC002374EA /* AJRecommendHistoryListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJRecommendHistoryListViewController.m; sourceTree = "<group>"; };
+		9BBD70741BF2F918002374EA /* AJRecommendHistoryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJRecommendHistoryDetailViewController.h; sourceTree = "<group>"; };
+		9BBD70751BF2F918002374EA /* AJRecommendHistoryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJRecommendHistoryDetailViewController.m; sourceTree = "<group>"; };
 		9BF938AD1BF206E0009429FD /* UIScrollView+AdaptiveKeyboardHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+AdaptiveKeyboardHeight.h"; sourceTree = "<group>"; };
 		9BF938AE1BF206E0009429FD /* UIScrollView+AdaptiveKeyboardHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+AdaptiveKeyboardHeight.m"; sourceTree = "<group>"; };
 		AA1A012A1BE8664C00930B8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -449,6 +460,20 @@
 			path = FDFullscreenPopGesture;
 			sourceTree = "<group>";
 		};
+		9BBD70611BF2E8BC002374EA /* RecommendHistory */ = {
+			isa = PBXGroup;
+			children = (
+				9BBD70621BF2E8EC002374EA /* AJRecommendHistoryListViewController.h */,
+				9BBD70631BF2E8EC002374EA /* AJRecommendHistoryListViewController.m */,
+				9BBD70741BF2F918002374EA /* AJRecommendHistoryDetailViewController.h */,
+				9BBD70751BF2F918002374EA /* AJRecommendHistoryDetailViewController.m */,
+				9BBB90BE1BF3048300F05162 /* AJRecommendHistoryTableViewCell.h */,
+				9BBB90BF1BF3048300F05162 /* AJRecommendHistoryTableViewCell.m */,
+				9BBB90C01BF3048300F05162 /* AJRecommendHistoryTableViewCell.xib */,
+			);
+			path = RecommendHistory;
+			sourceTree = "<group>";
+		};
 		9BF938AC1BF206E0009429FD /* UIScrollViewAdaptiveKeyboardHeight */ = {
 			isa = PBXGroup;
 			children = (
@@ -479,6 +504,7 @@
 		AA1A013D1BE877F500930B8C /* 销霸 */ = {
 			isa = PBXGroup;
 			children = (
+				9BBD70611BF2E8BC002374EA /* RecommendHistory */,
 				9BBB88101BF1A6E6009CB3DC /* CustomerManager */,
 				AA1A018D1BE8AF2200930B8C /* SaleChampionControllers */,
 				AA1A01901BE8AF2200930B8C /* SaleChampionViews */,
@@ -893,6 +919,7 @@
 				AA94C4A91BF06FD2006B5F9D /* myUpDate@2x.png in Resources */,
 				9BBB88321BF1A6E6009CB3DC /* AJCustomerInfoTableViewCell.xib in Resources */,
 				AA94C4A71BF06FD2006B5F9D /* myMiMa@2x.png in Resources */,
+				9BBB90C21BF3048300F05162 /* AJRecommendHistoryTableViewCell.xib in Resources */,
 				AA94C4AB1BF06FD2006B5F9D /* myYong@2x.png in Resources */,
 				AAEF758B1BEE247400EDECC8 /* recomendHistory@2x.png in Resources */,
 				AA1A01791BE88AC600930B8C /* sale_normal@2x.png in Resources */,
@@ -944,15 +971,18 @@
 				AA9075881BF0BE9000E8687A /* HouseDetailViewController.m in Sources */,
 				AA1A014D1BE877F500930B8C /* CYLTabBarController.m in Sources */,
 				AAEF758F1BEF430900EDECC8 /* OtherCusstomPageView.m in Sources */,
+				9BBD70651BF2E8EC002374EA /* AJRecommendHistoryListViewController.m in Sources */,
 				AA72E6D01BE9CDAC002A03D6 /* AllHousesViewController.m in Sources */,
 				9B9AC1331BF23B6400363822 /* YSKeyboardTableView.m in Sources */,
 				AAE57B2F1BF1DD6E00A604C3 /* HouseDetailCellTwo.m in Sources */,
+				9BBD70771BF2F918002374EA /* AJRecommendHistoryDetailViewController.m in Sources */,
 				AABFB4821BEC741E006D9870 /* CusstomPageView.m in Sources */,
 				AA72E6C91BE99DC3002A03D6 /* WellChosenTableCell.m in Sources */,
 				AAE57B361BF1EADE00A604C3 /* HouseDetailCellThree.m in Sources */,
 				9BBB88281BF1A6E6009CB3DC /* AJCustomerDeatailProgressTableViewCell.m in Sources */,
 				AA1A014B1BE877F500930B8C /* CYLPlusButton.m in Sources */,
 				9B9AC1361BF252E600363822 /* AJEditCustomAddPhoneNumView.m in Sources */,
+				9BBB90C11BF3048300F05162 /* AJRecommendHistoryTableViewCell.m in Sources */,
 				AA94C4971BF05BF0006B5F9D /* WPExpandHeader.m in Sources */,
 				9B9AC12C1BF22E2100363822 /* AJEditCustomerInfoViewController.m in Sources */,
 				9BBB88311BF1A6E6009CB3DC /* AJCustomerInfoTableViewCell.m in Sources */,
