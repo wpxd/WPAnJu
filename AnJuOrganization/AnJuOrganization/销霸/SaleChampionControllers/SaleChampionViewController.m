@@ -18,7 +18,12 @@
 @end
 
 @implementation SaleChampionViewController
-
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    delegate.tabbarIndex = 2;
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];

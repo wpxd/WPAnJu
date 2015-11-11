@@ -128,6 +128,7 @@
 		AAEF758C1BEE247400EDECC8 /* recomendHistory@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AAEF75801BEE247400EDECC8 /* recomendHistory@3x.png */; };
 		AAEF758F1BEF430900EDECC8 /* OtherCusstomPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = AAEF758E1BEF430900EDECC8 /* OtherCusstomPageView.m */; };
 		AAFF91E01BF30985005DC216 /* HouseDetailCellFour.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFF91DF1BF30985005DC216 /* HouseDetailCellFour.m */; };
+		AAFF91E31BF32154005DC216 /* MyMoneyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFF91E21BF32154005DC216 /* MyMoneyViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -311,6 +312,8 @@
 		AAEF758E1BEF430900EDECC8 /* OtherCusstomPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherCusstomPageView.m; sourceTree = "<group>"; };
 		AAFF91DE1BF30985005DC216 /* HouseDetailCellFour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HouseDetailCellFour.h; sourceTree = "<group>"; };
 		AAFF91DF1BF30985005DC216 /* HouseDetailCellFour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HouseDetailCellFour.m; sourceTree = "<group>"; };
+		AAFF91E11BF32154005DC216 /* MyMoneyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMoneyViewController.h; sourceTree = "<group>"; };
+		AAFF91E21BF32154005DC216 /* MyMoneyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMoneyViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -650,6 +653,8 @@
 			children = (
 				AA1A01931BE8AFEE00930B8C /* MyViewController.h */,
 				AA1A01941BE8AFEE00930B8C /* MyViewController.m */,
+				AAFF91E11BF32154005DC216 /* MyMoneyViewController.h */,
+				AAFF91E21BF32154005DC216 /* MyMoneyViewController.m */,
 			);
 			path = PersonalViewControllers;
 			sourceTree = "<group>";
@@ -958,6 +963,7 @@
 				9BBB51081BF1D57B00D74C5D /* AJEditCustomerAvatarTableViewCell.m in Sources */,
 				AABFB47D1BEC5A75006D9870 /* WPPagedFlowView.m in Sources */,
 				AA1A01621BE8813900930B8C /* CustomNavigationBarController.m in Sources */,
+				AAFF91E31BF32154005DC216 /* MyMoneyViewController.m in Sources */,
 				9BBB88431BF1BB23009CB3DC /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				AA1A015E1BE87DCB00930B8C /* Common.m in Sources */,
 				AAFF91E01BF30985005DC216 /* HouseDetailCellFour.m in Sources */,

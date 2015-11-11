@@ -19,6 +19,7 @@
 //#define kVerMobliePhoneRegex @"^(\\+?86)?(1[34578]\\d{9})$"
 #import <Foundation/Foundation.h>
 #import "CustomNavigationBarController.h"
+#import "AppDelegate.h"
 @interface Common : NSObject
 +(UILabel *)nagationItemTitleView:(NSString *)title;
 @end

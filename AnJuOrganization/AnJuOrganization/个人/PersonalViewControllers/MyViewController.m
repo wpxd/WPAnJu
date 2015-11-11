@@ -8,12 +8,27 @@
 
 #import "MyViewController.h"
 #import "UINavigationController+FDFullscreenPopGesture.h"
+#import "MyMoneyViewController.h"
 @interface MyViewController ()
 
 @end
 
 @implementation MyViewController
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    if (delegate.tabbarIndex!=3)
+    {
+        self.navigationController.navigationBarHidden = YES;
+    }
+    else
+    {
+        [self.navigationController setNavigationBarHidden:YES animated:YES];
+    }
+    delegate.tabbarIndex = 3;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -26,11 +41,6 @@
     _myTableView.delegate = self;
     [self.view addSubview:_myTableView];
     [self buildTableHeaderView];
-}
-
-- (void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
-    self.navigationController.navigationBarHidden = YES;
 }
 - (void)buildTableHeaderView
 {
@@ -153,7 +163,12 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    if (indexPath.section == 0)
+    {
+        MyMoneyViewController *myMoneyVC = [[MyMoneyViewController alloc] init];
+        myMoneyVC.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:myMoneyVC animated:YES];
+    }
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
