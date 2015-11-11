@@ -8,6 +8,7 @@
 
 #import "AllHousesViewController.h"
 #import "AllHousesTableViewCell.h"
+#import "HouseDetailViewController.h"
 @interface AllHousesViewController ()
 {
     UIView *headerBtnBackView;
@@ -134,9 +135,11 @@
     }
     return cell;
 }
-- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    HouseDetailViewController *houseDetailVC = [[HouseDetailViewController alloc] init];
+    houseDetailVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:houseDetailVC animated:YES];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

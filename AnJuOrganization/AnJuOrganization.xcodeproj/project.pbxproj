@@ -127,6 +127,7 @@
 		AAEF758B1BEE247400EDECC8 /* recomendHistory@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AAEF757F1BEE247400EDECC8 /* recomendHistory@2x.png */; };
 		AAEF758C1BEE247400EDECC8 /* recomendHistory@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AAEF75801BEE247400EDECC8 /* recomendHistory@3x.png */; };
 		AAEF758F1BEF430900EDECC8 /* OtherCusstomPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = AAEF758E1BEF430900EDECC8 /* OtherCusstomPageView.m */; };
+		AAFF91E01BF30985005DC216 /* HouseDetailCellFour.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFF91DF1BF30985005DC216 /* HouseDetailCellFour.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -308,6 +309,8 @@
 		AAEF75801BEE247400EDECC8 /* recomendHistory@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "recomendHistory@3x.png"; sourceTree = "<group>"; };
 		AAEF758D1BEF430900EDECC8 /* OtherCusstomPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherCusstomPageView.h; sourceTree = "<group>"; };
 		AAEF758E1BEF430900EDECC8 /* OtherCusstomPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherCusstomPageView.m; sourceTree = "<group>"; };
+		AAFF91DE1BF30985005DC216 /* HouseDetailCellFour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HouseDetailCellFour.h; sourceTree = "<group>"; };
+		AAFF91DF1BF30985005DC216 /* HouseDetailCellFour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HouseDetailCellFour.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -614,6 +617,8 @@
 				AAE57B2E1BF1DD6E00A604C3 /* HouseDetailCellTwo.m */,
 				AAE57B341BF1EADE00A604C3 /* HouseDetailCellThree.h */,
 				AAE57B351BF1EADE00A604C3 /* HouseDetailCellThree.m */,
+				AAFF91DE1BF30985005DC216 /* HouseDetailCellFour.h */,
+				AAFF91DF1BF30985005DC216 /* HouseDetailCellFour.m */,
 			);
 			path = WellChosenViews;
 			sourceTree = "<group>";
@@ -955,6 +960,7 @@
 				AA1A01621BE8813900930B8C /* CustomNavigationBarController.m in Sources */,
 				9BBB88431BF1BB23009CB3DC /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				AA1A015E1BE87DCB00930B8C /* Common.m in Sources */,
+				AAFF91E01BF30985005DC216 /* HouseDetailCellFour.m in Sources */,
 				AA1A018C1BE8AE6700930B8C /* WellChosenViewController.m in Sources */,
 				9BBB51121BF1D5B900D74C5D /* AJEditCustomerLevelTableViewCell.m in Sources */,
 				9BBB510D1BF1D5A800D74C5D /* AJEditCustomerPhoneTableViewCell.m in Sources */,

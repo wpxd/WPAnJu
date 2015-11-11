@@ -14,6 +14,8 @@
 #import "HouseDetailCellOne.h"
 #import "HouseDetailCellTwo.h"
 #import "HouseDetailCellThree.h"
+#import "HouseDetailCellFour.h"
+#import "AllHousesTableViewCell.h"
 @interface HouseDetailViewController ()
 
 @end
@@ -38,6 +40,32 @@
     _myTableView.delegate = self;
     [self.view addSubview:_myTableView];
     [self addTableHeaderView];
+    UIView *footerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kMainScreenWidth, 45)];
+    footerView.backgroundColor = [UIColor colorWithRed:0.95 green:0.95 blue:0.95 alpha:1];
+    _myTableView.tableFooterView = footerView;
+    //cell分割线顶满
+    if ([_myTableView respondsToSelector:@selector(setSeparatorInset:)])
+    {
+        [_myTableView setSeparatorInset:UIEdgeInsetsZero];
+    }
+    if ([_myTableView respondsToSelector:@selector(setLayoutMargins:)])
+    {
+        [_myTableView setLayoutMargins:UIEdgeInsetsMake(0,0,0,0)];
+    }
+    //推荐btn
+    UIButton *recommentBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    recommentBtn.frame = CGRectMake(0, kMainScreenHeight-45-64, kMainScreenWidth, 45);
+    recommentBtn.titleLabel.font = [UIFont systemFontOfSize:18];
+    [recommentBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [recommentBtn setTitle:@"立即推荐" forState:UIControlStateNormal];
+    [recommentBtn setBackgroundColor:UIColorFromHex(0xff4800)];
+    recommentBtn.alpha = 0.97;
+    [recommentBtn addTarget:self action:@selector(recommentBtnClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:recommentBtn];
+}
+- (void)recommentBtnClick
+{
+    
 }
 - (void)addTableHeaderView
 {
@@ -138,13 +166,34 @@
         }
     }
 }
+//设置分割线
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if ([cell respondsToSelector:@selector(setSeparatorInset:)])
+    {
+        [cell setSeparatorInset:UIEdgeInsetsZero];
+    }
+    
+    if ([cell respondsToSelector:@selector(setLayoutMargins:)])
+    {
+        [cell setLayoutMargins:UIEdgeInsetsZero];
+    }
+}
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 5;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+    if (section==4)
+    {
+        return 4;
+    }
+    else
+    {
+        return 1;
+    }
+    
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
@@ -176,7 +225,25 @@
             break;
         case 2:
         {
-            return 200;
+            return 220;
+        }
+            break;
+        case 3:
+        {
+            return 210;
+        }
+            break;
+        case 4:
+        {
+            if (indexPath.row==0)
+            {
+                return 50;
+            }
+            else
+            {
+                return 96;
+            }
+            
         }
             break;
         default:
@@ -211,15 +278,40 @@
         [cellThree buildHuXingScrollView:[NSArray arrayWithObjects:@"3.jpg",@"3.jpg",@"3.jpg",@"3.jpg",@"3.jpg", nil]];
         return cellThree;
     }
+    else if (indexPath.section==3)
+    {
+        HouseDetailCellFour *cellFour = [[HouseDetailCellFour alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+        cellFour.selectionStyle = UITableViewCellSelectionStyleNone;
+        return cellFour;
+    }
     else
     {
-        static  NSString *CellIntentifier = @"CellIntentifier";
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIntentifier];
-        if (cell==nil)
+        if (indexPath.row==0)
         {
-            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIntentifier];
+            static  NSString *CellIntentifier = @"CellIntentifier";
+            UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIntentifier];
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
+            UILabel *nearbyLab = [[UILabel alloc] initWithFrame:CGRectMake(5, 15, 80, 20)];
+            nearbyLab.font = [UIFont systemFontOfSize:14];
+            nearbyLab.textColor =[UIColor blackColor];
+            nearbyLab.text = @"附近楼盘";
+            [cell.contentView addSubview:nearbyLab];
+            return cell;
         }
-        return cell;
+        else
+        {
+            AllHousesTableViewCell *cell = [[AllHousesTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
+            if (indexPath.row%2==0)
+            {
+                cell.louPanImgView.image = [UIImage imageNamed:@"2.jpg"];
+            }
+            else
+            {
+                cell.louPanImgView.image = [UIImage imageNamed:@"3.jpg"];
+            }
+            return cell;
+        }
     }
     
 }

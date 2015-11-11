@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface HouseDetailCellThree : UITableViewCell
+@property(nonatomic,strong)UIButton *huXingBtn;
 - (void)buildHuXingScrollView:(NSArray *)imgArray;
 @end
