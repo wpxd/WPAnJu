@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface MyMoneyViewController : UIViewController
-
+#import "NJDBezierCurve.h"
+@interface MyMoneyViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+{
+    UIView *headView;
+}
+@property(nonatomic,strong)UITableView *myTableView;
+@property(nonatomic,strong)CATextLayer *moneyLab;
 @end

@@ -13,6 +13,7 @@
 #import "AllHousesViewController.h"
 #import "AJCustomerListTableViewController.h"
 #import "AJRecommendHistoryListViewController.h"
+#import "MyMoneyViewController.h"
 @interface SaleChampionViewController ()
 
 @end
@@ -79,6 +80,13 @@
             AJCustomerListTableViewController *customerManagetVC = [[AJCustomerListTableViewController alloc] init];
             customerManagetVC.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:customerManagetVC animated:YES];
+        }
+            break;
+        case 103:
+        {
+            MyMoneyViewController *myMoney = [[MyMoneyViewController alloc] init];
+            myMoney.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:myMoney animated:YES];
         }
             break;
         case 104:

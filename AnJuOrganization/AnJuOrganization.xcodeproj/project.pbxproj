@@ -129,6 +129,9 @@
 		AAEF758F1BEF430900EDECC8 /* OtherCusstomPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = AAEF758E1BEF430900EDECC8 /* OtherCusstomPageView.m */; };
 		AAFF91E01BF30985005DC216 /* HouseDetailCellFour.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFF91DF1BF30985005DC216 /* HouseDetailCellFour.m */; };
 		AAFF91E31BF32154005DC216 /* MyMoneyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFF91E21BF32154005DC216 /* MyMoneyViewController.m */; };
+		AAFF91E91BF33044005DC216 /* CATextLayer+NumberJump.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFF91E61BF33044005DC216 /* CATextLayer+NumberJump.m */; };
+		AAFF91EA1BF33044005DC216 /* NJDBezierCurve.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFF91E81BF33044005DC216 /* NJDBezierCurve.m */; };
+		AAFF91ED1BF33A54005DC216 /* MyMoneyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFF91EC1BF33A54005DC216 /* MyMoneyCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -314,6 +317,12 @@
 		AAFF91DF1BF30985005DC216 /* HouseDetailCellFour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HouseDetailCellFour.m; sourceTree = "<group>"; };
 		AAFF91E11BF32154005DC216 /* MyMoneyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMoneyViewController.h; sourceTree = "<group>"; };
 		AAFF91E21BF32154005DC216 /* MyMoneyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMoneyViewController.m; sourceTree = "<group>"; };
+		AAFF91E51BF33044005DC216 /* CATextLayer+NumberJump.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CATextLayer+NumberJump.h"; sourceTree = "<group>"; };
+		AAFF91E61BF33044005DC216 /* CATextLayer+NumberJump.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CATextLayer+NumberJump.m"; sourceTree = "<group>"; };
+		AAFF91E71BF33044005DC216 /* NJDBezierCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NJDBezierCurve.h; sourceTree = "<group>"; };
+		AAFF91E81BF33044005DC216 /* NJDBezierCurve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJDBezierCurve.m; sourceTree = "<group>"; };
+		AAFF91EB1BF33A54005DC216 /* MyMoneyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMoneyCell.h; sourceTree = "<group>"; };
+		AAFF91EC1BF33A54005DC216 /* MyMoneyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMoneyCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -662,6 +671,7 @@
 		AA1A01951BE8AFEE00930B8C /* PersonalViews */ = {
 			isa = PBXGroup;
 			children = (
+				AAFF91E41BF33044005DC216 /* MyMoney */,
 				AA94C4951BF05BF0006B5F9D /* WPExpandHeader.h */,
 				AA94C4961BF05BF0006B5F9D /* WPExpandHeader.m */,
 			);
@@ -782,6 +792,19 @@
 				AAEF75801BEE247400EDECC8 /* recomendHistory@3x.png */,
 			);
 			path = "经纪按钮";
+			sourceTree = "<group>";
+		};
+		AAFF91E41BF33044005DC216 /* MyMoney */ = {
+			isa = PBXGroup;
+			children = (
+				AAFF91E51BF33044005DC216 /* CATextLayer+NumberJump.h */,
+				AAFF91E61BF33044005DC216 /* CATextLayer+NumberJump.m */,
+				AAFF91E71BF33044005DC216 /* NJDBezierCurve.h */,
+				AAFF91E81BF33044005DC216 /* NJDBezierCurve.m */,
+				AAFF91EB1BF33A54005DC216 /* MyMoneyCell.h */,
+				AAFF91EC1BF33A54005DC216 /* MyMoneyCell.m */,
+			);
+			path = MyMoney;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -987,8 +1010,10 @@
 				AA72E6D01BE9CDAC002A03D6 /* AllHousesViewController.m in Sources */,
 				9B9AC1331BF23B6400363822 /* YSKeyboardTableView.m in Sources */,
 				AAE57B2F1BF1DD6E00A604C3 /* HouseDetailCellTwo.m in Sources */,
+				AAFF91EA1BF33044005DC216 /* NJDBezierCurve.m in Sources */,
 				9BBD70771BF2F918002374EA /* AJRecommendHistoryDetailViewController.m in Sources */,
 				AABFB4821BEC741E006D9870 /* CusstomPageView.m in Sources */,
+				AAFF91E91BF33044005DC216 /* CATextLayer+NumberJump.m in Sources */,
 				AA72E6C91BE99DC3002A03D6 /* WellChosenTableCell.m in Sources */,
 				AAE57B361BF1EADE00A604C3 /* HouseDetailCellThree.m in Sources */,
 				9BBB88281BF1A6E6009CB3DC /* AJCustomerDeatailProgressTableViewCell.m in Sources */,
@@ -1002,6 +1027,7 @@
 				9BBB882D1BF1A6E6009CB3DC /* AJCustomerDetailTableViewCell.m in Sources */,
 				AA1A014C1BE877F500930B8C /* CYLTabBar.m in Sources */,
 				9BBB51171BF1D5DF00D74C5D /* AJEditCustomerRemarksTableViewCell.m in Sources */,
+				AAFF91ED1BF33A54005DC216 /* MyMoneyCell.m in Sources */,
 				9BBB51021BF1D53400D74C5D /* AJEditCustomerBaseTableViewCell.m in Sources */,
 				AA840CF01BE8520B00AEADF1 /* main.m in Sources */,
 			);
