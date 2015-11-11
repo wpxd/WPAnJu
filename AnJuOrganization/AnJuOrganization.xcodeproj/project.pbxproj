@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9B4EE86B1BF1C672005C7039 /* phone@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B4EE8691BF1C672005C7039 /* phone@3x.png */; };
+		9B615D221BF371FE0065E2F8 /* AJRecommendHistoryFlagView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B615D211BF371FE0065E2F8 /* AJRecommendHistoryFlagView.m */; };
 		9B7A27B01BF1ED7A0083DA85 /* AJCustomerLevealView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7A27AF1BF1ED7A0083DA85 /* AJCustomerLevealView.m */; };
 		9B9AC1291BF22DCF00363822 /* WPPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B9AC1281BF22DCF00363822 /* WPPageControl.m */; };
 		9B9AC12C1BF22E2100363822 /* AJEditCustomerInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B9AC12B1BF22E2100363822 /* AJEditCustomerInfoViewController.m */; };
@@ -146,6 +147,8 @@
 
 /* Begin PBXFileReference section */
 		9B4EE8691BF1C672005C7039 /* phone@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "phone@3x.png"; sourceTree = "<group>"; };
+		9B615D201BF371FE0065E2F8 /* AJRecommendHistoryFlagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJRecommendHistoryFlagView.h; sourceTree = "<group>"; };
+		9B615D211BF371FE0065E2F8 /* AJRecommendHistoryFlagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJRecommendHistoryFlagView.m; sourceTree = "<group>"; };
 		9B7A27AE1BF1ED7A0083DA85 /* AJCustomerLevealView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJCustomerLevealView.h; sourceTree = "<group>"; };
 		9B7A27AF1BF1ED7A0083DA85 /* AJCustomerLevealView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJCustomerLevealView.m; sourceTree = "<group>"; };
 		9B9AC1281BF22DCF00363822 /* WPPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPPageControl.m; sourceTree = "<group>"; };
@@ -485,6 +488,8 @@
 				9BBB90BE1BF3048300F05162 /* AJRecommendHistoryTableViewCell.h */,
 				9BBB90BF1BF3048300F05162 /* AJRecommendHistoryTableViewCell.m */,
 				9BBB90C01BF3048300F05162 /* AJRecommendHistoryTableViewCell.xib */,
+				9B615D201BF371FE0065E2F8 /* AJRecommendHistoryFlagView.h */,
+				9B615D211BF371FE0065E2F8 /* AJRecommendHistoryFlagView.m */,
 			);
 			path = RecommendHistory;
 			sourceTree = "<group>";
@@ -1014,6 +1019,7 @@
 				9BBD70771BF2F918002374EA /* AJRecommendHistoryDetailViewController.m in Sources */,
 				AABFB4821BEC741E006D9870 /* CusstomPageView.m in Sources */,
 				AAFF91E91BF33044005DC216 /* CATextLayer+NumberJump.m in Sources */,
+				9B615D221BF371FE0065E2F8 /* AJRecommendHistoryFlagView.m in Sources */,
 				AA72E6C91BE99DC3002A03D6 /* WellChosenTableCell.m in Sources */,
 				AAE57B361BF1EADE00A604C3 /* HouseDetailCellThree.m in Sources */,
 				9BBB88281BF1A6E6009CB3DC /* AJCustomerDeatailProgressTableViewCell.m in Sources */,

@@ -19,10 +19,10 @@ UITextFieldDelegate
         _contentView = [[[UINib nibWithNibName:NSStringFromClass([self class]) bundle:nil] instantiateWithOwner:self options:nil] objectAtIndex:0];
         CGRect newFrame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
         _contentView.frame = newFrame;
-        _contentView.translatesAutoresizingMaskIntoConstraints = NO;
+//        _contentView.translatesAutoresizingMaskIntoConstraints = NO;
         [self addSubview:_contentView];
-        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-|_contentView|-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_contentView)]];
-        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-|_contentView|-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_contentView)]];
+//        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-|_contentView|-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_contentView)]];
+//        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-|_contentView|-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_contentView)]];
         [_phoneNumTextField addTarget:self action:@selector(phoneNumTextFieldAction:) forControlEvents:UIControlEventAllEvents];
     }
     return self;

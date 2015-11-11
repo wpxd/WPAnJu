@@ -25,7 +25,7 @@
 
 - (void)awakeFromNib {
     // Initialization code
-    NSLog(@"%@",self.namePhoneLabel);
+  
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

@@ -8,12 +8,14 @@
 
 #import "AJRecommendHistoryListViewController.h"
 #import "AJRecommendHistoryDetailViewController.h"
+#import "AJRecommendHistoryFlagView.h"
 @interface AJRecommendHistoryListViewController ()
 <
-UICollectionViewDataSource,
-UICollectionViewDelegate
+AJRecommendHistoryFlagViewDelegate,
+UIScrollViewDelegate
 >
 @property (strong, nonatomic)  UIScrollView *contentScrollView;
+@property (strong, nonatomic)  AJRecommendHistoryFlagView *flagView;
 @property (strong, nonatomic)  NSMutableArray *datasources;
 @end
 
@@ -22,7 +24,7 @@ UICollectionViewDelegate
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self makeCollcetionView];
+    [self makeContentView];
     [self makeDataSources:nil];
     self.view.backgroundColor = [UIColor whiteColor];
     
@@ -35,35 +37,40 @@ UICollectionViewDelegate
 
 
 #pragma mark - custom  method
-- (void)makeCollcetionView{
-
+- (void)makeContentView{
+    
+    self.flagView = [[AJRecommendHistoryFlagView alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 44)];
+    self.flagView.delegate = self;
+    [self.view addSubview:self.flagView];
+    CGFloat scrollViewHeight = [UIScreen mainScreen].bounds.size.height - 64 - 44;
     self.contentScrollView = [[UIScrollView alloc]
                            initWithFrame:CGRectMake(0,
-                                                    64,
+                                                    44,
                                                     [UIScreen mainScreen].bounds.size.width,
-                                                    [UIScreen mainScreen].bounds.size.height - 64)];
+                                                    scrollViewHeight)];
     self.contentScrollView.delegate = self;
     self.contentScrollView.pagingEnabled = YES;
     self.contentScrollView.contentSize = CGSizeMake([UIScreen mainScreen].bounds.size.width
                                                     * 6,
-                                                    [UIScreen mainScreen].bounds.size.height - 64) ;
+                                                    scrollViewHeight) ;
     self.contentScrollView.showsHorizontalScrollIndicator = YES;
     self.contentScrollView.showsVerticalScrollIndicator = YES;
     self.contentScrollView.directionalLockEnabled = YES;
     [self.view addSubview:self.contentScrollView];
+
     
     AJRecommendHistoryDetailViewController *cell0 = [[AJRecommendHistoryDetailViewController alloc]init];
-    cell0.view.frame = CGRectMake([UIScreen mainScreen].bounds.size.width * 0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 64);
+    cell0.view.frame = CGRectMake([UIScreen mainScreen].bounds.size.width * 0, 0, [UIScreen mainScreen].bounds.size.width, scrollViewHeight);
     AJRecommendHistoryDetailViewController *cell1 = [[AJRecommendHistoryDetailViewController alloc]init];
-    cell1.view.frame = CGRectMake([UIScreen mainScreen].bounds.size.width * 1, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 64);
+    cell1.view.frame = CGRectMake([UIScreen mainScreen].bounds.size.width * 1, 0, [UIScreen mainScreen].bounds.size.width, scrollViewHeight);
     AJRecommendHistoryDetailViewController *cell2 = [[AJRecommendHistoryDetailViewController alloc]init];
-    cell2.view.frame = CGRectMake([UIScreen mainScreen].bounds.size.width * 2, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 64);
+    cell2.view.frame = CGRectMake([UIScreen mainScreen].bounds.size.width * 2, 0, [UIScreen mainScreen].bounds.size.width, scrollViewHeight);
     AJRecommendHistoryDetailViewController *cell3 = [[AJRecommendHistoryDetailViewController alloc]init];
-    cell3.view.frame = CGRectMake([UIScreen mainScreen].bounds.size.width * 3, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 64);
+    cell3.view.frame = CGRectMake([UIScreen mainScreen].bounds.size.width * 3, 0, [UIScreen mainScreen].bounds.size.width, scrollViewHeight);
     AJRecommendHistoryDetailViewController *cell4 = [[AJRecommendHistoryDetailViewController alloc]init];
-    cell4.view.frame = CGRectMake([UIScreen mainScreen].bounds.size.width * 4, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 64);
+    cell4.view.frame = CGRectMake([UIScreen mainScreen].bounds.size.width * 4, 0, [UIScreen mainScreen].bounds.size.width, scrollViewHeight);
     AJRecommendHistoryDetailViewController *cell5 = [[AJRecommendHistoryDetailViewController alloc]init];
-    cell5.view.frame = CGRectMake([UIScreen mainScreen].bounds.size.width * 5, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 64);
+    cell5.view.frame = CGRectMake([UIScreen mainScreen].bounds.size.width * 5, 0, [UIScreen mainScreen].bounds.size.width, scrollViewHeight);
     
     [self addChildViewController:cell0];
     [self addChildViewController:cell1];
@@ -80,7 +87,6 @@ UICollectionViewDelegate
     [self.contentScrollView addSubview:cell5.view];
    
 
- 
     
 }
 
@@ -90,15 +96,16 @@ UICollectionViewDelegate
 //    self.datasources = [NSMutableArray arrayWithArray:@[cell0,cell1,cell2,cell3,cell4,cell5]];
 }
 
-#pragma mark -collection datasource delegate
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return 6;
-}
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    return [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
-    return self.datasources[indexPath.row];
+#pragma mark -scrollview delegate
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+ NSUInteger index =  self.contentScrollView.contentOffset.x /  [UIScreen mainScreen].bounds.size.width;
+    [self.flagView  selected:index];
 }
 
+- (void)flagView:(AJRecommendHistoryFlagView *)flageView selcetedIndex:(NSUInteger)index{
+    [self.contentScrollView setContentOffset:CGPointMake([UIScreen mainScreen].bounds.size.width * index, 0) animated:YES];
+}
 
 
 @end

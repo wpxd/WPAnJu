@@ -28,6 +28,7 @@ UITextViewDelegate
 #pragma mark- textViewDelegate 
 - (void)textViewDidBeginEditing:(UITextView *)textView{
     self.placeHoderLabel.hidden = YES;
+    
     if (self.callBackBlock) {
         self.callBackBlock(self,AJCustomerEditCellsOptionsRemarksEditBegin);
     }
@@ -35,7 +36,7 @@ UITextViewDelegate
     
 }
 - (void)textViewDidEndEditing:(UITextView *)textView{
-     self.placeHoderLabel.hidden = NO;
+     self.placeHoderLabel.hidden = textView.text.length > 0;
     if (self.callBackBlock) {
         self.callBackBlock(self,AJCustomerEditCellsOptionsRemarksEditEnd);
     }
