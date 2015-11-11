@@ -7,7 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+@class AJEditCustomAddPhoneNumView;
+@protocol AJEditCustomAddPhoneNumViewDelegate <NSObject>
+@optional
+- (void)phoneNumView:(AJEditCustomAddPhoneNumView *)phoneView textField:(UITextField *)textField;
 
+@end
 @interface AJEditCustomAddPhoneNumView : UIView
 
+@property (weak, nonatomic) IBOutlet UITextField *phoneNumTextField;
+@property (weak, nonatomic) IBOutlet UIButton *deleteBtn;
+
+@property (weak, nonatomic)id<AJEditCustomAddPhoneNumViewDelegate> delegate;
+
+- (IBAction)deleteBtnClicked:(id)sender;
 @end

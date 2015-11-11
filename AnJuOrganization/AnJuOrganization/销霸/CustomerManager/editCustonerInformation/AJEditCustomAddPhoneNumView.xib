@@ -5,7 +5,12 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AJEditCustomAddPhoneNumView"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AJEditCustomAddPhoneNumView">
+            <connections>
+                <outlet property="deleteBtn" destination="JbR-16-AFb" id="V6k-CD-87c"/>
+                <outlet property="phoneNumTextField" destination="Jj5-BR-jX2" id="7fL-3R-vmr"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -20,6 +25,9 @@
                         <constraint firstAttribute="width" constant="20" id="ltp-7b-bs4"/>
                     </constraints>
                     <state key="normal" title="-"/>
+                    <connections>
+                        <action selector="deleteBtnClicked:" destination="-1" eventType="touchUpInside" id="tKv-3W-cXW"/>
+                    </connections>
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GzU-rG-HF7" userLabel="topLine">
                     <rect key="frame" x="44" y="0.0" width="276" height="0.0"/>
@@ -44,6 +52,9 @@
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="VGV-fR-jPg"/>
+                    </connections>
                 </textField>
             </subviews>
             <animations/>
