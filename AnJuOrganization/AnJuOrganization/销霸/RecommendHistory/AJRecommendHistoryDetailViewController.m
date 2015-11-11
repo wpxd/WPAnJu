@@ -48,14 +48,7 @@ static NSString *const cellIdentifier = @"cellIdentifier";
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    AJRecommendHistoryTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-//    if (!cell) {
-//        cell = [[AJRecommendHistoryTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];;
-//    }
-//    return cell;
-   
     UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
-    
     return cell;
 }
 
