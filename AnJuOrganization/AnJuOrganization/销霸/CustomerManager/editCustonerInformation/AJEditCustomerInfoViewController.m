@@ -14,8 +14,8 @@
 UITableViewDataSource,
 UITableViewDelegate
 >
-@property (weak, nonatomic) IBOutlet UIButton *commitBtn;
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic)  UIButton *commitBtn;
+@property (strong, nonatomic)  UITableView *tableView;
 
 @property (nonatomic ,strong)NSArray *datasources;
 
@@ -28,9 +28,7 @@ UITableViewDelegate
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"编辑客户";
-    self.tableView.tableFooterView = [[UIView alloc]initWithFrame:CGRectZero];
-    self.tableView.autoAdaptiveKeyBoard = YES;
-    [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
+    [self makeTabLeView];
     [self makeCommitBtn];
     [self makeCells];
     
@@ -44,6 +42,25 @@ UITableViewDelegate
 
 
 #pragma mark -custom view
+
+- (void)makeTabLeView{
+    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 64 - 44) style:UITableViewStylePlain];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    self.tableView.tableFooterView = [[UIView alloc]initWithFrame:self.view.bounds];
+    self.tableView.autoAdaptiveKeyBoard = YES;
+    [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
+    [self.view addSubview:self.tableView];
+
+}
+- (void)makeCommitBtn{
+    self.commitBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.commitBtn.frame = CGRectMake(0,[UIScreen mainScreen].bounds.size.height - 64 - 44,  [UIScreen mainScreen].bounds.size.width, 44);
+    [self.view addSubview:self.commitBtn];
+    [self.commitBtn addTarget:self action:@selector(commitAction:) forControlEvents:UIControlEventTouchUpInside];
+    self.commitBtn.backgroundColor = [UIColor colorWithHex:0xF93108];
+}
+
 - (void)keBoardGesture{
     UITapGestureRecognizer* singleRecognizer;
     singleRecognizer = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(singleTap:)];
@@ -68,11 +85,8 @@ UITableViewDelegate
     
 }
 
-- (void)makeCommitBtn{
-    self.commitBtn.backgroundColor = [UIColor colorWithHex:0xF93108];
-}
 
-- (IBAction)commitAction:(UIButton *)sender {
+- (void)commitAction:(UIButton *)sender {
 }
 
 

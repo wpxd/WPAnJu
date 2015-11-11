@@ -19,7 +19,6 @@
 		9B9AC1381BF2530C00363822 /* AJEditCustomAddPhoneNumView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B9AC1371BF2530C00363822 /* AJEditCustomAddPhoneNumView.xib */; };
 		9BA8C5C61BF0D20200A72FFF /* customerInfo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA8C5C41BF0D20200A72FFF /* customerInfo@2x.png */; };
 		9BA8C5C71BF0D20200A72FFF /* customerInfo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA8C5C51BF0D20200A72FFF /* customerInfo@3x.png */; };
-		9BBB50FE1BF1D3DA00D74C5D /* AJEditCustomerInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BBB50FC1BF1D3DA00D74C5D /* AJEditCustomerInfoViewController.xib */; };
 		9BBB51021BF1D53400D74C5D /* AJEditCustomerBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBB51001BF1D53400D74C5D /* AJEditCustomerBaseTableViewCell.m */; };
 		9BBB51031BF1D53400D74C5D /* AJEditCustomerBaseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BBB51011BF1D53400D74C5D /* AJEditCustomerBaseTableViewCell.xib */; };
 		9BBB51081BF1D57B00D74C5D /* AJEditCustomerAvatarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBB51061BF1D57B00D74C5D /* AJEditCustomerAvatarTableViewCell.m */; };
@@ -163,7 +162,6 @@
 		9B9AC1371BF2530C00363822 /* AJEditCustomAddPhoneNumView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AJEditCustomAddPhoneNumView.xib; sourceTree = "<group>"; };
 		9BA8C5C41BF0D20200A72FFF /* customerInfo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "customerInfo@2x.png"; sourceTree = "<group>"; };
 		9BA8C5C51BF0D20200A72FFF /* customerInfo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "customerInfo@3x.png"; sourceTree = "<group>"; };
-		9BBB50FC1BF1D3DA00D74C5D /* AJEditCustomerInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AJEditCustomerInfoViewController.xib; sourceTree = "<group>"; };
 		9BBB50FF1BF1D53400D74C5D /* AJEditCustomerBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJEditCustomerBaseTableViewCell.h; sourceTree = "<group>"; };
 		9BBB51001BF1D53400D74C5D /* AJEditCustomerBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJEditCustomerBaseTableViewCell.m; sourceTree = "<group>"; };
 		9BBB51011BF1D53400D74C5D /* AJEditCustomerBaseTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AJEditCustomerBaseTableViewCell.xib; sourceTree = "<group>"; };
@@ -380,7 +378,6 @@
 			children = (
 				9B9AC12A1BF22E2100363822 /* AJEditCustomerInfoViewController.h */,
 				9B9AC12B1BF22E2100363822 /* AJEditCustomerInfoViewController.m */,
-				9BBB50FC1BF1D3DA00D74C5D /* AJEditCustomerInfoViewController.xib */,
 				9BBB51041BF1D53900D74C5D /* editCustomerCell */,
 				9B7A27AE1BF1ED7A0083DA85 /* AJCustomerLevealView.h */,
 				9B7A27AF1BF1ED7A0083DA85 /* AJCustomerLevealView.m */,
@@ -944,7 +941,6 @@
 				9BA8C5C71BF0D20200A72FFF /* customerInfo@3x.png in Resources */,
 				AAEF75851BEE247400EDECC8 /* myHouse@2x.png in Resources */,
 				AAEF75831BEE247400EDECC8 /* managerClient@2x.png in Resources */,
-				9BBB50FE1BF1D3DA00D74C5D /* AJEditCustomerInfoViewController.xib in Resources */,
 				AA1A01851BE88B9D00930B8C /* sale_normal@3x.png in Resources */,
 				AA1A014F1BE877F500930B8C /* Default.png in Resources */,
 				9BBB88401BF1A706009CB3DC /* VendorsReadMe in Resources */,
