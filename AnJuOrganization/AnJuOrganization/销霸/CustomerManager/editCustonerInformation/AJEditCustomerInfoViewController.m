@@ -18,9 +18,8 @@ UITableViewDelegate
 @property (strong, nonatomic)  UITableView *tableView;
 
 @property (nonatomic ,strong)NSArray *datasources;
-
-
 @property (nonatomic ,assign)CGPoint originOffset;
+
 @end
 
 @implementation AJEditCustomerInfoViewController
