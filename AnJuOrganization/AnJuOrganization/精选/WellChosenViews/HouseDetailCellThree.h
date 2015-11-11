@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface HouseDetailCellThree : UITableViewCell
-
+- (void)buildHuXingScrollView:(NSArray *)imgArray;
 @end

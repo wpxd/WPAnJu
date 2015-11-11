@@ -29,6 +29,22 @@
     }
     return self;
 }
+- (void)buildHuXingScrollView:(NSArray *)huXingArray
+{
+    UIScrollView *imgScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(5, 55, kMainScreenWidth-10, 140)];
+    imgScrollView.backgroundColor = [UIColor purpleColor];
+    imgScrollView.contentSize = CGSizeMake((120 * huXingArray.count-20), 140);
+    imgScrollView.bounces = NO;
+    imgScrollView.showsHorizontalScrollIndicator = NO;
+    imgScrollView.pagingEnabled = NO;
+    [self.contentView addSubview:imgScrollView];
+    for (int i = 0; i < huXingArray.count; i++)
+    {
+        UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(120*i, 0, 100, 120)];
+        imgView.backgroundColor = [UIColor redColor];
+        [imgScrollView addSubview:imgView];
+    }
+}
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 

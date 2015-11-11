@@ -174,7 +174,11 @@
             return 135+[self getCellHeightWithAttributedString:text];
         }
             break;
-            
+        case 2:
+        {
+            return 200;
+        }
+            break;
         default:
             break;
     }
@@ -204,6 +208,7 @@
     {
         HouseDetailCellThree *cellThree = [[HouseDetailCellThree alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
         cellThree.selectionStyle = UITableViewCellSelectionStyleNone;
+        [cellThree buildHuXingScrollView:[NSArray arrayWithObjects:@"3.jpg",@"3.jpg",@"3.jpg",@"3.jpg",@"3.jpg", nil]];
         return cellThree;
     }
     else
