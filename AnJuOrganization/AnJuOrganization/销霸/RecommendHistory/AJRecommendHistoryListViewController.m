@@ -90,9 +90,8 @@ UIScrollViewDelegate
     
 }
 
-- (void)makeDataSources:(NSArray *)arr{
-    
-    
+- (void)makeDataSources:(NSArray *)arr
+{
 //    self.datasources = [NSMutableArray arrayWithArray:@[cell0,cell1,cell2,cell3,cell4,cell5]];
 }
 

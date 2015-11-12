@@ -76,6 +76,14 @@
 		AA1A018C1BE8AE6700930B8C /* WellChosenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1A018A1BE8AE6700930B8C /* WellChosenViewController.m */; };
 		AA1A01911BE8AF2200930B8C /* SaleChampionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1A018F1BE8AF2200930B8C /* SaleChampionViewController.m */; };
 		AA1A01961BE8AFEE00930B8C /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1A01941BE8AFEE00930B8C /* MyViewController.m */; };
+		AA6F6E191BF43FCF00796727 /* RecommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6F6E181BF43FCF00796727 /* RecommentViewController.m */; };
+		AA6F6E1B1BF4709100796727 /* clientList@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA6F6E1A1BF4709100796727 /* clientList@3x.png */; };
+		AA6F6E1D1BF470A200796727 /* clientList@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA6F6E1C1BF470A200796727 /* clientList@2x.png */; };
+		AA6F6E1F1BF47A7100796727 /* addClient@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA6F6E1E1BF47A7100796727 /* addClient@3x.png */; };
+		AA6F6E211BF47A7E00796727 /* addClient@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA6F6E201BF47A7E00796727 /* addClient@2x.png */; };
+		AA6F6E231BF484D100796727 /* addHouses@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA6F6E221BF484D100796727 /* addHouses@3x.png */; };
+		AA6F6E251BF484DE00796727 /* addHouses@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA6F6E241BF484DE00796727 /* addHouses@2x.png */; };
+		AA6F6E281BF48A2B00796727 /* XHMessageTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6F6E271BF48A2B00796727 /* XHMessageTextView.m */; };
 		AA72E6C91BE99DC3002A03D6 /* WellChosenTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA72E6C81BE99DC3002A03D6 /* WellChosenTableCell.m */; };
 		AA72E6CC1BE9A313002A03D6 /* 1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = AA72E6CA1BE9A313002A03D6 /* 1.jpeg */; };
 		AA72E6CD1BE9A313002A03D6 /* 0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA72E6CB1BE9A313002A03D6 /* 0.jpg */; };
@@ -246,6 +254,16 @@
 		AA1A018F1BE8AF2200930B8C /* SaleChampionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaleChampionViewController.m; sourceTree = "<group>"; };
 		AA1A01931BE8AFEE00930B8C /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
 		AA1A01941BE8AFEE00930B8C /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		AA6F6E171BF43FCF00796727 /* RecommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommentViewController.h; sourceTree = "<group>"; };
+		AA6F6E181BF43FCF00796727 /* RecommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommentViewController.m; sourceTree = "<group>"; };
+		AA6F6E1A1BF4709100796727 /* clientList@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clientList@3x.png"; sourceTree = "<group>"; };
+		AA6F6E1C1BF470A200796727 /* clientList@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clientList@2x.png"; sourceTree = "<group>"; };
+		AA6F6E1E1BF47A7100796727 /* addClient@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addClient@3x.png"; sourceTree = "<group>"; };
+		AA6F6E201BF47A7E00796727 /* addClient@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addClient@2x.png"; sourceTree = "<group>"; };
+		AA6F6E221BF484D100796727 /* addHouses@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addHouses@3x.png"; sourceTree = "<group>"; };
+		AA6F6E241BF484DE00796727 /* addHouses@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addHouses@2x.png"; sourceTree = "<group>"; };
+		AA6F6E261BF48A2B00796727 /* XHMessageTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHMessageTextView.h; sourceTree = "<group>"; };
+		AA6F6E271BF48A2B00796727 /* XHMessageTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHMessageTextView.m; sourceTree = "<group>"; };
 		AA72E6C71BE99DC3002A03D6 /* WellChosenTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WellChosenTableCell.h; sourceTree = "<group>"; };
 		AA72E6C81BE99DC3002A03D6 /* WellChosenTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WellChosenTableCell.m; sourceTree = "<group>"; };
 		AA72E6CA1BE9A313002A03D6 /* 1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpeg; sourceTree = "<group>"; };
@@ -347,10 +365,16 @@
 		9BA8C5C31BF0D20200A72FFF /* customerManager */ = {
 			isa = PBXGroup;
 			children = (
+				AA6F6E241BF484DE00796727 /* addHouses@2x.png */,
+				AA6F6E221BF484D100796727 /* addHouses@3x.png */,
+				AA6F6E201BF47A7E00796727 /* addClient@2x.png */,
+				AA6F6E1C1BF470A200796727 /* clientList@2x.png */,
+				AA6F6E1A1BF4709100796727 /* clientList@3x.png */,
 				9B9AC12D1BF22E5900363822 /* phone@2x.png */,
 				9B4EE8691BF1C672005C7039 /* phone@3x.png */,
 				9BA8C5C41BF0D20200A72FFF /* customerInfo@2x.png */,
 				9BA8C5C51BF0D20200A72FFF /* customerInfo@3x.png */,
+				AA6F6E1E1BF47A7100796727 /* addClient@3x.png */,
 			);
 			path = customerManager;
 			sourceTree = "<group>";
@@ -642,6 +666,8 @@
 			children = (
 				AA1A018E1BE8AF2200930B8C /* SaleChampionViewController.h */,
 				AA1A018F1BE8AF2200930B8C /* SaleChampionViewController.m */,
+				AA6F6E171BF43FCF00796727 /* RecommentViewController.h */,
+				AA6F6E181BF43FCF00796727 /* RecommentViewController.m */,
 			);
 			path = SaleChampionControllers;
 			sourceTree = "<group>";
@@ -649,6 +675,8 @@
 		AA1A01901BE8AF2200930B8C /* SaleChampionViews */ = {
 			isa = PBXGroup;
 			children = (
+				AA6F6E261BF48A2B00796727 /* XHMessageTextView.h */,
+				AA6F6E271BF48A2B00796727 /* XHMessageTextView.m */,
 				AABFB47B1BEC5A75006D9870 /* WPPagedFlowView.h */,
 				AABFB47C1BEC5A75006D9870 /* WPPagedFlowView.m */,
 				AABFB4801BEC741E006D9870 /* CusstomPageView.h */,
@@ -916,6 +944,7 @@
 				9BBB51091BF1D57B00D74C5D /* AJEditCustomerAvatarTableViewCell.xib in Resources */,
 				AA1A01861BE88B9D00930B8C /* saleChosen_highlight@3x.png in Resources */,
 				AA1A01781BE88AC600930B8C /* sale_hignlight@2x.png in Resources */,
+				AA6F6E251BF484DE00796727 /* addHouses@2x.png in Resources */,
 				AAE57B271BF1C7F300A604C3 /* gouZiLight@2x.png in Resources */,
 				AAEF75871BEE247400EDECC8 /* myMoeny@2x.png in Resources */,
 				AAEF758C1BEE247400EDECC8 /* recomendHistory@3x.png in Resources */,
@@ -926,7 +955,9 @@
 				AA72E6D61BEA0136002A03D6 /* 2.jpg in Resources */,
 				AA1A012B1BE8664C00930B8C /* LaunchScreen.xib in Resources */,
 				AAE57B291BF1C7F300A604C3 /* gouZiNormal@2x.png in Resources */,
+				AA6F6E211BF47A7E00796727 /* addClient@2x.png in Resources */,
 				AA72E6D71BEA0136002A03D6 /* 3.jpg in Resources */,
+				AA6F6E231BF484D100796727 /* addHouses@3x.png in Resources */,
 				AAEF75861BEE247400EDECC8 /* myHouse@3x.png in Resources */,
 				AA1A014E1BE877F500930B8C /* Default-568h@2x.png in Resources */,
 				9BBB88301BF1A6E6009CB3DC /* AJCustomerDetailTableViewController.xib in Resources */,
@@ -934,6 +965,7 @@
 				9B9AC1381BF2530C00363822 /* AJEditCustomAddPhoneNumView.xib in Resources */,
 				9B4EE86B1BF1C672005C7039 /* phone@3x.png in Resources */,
 				9BBB88351BF1A6E6009CB3DC /* CustomerManagerReadMe in Resources */,
+				AA6F6E1D1BF470A200796727 /* clientList@2x.png in Resources */,
 				AA840CFB1BE8520B00AEADF1 /* Images.xcassets in Resources */,
 				AA1A01761BE88AC600930B8C /* my_highlight@2x.png in Resources */,
 				AAE57B2A1BF1C7F300A604C3 /* gouZiNormal@3x.png in Resources */,
@@ -943,12 +975,14 @@
 				AAEF75831BEE247400EDECC8 /* managerClient@2x.png in Resources */,
 				AA1A01851BE88B9D00930B8C /* sale_normal@3x.png in Resources */,
 				AA1A014F1BE877F500930B8C /* Default.png in Resources */,
+				AA6F6E1F1BF47A7100796727 /* addClient@3x.png in Resources */,
 				9BBB88401BF1A706009CB3DC /* VendorsReadMe in Resources */,
 				AA1A01511BE877F500930B8C /* Default@3x.png in Resources */,
 				AA94C4AC1BF06FD2006B5F9D /* myYong@3x.png in Resources */,
 				9B9AC1301BF22E9700363822 /* jianTou@2x.png in Resources */,
 				AAEF75881BEE247400EDECC8 /* myMoeny@3x.png in Resources */,
 				AA72E6CD1BE9A313002A03D6 /* 0.jpg in Resources */,
+				AA6F6E1B1BF4709100796727 /* clientList@3x.png in Resources */,
 				AAE57B331BF1E33400A604C3 /* telphone@3x.png in Resources */,
 				AA94C4A91BF06FD2006B5F9D /* myUpDate@2x.png in Resources */,
 				9BBB88321BF1A6E6009CB3DC /* AJCustomerInfoTableViewCell.xib in Resources */,
@@ -992,6 +1026,7 @@
 				AA1A015E1BE87DCB00930B8C /* Common.m in Sources */,
 				AAFF91E01BF30985005DC216 /* HouseDetailCellFour.m in Sources */,
 				AA1A018C1BE8AE6700930B8C /* WellChosenViewController.m in Sources */,
+				AA6F6E191BF43FCF00796727 /* RecommentViewController.m in Sources */,
 				9BBB51121BF1D5B900D74C5D /* AJEditCustomerLevelTableViewCell.m in Sources */,
 				9BBB510D1BF1D5A800D74C5D /* AJEditCustomerPhoneTableViewCell.m in Sources */,
 				9B7A27B01BF1ED7A0083DA85 /* AJCustomerLevealView.m in Sources */,
@@ -1012,6 +1047,7 @@
 				9B9AC1331BF23B6400363822 /* YSKeyboardTableView.m in Sources */,
 				AAE57B2F1BF1DD6E00A604C3 /* HouseDetailCellTwo.m in Sources */,
 				AAFF91EA1BF33044005DC216 /* NJDBezierCurve.m in Sources */,
+				AA6F6E281BF48A2B00796727 /* XHMessageTextView.m in Sources */,
 				9BBD70771BF2F918002374EA /* AJRecommendHistoryDetailViewController.m in Sources */,
 				AABFB4821BEC741E006D9870 /* CusstomPageView.m in Sources */,
 				AAFF91E91BF33044005DC216 /* CATextLayer+NumberJump.m in Sources */,

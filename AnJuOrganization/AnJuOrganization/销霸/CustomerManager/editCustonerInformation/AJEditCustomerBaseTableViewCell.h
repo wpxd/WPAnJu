@@ -29,7 +29,6 @@ typedef void (^AJCustomerEidtCellCallBackBlock) (AJEditCustomerBaseTableViewCell
     AJCustomerEditCellsType _cellType;
     AJCustomerEidtCellCallBackBlock _callBackBlock;
 }
-
 @property (assign ,nonatomic)AJCustomerEditCellsType cellType;
 @property (strong ,nonatomic)AJCustomerEidtCellCallBackBlock callBackBlock;
 + (instancetype )viewFromNib:(AJCustomerEditCellsType )type;

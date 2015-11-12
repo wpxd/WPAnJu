@@ -14,6 +14,7 @@
 #import "AJCustomerListTableViewController.h"
 #import "AJRecommendHistoryListViewController.h"
 #import "MyMoneyViewController.h"
+#import "RecommentViewController.h"
 @interface SaleChampionViewController ()
 
 @end
@@ -160,6 +161,7 @@
         pageView.backgroundColor = [UIColor whiteColor];
         pageView.tag = index+1000;
         [pageView.contentBtn addTarget:self action:@selector(contentBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+        [pageView.recommendBtn addTarget:self action:@selector(recommendBtnClick) forControlEvents:UIControlEventTouchUpInside];
         return pageView;
     }
     
@@ -168,6 +170,12 @@
 - (void)contentBtnClick:(id)sender
 {
     
+}
+- (void)recommendBtnClick
+{
+    RecommentViewController *recommentVC = [[RecommentViewController alloc] init];
+    recommentVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:recommentVC animated:YES];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
