@@ -22,7 +22,6 @@
         placeHolder = [placeHolder substringToIndex:maxChars - 8];
         placeHolder = [[placeHolder stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] stringByAppendingFormat:@"..."];
     }
-    
     _placeHolder = placeHolder;
     [self setNeedsDisplay];
 }
@@ -98,7 +97,7 @@
     
     _placeHolderTextColor = [UIColor lightGrayColor];
     
-    self.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+//    self.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     self.scrollIndicatorInsets = UIEdgeInsetsMake(10.0f, 0.0f, 10.0f, 8.0f);
     self.contentInset = UIEdgeInsetsZero;
     self.scrollEnabled = YES;
@@ -143,7 +142,8 @@
         
         [self.placeHolderTextColor set];
         
-        if (NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_6_0) {
+        if (NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_6_0)
+        {
             NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
             paragraphStyle.lineBreakMode = NSLineBreakByTruncatingTail;
             paragraphStyle.alignment = self.textAlignment;
@@ -153,11 +153,12 @@
                                             NSForegroundColorAttributeName : self.placeHolderTextColor,
                                             NSParagraphStyleAttributeName : paragraphStyle }];
         }
-        else {
-            [self.placeHolder drawInRect:placeHolderRect
-                                withFont:self.font
-                           lineBreakMode:NSLineBreakByTruncatingTail
-                               alignment:self.textAlignment];
+        else
+        {
+//            [self.placeHolder drawInRect:placeHolderRect
+//                                withFont:self.font
+//                           lineBreakMode:NSLineBreakByTruncatingTail
+//                               alignment:self.textAlignment];
         }
     }
 }

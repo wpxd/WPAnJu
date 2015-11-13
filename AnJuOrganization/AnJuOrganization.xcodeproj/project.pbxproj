@@ -76,6 +76,20 @@
 		AA1A018C1BE8AE6700930B8C /* WellChosenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1A018A1BE8AE6700930B8C /* WellChosenViewController.m */; };
 		AA1A01911BE8AF2200930B8C /* SaleChampionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1A018F1BE8AF2200930B8C /* SaleChampionViewController.m */; };
 		AA1A01961BE8AFEE00930B8C /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1A01941BE8AFEE00930B8C /* MyViewController.m */; };
+		AA3A324A1BF58483009587A8 /* FAImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3A323F1BF58483009587A8 /* FAImageView.m */; };
+		AA3A324B1BF58483009587A8 /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3A32411BF58483009587A8 /* NSString+FontAwesome.m */; };
+		AA3A324D1BF58483009587A8 /* UIFont+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3A32451BF58483009587A8 /* UIFont+FontAwesome.m */; };
+		AA3A324E1BF58483009587A8 /* UIButton+PPiAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3A32471BF58483009587A8 /* UIButton+PPiAwesome.m */; };
+		AA3A324F1BF58483009587A8 /* PPiFlatSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3A32491BF58483009587A8 /* PPiFlatSegmentedControl.m */; };
+		AA3A32521BF5A53A009587A8 /* RecommendHouseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3A32511BF5A53A009587A8 /* RecommendHouseViewController.m */; };
+		AA3A32551BF5B7D1009587A8 /* RecommdHouseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3A32541BF5B7D1009587A8 /* RecommdHouseCell.m */; };
+		AA3A325A1BF5BB97009587A8 /* quanLight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA3A32561BF5BB97009587A8 /* quanLight@3x.png */; };
+		AA3A325B1BF5BB97009587A8 /* quanNomar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA3A32571BF5BB97009587A8 /* quanNomar@3x.png */; };
+		AA3A325C1BF5BB97009587A8 /* quanLight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA3A32581BF5BB97009587A8 /* quanLight@2x.png */; };
+		AA3A325D1BF5BB97009587A8 /* quanNomarl@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA3A32591BF5BB97009587A8 /* quanNomarl@2x.png */; };
+		AA3A32601BF5D0C5009587A8 /* RecommendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3A325F1BF5D0C5009587A8 /* RecommendCell.m */; };
+		AA3A32631BF5DCA5009587A8 /* deletHous@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA3A32611BF5DCA5009587A8 /* deletHous@2x.png */; };
+		AA3A32641BF5DCA5009587A8 /* deletHous@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA3A32621BF5DCA5009587A8 /* deletHous@3x.png */; };
 		AA6F6E191BF43FCF00796727 /* RecommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6F6E181BF43FCF00796727 /* RecommentViewController.m */; };
 		AA6F6E1B1BF4709100796727 /* clientList@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA6F6E1A1BF4709100796727 /* clientList@3x.png */; };
 		AA6F6E1D1BF470A200796727 /* clientList@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA6F6E1C1BF470A200796727 /* clientList@2x.png */; };
@@ -254,6 +268,28 @@
 		AA1A018F1BE8AF2200930B8C /* SaleChampionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaleChampionViewController.m; sourceTree = "<group>"; };
 		AA1A01931BE8AFEE00930B8C /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
 		AA1A01941BE8AFEE00930B8C /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		AA3A323E1BF58483009587A8 /* FAImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAImageView.h; sourceTree = "<group>"; };
+		AA3A323F1BF58483009587A8 /* FAImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAImageView.m; sourceTree = "<group>"; };
+		AA3A32401BF58483009587A8 /* NSString+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FontAwesome.h"; sourceTree = "<group>"; };
+		AA3A32411BF58483009587A8 /* NSString+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FontAwesome.m"; sourceTree = "<group>"; };
+		AA3A32441BF58483009587A8 /* UIFont+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+FontAwesome.h"; sourceTree = "<group>"; };
+		AA3A32451BF58483009587A8 /* UIFont+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+FontAwesome.m"; sourceTree = "<group>"; };
+		AA3A32461BF58483009587A8 /* UIButton+PPiAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+PPiAwesome.h"; sourceTree = "<group>"; };
+		AA3A32471BF58483009587A8 /* UIButton+PPiAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+PPiAwesome.m"; sourceTree = "<group>"; };
+		AA3A32481BF58483009587A8 /* PPiFlatSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPiFlatSegmentedControl.h; sourceTree = "<group>"; };
+		AA3A32491BF58483009587A8 /* PPiFlatSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPiFlatSegmentedControl.m; sourceTree = "<group>"; };
+		AA3A32501BF5A53A009587A8 /* RecommendHouseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendHouseViewController.h; sourceTree = "<group>"; };
+		AA3A32511BF5A53A009587A8 /* RecommendHouseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendHouseViewController.m; sourceTree = "<group>"; };
+		AA3A32531BF5B7D1009587A8 /* RecommdHouseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommdHouseCell.h; sourceTree = "<group>"; };
+		AA3A32541BF5B7D1009587A8 /* RecommdHouseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommdHouseCell.m; sourceTree = "<group>"; };
+		AA3A32561BF5BB97009587A8 /* quanLight@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "quanLight@3x.png"; sourceTree = "<group>"; };
+		AA3A32571BF5BB97009587A8 /* quanNomar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "quanNomar@3x.png"; sourceTree = "<group>"; };
+		AA3A32581BF5BB97009587A8 /* quanLight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "quanLight@2x.png"; sourceTree = "<group>"; };
+		AA3A32591BF5BB97009587A8 /* quanNomarl@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "quanNomarl@2x.png"; sourceTree = "<group>"; };
+		AA3A325E1BF5D0C5009587A8 /* RecommendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendCell.h; sourceTree = "<group>"; };
+		AA3A325F1BF5D0C5009587A8 /* RecommendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendCell.m; sourceTree = "<group>"; };
+		AA3A32611BF5DCA5009587A8 /* deletHous@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "deletHous@2x.png"; sourceTree = "<group>"; };
+		AA3A32621BF5DCA5009587A8 /* deletHous@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "deletHous@3x.png"; sourceTree = "<group>"; };
 		AA6F6E171BF43FCF00796727 /* RecommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommentViewController.h; sourceTree = "<group>"; };
 		AA6F6E181BF43FCF00796727 /* RecommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommentViewController.m; sourceTree = "<group>"; };
 		AA6F6E1A1BF4709100796727 /* clientList@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clientList@3x.png"; sourceTree = "<group>"; };
@@ -365,6 +401,12 @@
 		9BA8C5C31BF0D20200A72FFF /* customerManager */ = {
 			isa = PBXGroup;
 			children = (
+				AA3A32611BF5DCA5009587A8 /* deletHous@2x.png */,
+				AA3A32621BF5DCA5009587A8 /* deletHous@3x.png */,
+				AA3A32561BF5BB97009587A8 /* quanLight@3x.png */,
+				AA3A32571BF5BB97009587A8 /* quanNomar@3x.png */,
+				AA3A32581BF5BB97009587A8 /* quanLight@2x.png */,
+				AA3A32591BF5BB97009587A8 /* quanNomarl@2x.png */,
 				AA6F6E241BF484DE00796727 /* addHouses@2x.png */,
 				AA6F6E221BF484D100796727 /* addHouses@3x.png */,
 				AA6F6E201BF47A7E00796727 /* addClient@2x.png */,
@@ -556,6 +598,7 @@
 		AA1A013E1BE877F500930B8C /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				AA3A323B1BF58483009587A8 /* Segment */,
 				9BBB88361BF1A706009CB3DC /* utils */,
 				9BBB88391BF1A706009CB3DC /* Vendors */,
 				AA1A015C1BE87DCB00930B8C /* Common.h */,
@@ -668,6 +711,8 @@
 				AA1A018F1BE8AF2200930B8C /* SaleChampionViewController.m */,
 				AA6F6E171BF43FCF00796727 /* RecommentViewController.h */,
 				AA6F6E181BF43FCF00796727 /* RecommentViewController.m */,
+				AA3A32501BF5A53A009587A8 /* RecommendHouseViewController.h */,
+				AA3A32511BF5A53A009587A8 /* RecommendHouseViewController.m */,
 			);
 			path = SaleChampionControllers;
 			sourceTree = "<group>";
@@ -683,6 +728,10 @@
 				AABFB4811BEC741E006D9870 /* CusstomPageView.m */,
 				AAEF758D1BEF430900EDECC8 /* OtherCusstomPageView.h */,
 				AAEF758E1BEF430900EDECC8 /* OtherCusstomPageView.m */,
+				AA3A32531BF5B7D1009587A8 /* RecommdHouseCell.h */,
+				AA3A32541BF5B7D1009587A8 /* RecommdHouseCell.m */,
+				AA3A325E1BF5D0C5009587A8 /* RecommendCell.h */,
+				AA3A325F1BF5D0C5009587A8 /* RecommendCell.m */,
 			);
 			path = SaleChampionViews;
 			sourceTree = "<group>";
@@ -706,6 +755,47 @@
 				AA94C4961BF05BF0006B5F9D /* WPExpandHeader.m */,
 			);
 			path = PersonalViews;
+			sourceTree = "<group>";
+		};
+		AA3A323B1BF58483009587A8 /* Segment */ = {
+			isa = PBXGroup;
+			children = (
+				AA3A323C1BF58483009587A8 /* PPiAwesomeButton */,
+				AA3A32481BF58483009587A8 /* PPiFlatSegmentedControl.h */,
+				AA3A32491BF58483009587A8 /* PPiFlatSegmentedControl.m */,
+			);
+			path = Segment;
+			sourceTree = "<group>";
+		};
+		AA3A323C1BF58483009587A8 /* PPiAwesomeButton */ = {
+			isa = PBXGroup;
+			children = (
+				AA3A323D1BF58483009587A8 /* FontAwesome */,
+				AA3A32461BF58483009587A8 /* UIButton+PPiAwesome.h */,
+				AA3A32471BF58483009587A8 /* UIButton+PPiAwesome.m */,
+			);
+			path = PPiAwesomeButton;
+			sourceTree = "<group>";
+		};
+		AA3A323D1BF58483009587A8 /* FontAwesome */ = {
+			isa = PBXGroup;
+			children = (
+				AA3A323E1BF58483009587A8 /* FAImageView.h */,
+				AA3A323F1BF58483009587A8 /* FAImageView.m */,
+				AA3A32401BF58483009587A8 /* NSString+FontAwesome.h */,
+				AA3A32411BF58483009587A8 /* NSString+FontAwesome.m */,
+				AA3A32431BF58483009587A8 /* Resources */,
+				AA3A32441BF58483009587A8 /* UIFont+FontAwesome.h */,
+				AA3A32451BF58483009587A8 /* UIFont+FontAwesome.m */,
+			);
+			path = FontAwesome;
+			sourceTree = "<group>";
+		};
+		AA3A32431BF58483009587A8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		AA840CE11BE8520B00AEADF1 = {
@@ -929,17 +1019,21 @@
 				9BBB51181BF1D5DF00D74C5D /* AJEditCustomerRemarksTableViewCell.xib in Resources */,
 				AA94C4AE1BF08F69006B5F9D /* mySeting@2x.png in Resources */,
 				9BBB88291BF1A6E6009CB3DC /* AJCustomerDeatailProgressTableViewCell.xib in Resources */,
+				AA3A325B1BF5BB97009587A8 /* quanNomar@3x.png in Resources */,
 				AAE57B281BF1C7F300A604C3 /* gouZiLight@3x.png in Resources */,
 				AA72E6CC1BE9A313002A03D6 /* 1.jpeg in Resources */,
 				AAE57B311BF1E31C00A604C3 /* telphone@2x.png in Resources */,
+				AA3A325A1BF5BB97009587A8 /* quanLight@3x.png in Resources */,
 				AA1A01771BE88AC600930B8C /* my_normal@2x.png in Resources */,
 				AA94C4B01BF08F80006B5F9D /* mySeting@3x.png in Resources */,
+				AA3A32641BF5DCA5009587A8 /* deletHous@3x.png in Resources */,
 				9BBB882B1BF1A6E6009CB3DC /* AJCustomerDetailAvatarTableViewCell.xib in Resources */,
 				9BBB882E1BF1A6E6009CB3DC /* AJCustomerDetailTableViewCell.xib in Resources */,
 				AA1A017B1BE88AC600930B8C /* wellChosen_normal@2x.png in Resources */,
 				AA1A01831BE88B9D00930B8C /* my_normal@3x.png in Resources */,
 				AAEF75821BEE247400EDECC8 /* allHouses@3x.png in Resources */,
 				9BBB51091BF1D57B00D74C5D /* AJEditCustomerAvatarTableViewCell.xib in Resources */,
+				AA3A32631BF5DCA5009587A8 /* deletHous@2x.png in Resources */,
 				9BBB51091BF1D57B00D74C5D /* AJEditCustomerAvatarTableViewCell.xib in Resources */,
 				9BBB51091BF1D57B00D74C5D /* AJEditCustomerAvatarTableViewCell.xib in Resources */,
 				AA1A01861BE88B9D00930B8C /* saleChosen_highlight@3x.png in Resources */,
@@ -965,6 +1059,7 @@
 				9B9AC1381BF2530C00363822 /* AJEditCustomAddPhoneNumView.xib in Resources */,
 				9B4EE86B1BF1C672005C7039 /* phone@3x.png in Resources */,
 				9BBB88351BF1A6E6009CB3DC /* CustomerManagerReadMe in Resources */,
+				AA3A325D1BF5BB97009587A8 /* quanNomarl@2x.png in Resources */,
 				AA6F6E1D1BF470A200796727 /* clientList@2x.png in Resources */,
 				AA840CFB1BE8520B00AEADF1 /* Images.xcassets in Resources */,
 				AA1A01761BE88AC600930B8C /* my_highlight@2x.png in Resources */,
@@ -979,6 +1074,7 @@
 				9BBB88401BF1A706009CB3DC /* VendorsReadMe in Resources */,
 				AA1A01511BE877F500930B8C /* Default@3x.png in Resources */,
 				AA94C4AC1BF06FD2006B5F9D /* myYong@3x.png in Resources */,
+				AA3A325C1BF5BB97009587A8 /* quanLight@2x.png in Resources */,
 				9B9AC1301BF22E9700363822 /* jianTou@2x.png in Resources */,
 				AAEF75881BEE247400EDECC8 /* myMoeny@3x.png in Resources */,
 				AA72E6CD1BE9A313002A03D6 /* 0.jpg in Resources */,
@@ -1030,12 +1126,16 @@
 				9BBB51121BF1D5B900D74C5D /* AJEditCustomerLevelTableViewCell.m in Sources */,
 				9BBB510D1BF1D5A800D74C5D /* AJEditCustomerPhoneTableViewCell.m in Sources */,
 				9B7A27B01BF1ED7A0083DA85 /* AJCustomerLevealView.m in Sources */,
+				AA3A32551BF5B7D1009587A8 /* RecommdHouseCell.m in Sources */,
+				AA3A32521BF5A53A009587A8 /* RecommendHouseViewController.m in Sources */,
 				9BBB882C1BF1A6E6009CB3DC /* AJCustomerDetailBaseTableViewCell.m in Sources */,
 				9BBB883E1BF1A706009CB3DC /* UIColor+GJCategory.m in Sources */,
 				AA1A01911BE8AF2200930B8C /* SaleChampionViewController.m in Sources */,
+				AA3A324F1BF58483009587A8 /* PPiFlatSegmentedControl.m in Sources */,
 				AA1A01961BE8AFEE00930B8C /* MyViewController.m in Sources */,
 				9B9AC1291BF22DCF00363822 /* WPPageControl.m in Sources */,
 				9BBB882F1BF1A6E6009CB3DC /* AJCustomerDetailTableViewController.m in Sources */,
+				AA3A324B1BF58483009587A8 /* NSString+FontAwesome.m in Sources */,
 				AAE57B211BF1B8A900A604C3 /* HouseDetailCellOne.m in Sources */,
 				AA840CF31BE8520B00AEADF1 /* AppDelegate.m in Sources */,
 				9BBB882A1BF1A6E6009CB3DC /* AJCustomerDetailAvatarTableViewCell.m in Sources */,
@@ -1044,6 +1144,7 @@
 				AAEF758F1BEF430900EDECC8 /* OtherCusstomPageView.m in Sources */,
 				9BBD70651BF2E8EC002374EA /* AJRecommendHistoryListViewController.m in Sources */,
 				AA72E6D01BE9CDAC002A03D6 /* AllHousesViewController.m in Sources */,
+				AA3A32601BF5D0C5009587A8 /* RecommendCell.m in Sources */,
 				9B9AC1331BF23B6400363822 /* YSKeyboardTableView.m in Sources */,
 				AAE57B2F1BF1DD6E00A604C3 /* HouseDetailCellTwo.m in Sources */,
 				AAFF91EA1BF33044005DC216 /* NJDBezierCurve.m in Sources */,
@@ -1054,13 +1155,16 @@
 				9B615D221BF371FE0065E2F8 /* AJRecommendHistoryFlagView.m in Sources */,
 				AA72E6C91BE99DC3002A03D6 /* WellChosenTableCell.m in Sources */,
 				AAE57B361BF1EADE00A604C3 /* HouseDetailCellThree.m in Sources */,
+				AA3A324D1BF58483009587A8 /* UIFont+FontAwesome.m in Sources */,
 				9BBB88281BF1A6E6009CB3DC /* AJCustomerDeatailProgressTableViewCell.m in Sources */,
+				AA3A324A1BF58483009587A8 /* FAImageView.m in Sources */,
 				AA1A014B1BE877F500930B8C /* CYLPlusButton.m in Sources */,
 				9B9AC1361BF252E600363822 /* AJEditCustomAddPhoneNumView.m in Sources */,
 				9BBB90C11BF3048300F05162 /* AJRecommendHistoryTableViewCell.m in Sources */,
 				AA94C4971BF05BF0006B5F9D /* WPExpandHeader.m in Sources */,
 				9B9AC12C1BF22E2100363822 /* AJEditCustomerInfoViewController.m in Sources */,
 				9BBB88311BF1A6E6009CB3DC /* AJCustomerInfoTableViewCell.m in Sources */,
+				AA3A324E1BF58483009587A8 /* UIButton+PPiAwesome.m in Sources */,
 				9BBB88331BF1A6E6009CB3DC /* AJCustomerListTableViewController.m in Sources */,
 				9BBB882D1BF1A6E6009CB3DC /* AJCustomerDetailTableViewCell.m in Sources */,
 				AA1A014C1BE877F500930B8C /* CYLTabBar.m in Sources */,
