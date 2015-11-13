@@ -7,6 +7,7 @@
 //
 
 #import "OtherCusstomPageView.h"
+
 @implementation OtherCusstomPageView
 - (instancetype)init
 {
@@ -86,6 +87,7 @@
     [btnView addSubview:_daiKanBtn];
     
 }
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

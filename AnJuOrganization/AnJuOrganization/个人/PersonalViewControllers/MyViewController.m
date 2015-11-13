@@ -9,6 +9,8 @@
 #import "MyViewController.h"
 #import "UINavigationController+FDFullscreenPopGesture.h"
 #import "MyMoneyViewController.h"
+#import "AJPersonalSettingTableViewController.h"
+
 @interface MyViewController ()
 
 @end
@@ -78,7 +80,9 @@
 }
 - (void)settingBtnClick
 {
-    
+    AJPersonalSettingTableViewController *vc = [[AJPersonalSettingTableViewController alloc]init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {

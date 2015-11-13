@@ -15,6 +15,8 @@
 #import "AJRecommendHistoryListViewController.h"
 #import "MyMoneyViewController.h"
 #import "RecommentViewController.h"
+#import "FastGetCashTableViewController.h"
+
 @interface SaleChampionViewController ()
 
 @end
@@ -153,6 +155,7 @@
         pageView.tag = index+1000;
         [pageView.contentBtn addTarget:self action:@selector(contentBtnClick:) forControlEvents:UIControlEventTouchUpInside];
         pageView.daiKanBtn.alpha = 0;
+        [pageView.daiKanBtn addTarget:self action:@selector(fastGetCash) forControlEvents:UIControlEventTouchUpInside];
         return pageView;
     }
     else
@@ -169,6 +172,15 @@
 }
 - (void)contentBtnClick:(id)sender
 {
+    
+}
+
+
+- (void)fastGetCash
+{
+    FastGetCashTableViewController *vc = [[FastGetCashTableViewController alloc]init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
     
 }
 - (void)recommendBtnClick

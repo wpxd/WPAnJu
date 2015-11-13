@@ -154,6 +154,8 @@
 		AAFF91E91BF33044005DC216 /* CATextLayer+NumberJump.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFF91E61BF33044005DC216 /* CATextLayer+NumberJump.m */; };
 		AAFF91EA1BF33044005DC216 /* NJDBezierCurve.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFF91E81BF33044005DC216 /* NJDBezierCurve.m */; };
 		AAFF91ED1BF33A54005DC216 /* MyMoneyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFF91EC1BF33A54005DC216 /* MyMoneyCell.m */; };
+		B498C0591BF631B000A52633 /* FastGetCashTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B498C0581BF631B000A52633 /* FastGetCashTableViewController.m */; };
+		B498C05D1BF63C3600A52633 /* AJPersonalSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B498C05C1BF63C3600A52633 /* AJPersonalSettingTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -378,6 +380,10 @@
 		AAFF91E81BF33044005DC216 /* NJDBezierCurve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJDBezierCurve.m; sourceTree = "<group>"; };
 		AAFF91EB1BF33A54005DC216 /* MyMoneyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMoneyCell.h; sourceTree = "<group>"; };
 		AAFF91EC1BF33A54005DC216 /* MyMoneyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMoneyCell.m; sourceTree = "<group>"; };
+		B498C0571BF631B000A52633 /* FastGetCashTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastGetCashTableViewController.h; sourceTree = "<group>"; };
+		B498C0581BF631B000A52633 /* FastGetCashTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastGetCashTableViewController.m; sourceTree = "<group>"; };
+		B498C05B1BF63C3600A52633 /* AJPersonalSettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJPersonalSettingTableViewController.h; sourceTree = "<group>"; };
+		B498C05C1BF63C3600A52633 /* AJPersonalSettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJPersonalSettingTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -569,6 +575,7 @@
 		AA1A013B1BE877BE00930B8C /* 个人 */ = {
 			isa = PBXGroup;
 			children = (
+				B498C05A1BF63BF200A52633 /* PersonalSetting */,
 				AA1A01921BE8AFEE00930B8C /* PersonalViewControllers */,
 				AA1A01951BE8AFEE00930B8C /* PersonalViews */,
 			);
@@ -587,6 +594,7 @@
 		AA1A013D1BE877F500930B8C /* 销霸 */ = {
 			isa = PBXGroup;
 			children = (
+				B498C0561BF6311300A52633 /* FastGetCash */,
 				9BBD70611BF2E8BC002374EA /* RecommendHistory */,
 				9BBB88101BF1A6E6009CB3DC /* CustomerManager */,
 				AA1A018D1BE8AF2200930B8C /* SaleChampionControllers */,
@@ -927,6 +935,24 @@
 			path = MyMoney;
 			sourceTree = "<group>";
 		};
+		B498C0561BF6311300A52633 /* FastGetCash */ = {
+			isa = PBXGroup;
+			children = (
+				B498C0571BF631B000A52633 /* FastGetCashTableViewController.h */,
+				B498C0581BF631B000A52633 /* FastGetCashTableViewController.m */,
+			);
+			path = FastGetCash;
+			sourceTree = "<group>";
+		};
+		B498C05A1BF63BF200A52633 /* PersonalSetting */ = {
+			isa = PBXGroup;
+			children = (
+				B498C05B1BF63C3600A52633 /* AJPersonalSettingTableViewController.h */,
+				B498C05C1BF63C3600A52633 /* AJPersonalSettingTableViewController.m */,
+			);
+			path = PersonalSetting;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1161,6 +1187,7 @@
 				AA1A014B1BE877F500930B8C /* CYLPlusButton.m in Sources */,
 				9B9AC1361BF252E600363822 /* AJEditCustomAddPhoneNumView.m in Sources */,
 				9BBB90C11BF3048300F05162 /* AJRecommendHistoryTableViewCell.m in Sources */,
+				B498C05D1BF63C3600A52633 /* AJPersonalSettingTableViewController.m in Sources */,
 				AA94C4971BF05BF0006B5F9D /* WPExpandHeader.m in Sources */,
 				9B9AC12C1BF22E2100363822 /* AJEditCustomerInfoViewController.m in Sources */,
 				9BBB88311BF1A6E6009CB3DC /* AJCustomerInfoTableViewCell.m in Sources */,
@@ -1172,6 +1199,7 @@
 				AAFF91ED1BF33A54005DC216 /* MyMoneyCell.m in Sources */,
 				9BBB51021BF1D53400D74C5D /* AJEditCustomerBaseTableViewCell.m in Sources */,
 				AA840CF01BE8520B00AEADF1 /* main.m in Sources */,
+				B498C0591BF631B000A52633 /* FastGetCashTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
