@@ -80,7 +80,8 @@
 }
 - (void)settingBtnClick
 {
-    AJPersonalSettingTableViewController *vc = [[AJPersonalSettingTableViewController alloc]init];
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
+    AJPersonalSettingTableViewController *vc = [sb instantiateViewControllerWithIdentifier:@"AJPersonalSettingTableViewController"];
     vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
 }
