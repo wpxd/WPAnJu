@@ -154,6 +154,10 @@
 		AAFF91E91BF33044005DC216 /* CATextLayer+NumberJump.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFF91E61BF33044005DC216 /* CATextLayer+NumberJump.m */; };
 		AAFF91EA1BF33044005DC216 /* NJDBezierCurve.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFF91E81BF33044005DC216 /* NJDBezierCurve.m */; };
 		AAFF91ED1BF33A54005DC216 /* MyMoneyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFF91EC1BF33A54005DC216 /* MyMoneyCell.m */; };
+		B46BA4701BF6E3310026A899 /* AJChangePasswordTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B46BA46F1BF6E3310026A899 /* AJChangePasswordTableViewController.m */; };
+		B46BA4731BF6EB8D0026A899 /* AJForgetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B46BA4721BF6EB8D0026A899 /* AJForgetPasswordViewController.m */; };
+		B46BA4781BF6FA450026A899 /* AJAboutUSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B46BA4771BF6FA450026A899 /* AJAboutUSTableViewController.m */; };
+		B46BA47A1BF6FDB50026A899 /* icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B46BA4791BF6FDB50026A899 /* icon.jpg */; };
 		B498C0591BF631B000A52633 /* FastGetCashTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B498C0581BF631B000A52633 /* FastGetCashTableViewController.m */; };
 		B498C05D1BF63C3600A52633 /* AJPersonalSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B498C05C1BF63C3600A52633 /* AJPersonalSettingTableViewController.m */; };
 		B498C05F1BF63DC600A52633 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B498C05E1BF63DC600A52633 /* Storyboard.storyboard */; };
@@ -381,6 +385,13 @@
 		AAFF91E81BF33044005DC216 /* NJDBezierCurve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJDBezierCurve.m; sourceTree = "<group>"; };
 		AAFF91EB1BF33A54005DC216 /* MyMoneyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMoneyCell.h; sourceTree = "<group>"; };
 		AAFF91EC1BF33A54005DC216 /* MyMoneyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMoneyCell.m; sourceTree = "<group>"; };
+		B46BA46E1BF6E3310026A899 /* AJChangePasswordTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJChangePasswordTableViewController.h; sourceTree = "<group>"; };
+		B46BA46F1BF6E3310026A899 /* AJChangePasswordTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJChangePasswordTableViewController.m; sourceTree = "<group>"; };
+		B46BA4711BF6EB8D0026A899 /* AJForgetPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJForgetPasswordViewController.h; sourceTree = "<group>"; };
+		B46BA4721BF6EB8D0026A899 /* AJForgetPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJForgetPasswordViewController.m; sourceTree = "<group>"; };
+		B46BA4761BF6FA450026A899 /* AJAboutUSTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJAboutUSTableViewController.h; sourceTree = "<group>"; };
+		B46BA4771BF6FA450026A899 /* AJAboutUSTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJAboutUSTableViewController.m; sourceTree = "<group>"; };
+		B46BA4791BF6FDB50026A899 /* icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon.jpg; sourceTree = "<group>"; };
 		B498C0571BF631B000A52633 /* FastGetCashTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastGetCashTableViewController.h; sourceTree = "<group>"; };
 		B498C0581BF631B000A52633 /* FastGetCashTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastGetCashTableViewController.m; sourceTree = "<group>"; };
 		B498C05B1BF63C3600A52633 /* AJPersonalSettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJPersonalSettingTableViewController.h; sourceTree = "<group>"; };
@@ -577,6 +588,8 @@
 		AA1A013B1BE877BE00930B8C /* 个人 */ = {
 			isa = PBXGroup;
 			children = (
+				B46BA4751BF6FA230026A899 /* AboutUs */,
+				B46BA46D1BF6E3140026A899 /* Password */,
 				B498C05A1BF63BF200A52633 /* PersonalSetting */,
 				AA1A01921BE8AFEE00930B8C /* PersonalViewControllers */,
 				AA1A01951BE8AFEE00930B8C /* PersonalViews */,
@@ -644,6 +657,7 @@
 				AA1A01481BE877F500930B8C /* Default.png */,
 				AA1A01491BE877F500930B8C /* Default@2x.png */,
 				AA1A014A1BE877F500930B8C /* Default@3x.png */,
+				B46BA4791BF6FDB50026A899 /* icon.jpg */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -938,6 +952,26 @@
 			path = MyMoney;
 			sourceTree = "<group>";
 		};
+		B46BA46D1BF6E3140026A899 /* Password */ = {
+			isa = PBXGroup;
+			children = (
+				B46BA46E1BF6E3310026A899 /* AJChangePasswordTableViewController.h */,
+				B46BA46F1BF6E3310026A899 /* AJChangePasswordTableViewController.m */,
+				B46BA4711BF6EB8D0026A899 /* AJForgetPasswordViewController.h */,
+				B46BA4721BF6EB8D0026A899 /* AJForgetPasswordViewController.m */,
+			);
+			path = Password;
+			sourceTree = "<group>";
+		};
+		B46BA4751BF6FA230026A899 /* AboutUs */ = {
+			isa = PBXGroup;
+			children = (
+				B46BA4761BF6FA450026A899 /* AJAboutUSTableViewController.h */,
+				B46BA4771BF6FA450026A899 /* AJAboutUSTableViewController.m */,
+			);
+			path = AboutUs;
+			sourceTree = "<group>";
+		};
 		B498C0561BF6311300A52633 /* FastGetCash */ = {
 			isa = PBXGroup;
 			children = (
@@ -1112,6 +1146,7 @@
 				AA94C4A91BF06FD2006B5F9D /* myUpDate@2x.png in Resources */,
 				9BBB88321BF1A6E6009CB3DC /* AJCustomerInfoTableViewCell.xib in Resources */,
 				AA94C4A71BF06FD2006B5F9D /* myMiMa@2x.png in Resources */,
+				B46BA47A1BF6FDB50026A899 /* icon.jpg in Resources */,
 				B498C05F1BF63DC600A52633 /* Storyboard.storyboard in Resources */,
 				9BBB90C21BF3048300F05162 /* AJRecommendHistoryTableViewCell.xib in Resources */,
 				AA94C4AB1BF06FD2006B5F9D /* myYong@2x.png in Resources */,
@@ -1163,6 +1198,7 @@
 				AA1A01911BE8AF2200930B8C /* SaleChampionViewController.m in Sources */,
 				AA3A324F1BF58483009587A8 /* PPiFlatSegmentedControl.m in Sources */,
 				AA1A01961BE8AFEE00930B8C /* MyViewController.m in Sources */,
+				B46BA4701BF6E3310026A899 /* AJChangePasswordTableViewController.m in Sources */,
 				9B9AC1291BF22DCF00363822 /* WPPageControl.m in Sources */,
 				9BBB882F1BF1A6E6009CB3DC /* AJCustomerDetailTableViewController.m in Sources */,
 				AA3A324B1BF58483009587A8 /* NSString+FontAwesome.m in Sources */,
@@ -1198,11 +1234,13 @@
 				AA3A324E1BF58483009587A8 /* UIButton+PPiAwesome.m in Sources */,
 				9BBB88331BF1A6E6009CB3DC /* AJCustomerListTableViewController.m in Sources */,
 				9BBB882D1BF1A6E6009CB3DC /* AJCustomerDetailTableViewCell.m in Sources */,
+				B46BA4781BF6FA450026A899 /* AJAboutUSTableViewController.m in Sources */,
 				AA1A014C1BE877F500930B8C /* CYLTabBar.m in Sources */,
 				9BBB51171BF1D5DF00D74C5D /* AJEditCustomerRemarksTableViewCell.m in Sources */,
 				AAFF91ED1BF33A54005DC216 /* MyMoneyCell.m in Sources */,
 				9BBB51021BF1D53400D74C5D /* AJEditCustomerBaseTableViewCell.m in Sources */,
 				AA840CF01BE8520B00AEADF1 /* main.m in Sources */,
+				B46BA4731BF6EB8D0026A899 /* AJForgetPasswordViewController.m in Sources */,
 				B498C0591BF631B000A52633 /* FastGetCashTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

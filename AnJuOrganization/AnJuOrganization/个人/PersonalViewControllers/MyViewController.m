@@ -10,6 +10,8 @@
 #import "UINavigationController+FDFullscreenPopGesture.h"
 #import "MyMoneyViewController.h"
 #import "AJPersonalSettingTableViewController.h"
+#import "AJChangePasswordTableViewController.h"
+#import "AJAboutUSTableViewController.h"
 
 @interface MyViewController ()
 
@@ -173,6 +175,20 @@
         MyMoneyViewController *myMoneyVC = [[MyMoneyViewController alloc] init];
         myMoneyVC.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:myMoneyVC animated:YES];
+    }else if (indexPath.section == 1){
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
+        AJChangePasswordTableViewController *vc = [sb instantiateViewControllerWithIdentifier:@"AJForgetPasswordViewController"];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if (indexPath.section == 2){
+        
+        if(indexPath.row == 2){
+        
+            UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
+            AJAboutUSTableViewController *vc = [sb instantiateViewControllerWithIdentifier:@"AJAboutUSTableViewController"];
+            vc.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:vc animated:YES];        }
+        
     }
 }
 - (void)didReceiveMemoryWarning {
