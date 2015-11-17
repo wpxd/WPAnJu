@@ -158,6 +158,7 @@
 		B46BA4731BF6EB8D0026A899 /* AJForgetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B46BA4721BF6EB8D0026A899 /* AJForgetPasswordViewController.m */; };
 		B46BA4781BF6FA450026A899 /* AJAboutUSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B46BA4771BF6FA450026A899 /* AJAboutUSTableViewController.m */; };
 		B46BA47A1BF6FDB50026A899 /* icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B46BA4791BF6FDB50026A899 /* icon.jpg */; };
+		B46BA4A11BFB66310026A899 /* AJLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B46BA4A01BFB66310026A899 /* AJLoginViewController.m */; };
 		B498C0591BF631B000A52633 /* FastGetCashTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B498C0581BF631B000A52633 /* FastGetCashTableViewController.m */; };
 		B498C05D1BF63C3600A52633 /* AJPersonalSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B498C05C1BF63C3600A52633 /* AJPersonalSettingTableViewController.m */; };
 		B498C05F1BF63DC600A52633 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B498C05E1BF63DC600A52633 /* Storyboard.storyboard */; };
@@ -392,6 +393,8 @@
 		B46BA4761BF6FA450026A899 /* AJAboutUSTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJAboutUSTableViewController.h; sourceTree = "<group>"; };
 		B46BA4771BF6FA450026A899 /* AJAboutUSTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJAboutUSTableViewController.m; sourceTree = "<group>"; };
 		B46BA4791BF6FDB50026A899 /* icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon.jpg; sourceTree = "<group>"; };
+		B46BA49F1BFB66310026A899 /* AJLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJLoginViewController.h; sourceTree = "<group>"; };
+		B46BA4A01BFB66310026A899 /* AJLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJLoginViewController.m; sourceTree = "<group>"; };
 		B498C0571BF631B000A52633 /* FastGetCashTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastGetCashTableViewController.h; sourceTree = "<group>"; };
 		B498C0581BF631B000A52633 /* FastGetCashTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastGetCashTableViewController.m; sourceTree = "<group>"; };
 		B498C05B1BF63C3600A52633 /* AJPersonalSettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJPersonalSettingTableViewController.h; sourceTree = "<group>"; };
@@ -588,6 +591,7 @@
 		AA1A013B1BE877BE00930B8C /* 个人 */ = {
 			isa = PBXGroup;
 			children = (
+				B46BA49E1BFB66040026A899 /* Login */,
 				B46BA4751BF6FA230026A899 /* AboutUs */,
 				B46BA46D1BF6E3140026A899 /* Password */,
 				B498C05A1BF63BF200A52633 /* PersonalSetting */,
@@ -972,6 +976,15 @@
 			path = AboutUs;
 			sourceTree = "<group>";
 		};
+		B46BA49E1BFB66040026A899 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B46BA49F1BFB66310026A899 /* AJLoginViewController.h */,
+				B46BA4A01BFB66310026A899 /* AJLoginViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		B498C0561BF6311300A52633 /* FastGetCash */ = {
 			isa = PBXGroup;
 			children = (
@@ -1208,6 +1221,7 @@
 				AA9075881BF0BE9000E8687A /* HouseDetailViewController.m in Sources */,
 				AA1A014D1BE877F500930B8C /* CYLTabBarController.m in Sources */,
 				AAEF758F1BEF430900EDECC8 /* OtherCusstomPageView.m in Sources */,
+				B46BA4A11BFB66310026A899 /* AJLoginViewController.m in Sources */,
 				9BBD70651BF2E8EC002374EA /* AJRecommendHistoryListViewController.m in Sources */,
 				AA72E6D01BE9CDAC002A03D6 /* AllHousesViewController.m in Sources */,
 				AA3A32601BF5D0C5009587A8 /* RecommendCell.m in Sources */,

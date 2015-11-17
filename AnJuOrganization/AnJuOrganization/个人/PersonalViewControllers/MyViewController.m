@@ -176,21 +176,30 @@
         myMoneyVC.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:myMoneyVC animated:YES];
     }else if (indexPath.section == 1){
-        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
-        AJChangePasswordTableViewController *vc = [sb instantiateViewControllerWithIdentifier:@"AJForgetPasswordViewController"];
-        vc.hidesBottomBarWhenPushed = YES;
-        [self.navigationController pushViewController:vc animated:YES];
+        
+        [self push2VCWithSBIdentifier:@"AJForgetPasswordViewController"];
+        
     }else if (indexPath.section == 2){
         
         if(indexPath.row == 2){
         
-            UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
-            AJAboutUSTableViewController *vc = [sb instantiateViewControllerWithIdentifier:@"AJAboutUSTableViewController"];
-            vc.hidesBottomBarWhenPushed = YES;
-            [self.navigationController pushViewController:vc animated:YES];        }
+            [self push2VCWithSBIdentifier:@"AJAboutUSTableViewController"];
+        }
+        if (indexPath.row == 1){
+            [self push2VCWithSBIdentifier:@"AJLoginViewController"];
+        }
         
     }
 }
+
+- (void)push2VCWithSBIdentifier:(NSString *)identifier
+{
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
+    UIViewController *vc = [sb instantiateViewControllerWithIdentifier:identifier];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
