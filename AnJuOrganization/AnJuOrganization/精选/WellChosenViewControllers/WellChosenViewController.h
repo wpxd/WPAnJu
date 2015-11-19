@@ -13,4 +13,5 @@
     UITableView *myTableView;
 }
 @property(nonatomic,strong)UITableView *myTableView;
+@property(nonatomic,strong)NSMutableArray *houseObjArray;
 @end

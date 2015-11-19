@@ -51,15 +51,15 @@
         louPanState.font = [UIFont systemFontOfSize:14];
         louPanState.text = @"现房";
         [stateView addSubview:louPanState];
-        yongJinView = [[UIView alloc] initWithFrame:CGRectMake(kMainScreenWidth-120, 120, 110, 30)];
+        yongJinView = [[UIView alloc] initWithFrame:CGRectMake(kMainScreenWidth-100, 120, 90, 30)];
         yongJinView.backgroundColor = UIColorFromHex(0x000000);
         yongJinView.alpha = 0.7;
         [self.contentView addSubview:yongJinView];
-        yongJinLab = [[UILabel alloc] initWithFrame:CGRectMake(5, 5, 100, 20)];
+        yongJinLab = [[UILabel alloc] initWithFrame:CGRectMake(5, 5, 80, 20)];
         yongJinLab.font = [UIFont systemFontOfSize:14];
         yongJinLab.textColor = [UIColor whiteColor];
         yongJinLab.textAlignment = NSTextAlignmentCenter;
-        yongJinLab.text = @"佣金：￥20000";
+        yongJinLab.text = @"佣金：待定";
         [yongJinView addSubview:yongJinLab];
     }
     return self;
